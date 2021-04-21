@@ -12,7 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="10a1bd07-df15-4e1d-ac40-9829217f5fbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
       <updated>1618943328534</updated>
       <workItem from="1618943329893" duration="12517000" />
       <workItem from="1619006235092" duration="12532000" />
-      <workItem from="1619036108595" duration="1397000" />
+      <workItem from="1619036108595" duration="1634000" />
     </task>
     <servers />
   </component>
