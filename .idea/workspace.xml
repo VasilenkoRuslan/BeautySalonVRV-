@@ -12,6 +12,15 @@
   <component name="ChangeListManager">
     <list default="true" id="10a1bd07-df15-4e1d-ac40-9829217f5fbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/.cache-loader/c3ffd495ecc74fe414f0ffbf0ef1fab4.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/.cache-loader/c3ffd495ecc74fe414f0ffbf0ef1fab4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/assets/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/assets/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/dist/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/dist/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/dist/scripts/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/dist/scripts/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/dist/styles/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/dist/styles/main.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +41,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1rReSMOMkNsMpQKh8anAvU3tzIP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -73,8 +84,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -88,7 +99,9 @@
       <updated>1618943328534</updated>
       <workItem from="1618943329893" duration="12517000" />
       <workItem from="1619006235092" duration="12532000" />
-      <workItem from="1619036108595" duration="2597000" />
+      <workItem from="1619036108595" duration="3200000" />
+      <workItem from="1619285965819" duration="12885000" />
+      <workItem from="1619369881976" duration="2210000" />
     </task>
     <servers />
   </component>
@@ -105,35 +118,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="469" y="191" width="738" height="634" key="#Inspections" timestamp="1619019376292">
+    <state x="469" y="191" width="738" height="634" key="#Inspections" timestamp="1619294862319">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
-    <state x="469" y="191" width="738" height="634" key="#Inspections/0.0.1680.1017@0.0.1680.1017" timestamp="1619019376292" />
+    <state x="469" y="191" width="738" height="634" key="#Inspections/0.0.1680.1017@0.0.1680.1017" timestamp="1619294862319" />
     <state x="603" y="79" width="806" height="722" key="#Intentions" timestamp="1619022802506">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
     <state x="603" y="79" width="806" height="722" key="#Intentions/0.0.1680.1017@0.0.1680.1017" timestamp="1619022802506" />
-    <state width="1638" height="129" key="GridCell.Tab.0.bottom" timestamp="1619025667194">
+    <state width="1638" height="129" key="GridCell.Tab.0.bottom" timestamp="1619303085415">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
-    <state width="1638" height="129" key="GridCell.Tab.0.bottom/0.0.1680.1017@0.0.1680.1017" timestamp="1619025667194" />
-    <state width="1638" height="129" key="GridCell.Tab.0.center" timestamp="1619025667167">
+    <state width="1638" height="129" key="GridCell.Tab.0.bottom/0.0.1680.1017@0.0.1680.1017" timestamp="1619303085415" />
+    <state width="1638" height="129" key="GridCell.Tab.0.center" timestamp="1619303085414">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
-    <state width="1638" height="129" key="GridCell.Tab.0.center/0.0.1680.1017@0.0.1680.1017" timestamp="1619025667167" />
-    <state width="1638" height="129" key="GridCell.Tab.0.left" timestamp="1619025667166">
+    <state width="1638" height="129" key="GridCell.Tab.0.center/0.0.1680.1017@0.0.1680.1017" timestamp="1619303085414" />
+    <state width="1638" height="129" key="GridCell.Tab.0.left" timestamp="1619303085414">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
-    <state width="1638" height="129" key="GridCell.Tab.0.left/0.0.1680.1017@0.0.1680.1017" timestamp="1619025667166" />
-    <state width="1638" height="129" key="GridCell.Tab.0.right" timestamp="1619025667168">
+    <state width="1638" height="129" key="GridCell.Tab.0.left/0.0.1680.1017@0.0.1680.1017" timestamp="1619303085414" />
+    <state width="1638" height="129" key="GridCell.Tab.0.right" timestamp="1619303085414">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
-    <state width="1638" height="129" key="GridCell.Tab.0.right/0.0.1680.1017@0.0.1680.1017" timestamp="1619025667168" />
-    <state x="1078" y="435" width="360" height="144" key="NewPhpFileDialog" timestamp="1618943703443">
+    <state width="1638" height="129" key="GridCell.Tab.0.right/0.0.1680.1017@0.0.1680.1017" timestamp="1619303085414" />
+    <state x="504" y="359" width="360" height="144" key="NewPhpFileDialog" timestamp="1619301951711">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
-    <state x="1078" y="435" width="360" height="144" key="NewPhpFileDialog/0.0.1680.1017@0.0.1680.1017" timestamp="1618943703443" />
+    <state x="504" y="359" width="360" height="144" key="NewPhpFileDialog/0.0.1680.1017@0.0.1680.1017" timestamp="1619301951711" />
   </component>
 </project>
