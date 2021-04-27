@@ -18,18 +18,24 @@
  * @package WordPress
  */
 
+$cred_name= ($_SERVER['HTTP_HOST'] == 'beauty.loc') ? 'dev' : 'prod';
+
+require_once 'credentials.php';
+global $cred;
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'beauty' );
+define( 'DB_NAME', $cred[$cred_name]['DB_NAME'] );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', $cred[$cred_name]['DB_USER'] );
+
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '1' );
+define( 'DB_PASSWORD', $cred[$cred_name]['DB_PASSWORD'] );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', $cred[$cred_name]['DB_HOST'] );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -88,3 +94,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+define('FS_METHOD', 'direct');
