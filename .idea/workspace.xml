@@ -11,16 +11,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10a1bd07-df15-4e1d-ac40-9829217f5fbd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/.cache-loader/9f01073f01b285fb3229d047d26db63d.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/.cache-loader/9f01073f01b285fb3229d047d26db63d.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/.cache-loader/c3ffd495ecc74fe414f0ffbf0ef1fab4.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/.cache-loader/c3ffd495ecc74fe414f0ffbf0ef1fab4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/.cache-loader/e89ba32d75609b9cf58f658d13281caf.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/.cache-loader/e89ba32d75609b9cf58f658d13281caf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/assets/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/assets/scripts/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/assets/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/assets/styles/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/dist/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/dist/scripts/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/dist/scripts/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/dist/scripts/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/dist/styles/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/dist/styles/main.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/inc/wp/enqueue_scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/inc/wp/enqueue_scripts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/beautysalon/temp-spot-beauty/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/beautysalon/temp-spot-beauty/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +42,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/wp-content/themes/beautysalon/package.json" />
   </component>
   <component name="ProjectId" id="1rReSMOMkNsMpQKh8anAvU3tzIP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -51,15 +64,31 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/themes/beautysalon/assets/scripts/plagins" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/beautysalon/assets/scripts/plagins" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beautysalon/assets/styles" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/beautysalon/assets/scripts/plagins" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beautysalon/assets/scripts" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beautysalon/inc/contactform" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/beautysalon/assets/images" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -67,6 +96,16 @@
       <command value="run" />
       <scripts>
         <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build:production" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/wp-content/themes/beautysalon/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:production" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -84,8 +123,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.build:production" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -101,7 +141,11 @@
       <workItem from="1619006235092" duration="12532000" />
       <workItem from="1619036108595" duration="3200000" />
       <workItem from="1619285965819" duration="12885000" />
-      <workItem from="1619369881976" duration="2210000" />
+      <workItem from="1619369881976" duration="15229000" />
+      <workItem from="1619387792003" duration="9220000" />
+      <workItem from="1619448692771" duration="29816000" />
+      <workItem from="1619490109417" duration="5771000" />
+      <workItem from="1619534658478" duration="2657000" />
     </task>
     <servers />
   </component>
@@ -121,33 +165,41 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="469" y="191" width="738" height="634" key="#Inspections" timestamp="1619294862319">
+    <state x="703" y="405" width="269" height="206" key="#ESLint" timestamp="1619476205477">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
-    <state x="469" y="191" width="738" height="634" key="#Inspections/0.0.1680.1017@0.0.1680.1017" timestamp="1619294862319" />
-    <state x="603" y="79" width="806" height="722" key="#Intentions" timestamp="1619022802506">
+    <state x="703" y="405" width="269" height="206" key="#ESLint/0.0.1680.1017@0.0.1680.1017" timestamp="1619476205477" />
+    <state x="469" y="191" width="738" height="634" key="#Inspections" timestamp="1619450711971">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
-    <state x="603" y="79" width="806" height="722" key="#Intentions/0.0.1680.1017@0.0.1680.1017" timestamp="1619022802506" />
-    <state width="1638" height="129" key="GridCell.Tab.0.bottom" timestamp="1619303085415">
+    <state x="469" y="191" width="738" height="634" key="#Inspections/0.0.1680.1017@0.0.1680.1017" timestamp="1619450711971" />
+    <state x="603" y="79" width="806" height="902" key="#Intentions" timestamp="1619482088620">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
-    <state width="1638" height="129" key="GridCell.Tab.0.bottom/0.0.1680.1017@0.0.1680.1017" timestamp="1619303085415" />
-    <state width="1638" height="129" key="GridCell.Tab.0.center" timestamp="1619303085414">
+    <state x="603" y="79" width="806" height="902" key="#Intentions/0.0.1680.1017@0.0.1680.1017" timestamp="1619482088620" />
+    <state x="623" y="268" width="430" height="481" key="FileChooserDialogImpl" timestamp="1619375037591">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
-    <state width="1638" height="129" key="GridCell.Tab.0.center/0.0.1680.1017@0.0.1680.1017" timestamp="1619303085414" />
-    <state width="1638" height="129" key="GridCell.Tab.0.left" timestamp="1619303085414">
+    <state x="623" y="268" width="430" height="481" key="FileChooserDialogImpl/0.0.1680.1017@0.0.1680.1017" timestamp="1619375037591" />
+    <state width="792" height="206" key="GridCell.Tab.0.bottom" timestamp="1619536765454">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
-    <state width="1638" height="129" key="GridCell.Tab.0.left/0.0.1680.1017@0.0.1680.1017" timestamp="1619303085414" />
-    <state width="1638" height="129" key="GridCell.Tab.0.right" timestamp="1619303085414">
+    <state width="792" height="206" key="GridCell.Tab.0.bottom/0.0.1680.1017@0.0.1680.1017" timestamp="1619536765454" />
+    <state width="792" height="206" key="GridCell.Tab.0.center" timestamp="1619536765454">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
-    <state width="1638" height="129" key="GridCell.Tab.0.right/0.0.1680.1017@0.0.1680.1017" timestamp="1619303085414" />
-    <state x="504" y="359" width="360" height="144" key="NewPhpFileDialog" timestamp="1619301951711">
+    <state width="792" height="206" key="GridCell.Tab.0.center/0.0.1680.1017@0.0.1680.1017" timestamp="1619536765454" />
+    <state width="792" height="206" key="GridCell.Tab.0.left" timestamp="1619536765453">
       <screen x="0" y="0" width="1680" height="1017" />
     </state>
-    <state x="504" y="359" width="360" height="144" key="NewPhpFileDialog/0.0.1680.1017@0.0.1680.1017" timestamp="1619301951711" />
+    <state width="792" height="206" key="GridCell.Tab.0.left/0.0.1680.1017@0.0.1680.1017" timestamp="1619536765453" />
+    <state width="792" height="206" key="GridCell.Tab.0.right" timestamp="1619536765454">
+      <screen x="0" y="0" width="1680" height="1017" />
+    </state>
+    <state width="792" height="206" key="GridCell.Tab.0.right/0.0.1680.1017@0.0.1680.1017" timestamp="1619536765454" />
+    <state x="504" y="359" width="360" height="144" key="NewPhpFileDialog" timestamp="1619493545943">
+      <screen x="0" y="0" width="1680" height="1017" />
+    </state>
+    <state x="504" y="359" width="360" height="144" key="NewPhpFileDialog/0.0.1680.1017@0.0.1680.1017" timestamp="1619493545943" />
   </component>
 </project>

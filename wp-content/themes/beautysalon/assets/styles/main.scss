@@ -1,1 +1,28 @@
-// @import "file";
+/**
+* Template Name: Spot
+* Template URL: https://templatemag.com/spot-bootstrap-freelance-template/
+* Author: TemplateMag.com
+* License: https://templatemag.com/license/
+*/
+
+@import "components/bootstrap";
+@import "components/font-awesome";
+
+//commons
+@import "commons/variables";
+@import "commons/general";
+
+//sections
+@import "layouts/sections/header";
+@import "layouts/sections/footer";
+@import "layouts/sections/wrap";
+@import "layouts/sections/sections";
+
+//pages
+@import "layouts/pages/home";
+
+//blocks
+@import "layouts/blocks/tilt";
+@import "layouts/blocks/modal-contact";
+@import "layouts/blocks/pricing-tables";
+@import "layouts/blocks/contact-form";

@@ -1,0 +1,37 @@
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.navbar {
+  font-weight: 800;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-inverse {
+  background: #2d2d2d;
+  border-color: #2d2d2d;
+
+  .navbar-brand {
+    color: #999;
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 1px;
+
+    i {
+      color: #ff7878;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .navbar-nav > .active > a {
+    background: #ff7878;
+  }
+}

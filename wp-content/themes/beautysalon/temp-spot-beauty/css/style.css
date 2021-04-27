@@ -277,7 +277,7 @@ hr {
 /***** MODAL CONTACT *****/
 
 .modal-content {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .modal-header {

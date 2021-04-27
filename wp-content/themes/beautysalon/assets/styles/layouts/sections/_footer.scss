@@ -1,0 +1,35 @@
+/* Footer Wrap */
+
+#f {
+  background: #2d2d2d;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  i {
+    color: #bdbdbd;
+    font-size: 30px;
+    padding: 20px;
+
+    &:hover {
+      color: #ff7878;
+    }
+  }
+}
+
+/* Copyrights */
+
+#copyrights {
+  background: #222;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.credits {
+  color: #999;
+}
+
