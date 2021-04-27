@@ -27,8 +27,7 @@
 						Somestreet Ave, 987<br/> London, UK.<br/> +44 8948-4343<br/> contact@example.com
 					</p>
 
-					<form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
-
+					<form class="contact-form php-mail-form" role="form" action="<?= $temp_html_dir; ?>contactform/contactform.php" method="POST">
 						<div class="form-group">
 							<label for="contact-name">Your Name</label>
 							<input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
@@ -85,15 +84,6 @@
 		</div>
 	</div>
 </div>
-
-<!-- JavaScript Libraries -->
-<script src="<?= $temp_html_dir; ?>lib/jquery/jquery.min.js"></script>
-<script src="<?= $temp_html_dir; ?>lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="<?= $temp_html_dir; ?>lib/php-mail-form/validate.js"></script>
-<script src="<?= $temp_html_dir; ?>lib/chart/chart.js"></script>
-
-<!-- Template Main Javascript File -->
-<script src="<?= $temp_html_dir; ?>js/main.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

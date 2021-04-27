@@ -5,22 +5,9 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="" name="keywords">
-	<link href="<?= $temp_html_dir; ?>img/apple-touch-icon.png" rel="apple-touch-icon">
-
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:400,300,700,900" rel="stylesheet">
-
-	<!-- Bootstrap CSS File -->
-	<link href="<?= $temp_html_dir; ?>lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- Libraries CSS Files -->
-	<link href="<?= $temp_html_dir; ?>lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-	<!-- Main Stylesheet File -->
-	<link href="<?= $temp_html_dir; ?>css/style.css" rel="stylesheet">
+<!--	<link href="--><?//= $temp_html_dir; ?><!--img/apple-touch-icon.png" rel="apple-touch-icon" >-->
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
