@@ -15853,7 +15853,13 @@ hr {
   letter-spacing: 1px;
 }
 
-/* line 34, assets/styles/layouts/sections/_header.scss */
+/* line 33, assets/styles/layouts/sections/_header.scss */
+
+.navbar-inverse .navbar-brand img {
+  max-height: 40px;
+}
+
+/* line 38, assets/styles/layouts/sections/_header.scss */
 
 .navbar-inverse .navbar-nav > .active > a {
   background: #ff7878;

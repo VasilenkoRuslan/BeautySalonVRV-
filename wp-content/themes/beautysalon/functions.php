@@ -7,3 +7,5 @@ $temp_html_dir = THEME_DIR_URI . '/temp-spot-beauty/'; //TODO delete before prod
 require_once THEME_DIR .'/inc/helpers/file.php';
 require_once THEME_DIR .'/inc/wp/enqueue_scripts.php';
 require_once THEME_DIR .'/inc/wp/theme_support.php';
+require_once THEME_DIR .'/inc/wp/image-sizes.php';
+require_once THEME_DIR .'/inc/acf/options-pages.php';

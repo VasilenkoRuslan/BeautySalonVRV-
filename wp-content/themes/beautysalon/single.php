@@ -1,7 +1,7 @@
 <?php global $temp_html_dir;
 $title = get_the_title();
 $breadcrumbs = yoast_breadcrumb('</div><div id="breadcrumbs">', '</div><div>', FALSE);
-$thumbnail_url = get_the_post_thumbnail_url();
+$thumbnail_url = get_the_post_thumbnail(NULL,'Medium');
 $date = get_the_date('d F Y');
 $content = get_the_content(); ?>
 
@@ -19,8 +19,8 @@ $content = get_the_content(); ?>
 <div class="container desc">
 	<div class="row">
 		<br><br>
-		<div class="col-lg-12">
-			<img src="<?= $thumbnail_url; ?>" alt="">
+		<div class="col-lg-12 justify-content-center text-left">
+			<?= $thumbnail_url; ?>
 		</div>
 		<div class="col-lg-12 justify-content-center text-left">
 			<h4><?= $title; ?></h4>
