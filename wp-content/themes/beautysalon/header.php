@@ -12,10 +12,15 @@
 <?php wp_body_open(); ?>
 
 <!-- Fixed navbar -->
+
+
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<?php echo $header_theme->get_icon_bar(); ?>
 		<?php echo $header_theme->get_phone_block(); ?>
+		<?php echo get_search_form(array(
+				'echo' => false,
+		));; ?>
 		<?php echo $header_theme->get_header_menu(); ?>
 	</div>
 </div>

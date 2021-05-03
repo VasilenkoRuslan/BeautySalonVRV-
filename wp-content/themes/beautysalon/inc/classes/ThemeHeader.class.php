@@ -12,7 +12,7 @@ class ThemeHeader
 	function get_icon_bar()
 	{
 		$logo_url = home_url('/');
-		$logo_src=$this->acf_fields['logo']['url'];
+		$logo_src = $this->acf_fields['logo']['url'];
 		return <<<HTML
 <div class="navbar-header">
 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -28,13 +28,13 @@ HTML;
 
 	function get_phone_block()
 	{
-		$phone_title=$this->acf_fields['phone']['phone_title'];
-		$phone_numb=$this->acf_fields['phone']['phone_number'];
+		$phone_title = $this->acf_fields['phone']['phone_title'];
+		$phone_numb = $this->acf_fields['phone']['phone_number'];
 
 		return <<<HTML
-<div class="navbar-text">
-	<h5 class="text-warning">{$phone_title}</h5>
-	<h5 class="text-warning">tel: <a href="tel: {$phone_numb}">{$phone_numb}</a></h5>
+<div class="navbar navbar-header">
+	<h4>{$phone_title}</h4>
+	<h4>tel: <a href="tel: {$phone_numb}">{$phone_numb}</a></h4>
 </div>
 HTML;
 	}
@@ -42,19 +42,13 @@ HTML;
 	function get_header_menu()
 	{
 		global $temp_html_dir;
-
-		return <<<HTML
-<div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="{$temp_html_dir}index.html">HOME</a></li>
-				<li><a href="{$temp_html_dir}about.html">ABOUT</a></li>
-				<li><a href="{$temp_html_dir}services.html">SERVICES</a></li>
-				<li><a href="{$temp_html_dir}works.html">WORKS</a></li>
-				<li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a>
-				</li>
-			</ul>
-		</div>
-HTML;
-
+		$main_menu = wp_nav_menu(array(
+			'theme_location' => 'main-menu',
+			'container_class' => 'navbar-collapse collapse',
+			'menu_class' => 'nav navbar-nav navbar-right',
+			'items_wrap' => '<ul id="%1$s" class="%2$s nav navbar-nav navbar-right">%3$s</ul>',
+			"echo" => false,
+		));
+		return $main_menu;
 	}
 }

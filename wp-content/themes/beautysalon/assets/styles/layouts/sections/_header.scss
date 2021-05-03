@@ -23,19 +23,47 @@ hr {
     font-weight: bolder;
     font-size: 22px;
     letter-spacing: 1px;
-
-    i {
-      color: #ff7878;
-      font-size: 22px;
-      letter-spacing: 1px;
-    }
-
-    img {
-      max-height: 40px;
-    }
   }
 
-  .navbar-nav > .active > a {
-    background: #ff7878;
+  .navbar-header h4 {
+    color: #fff;
+  }
+
+  i {
+    color: #ff7878;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  img {
+    max-height: 40px;
+  }
+}
+
+.navbar-nav > .active > a {
+  background: #ff7878;
+}
+
+#mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item > a.mega-menu-link {
+  line-height: 20px;
+  position: relative;
+  display: block;
+  padding: 15px;
+  word-wrap: break-word;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+  font-weight: 800;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+  font-size: 14px;
+  height: auto;
+  text-transform: uppercase;
+}
+
+#mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link {
+  background: #ff7878;
+
+  &:hover {
+    background: #090909;
   }
 }

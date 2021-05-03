@@ -4,13 +4,11 @@ $acf_footer = get_field('footer', 'options');
 /* This is Socials icons at footer */
 function footer_social_shortcode()
 {
-	global $acf_footer;
-
-	if (empty($acf_footer['social_networks'])) {
+	if (empty(get_field('footer_social_networks', 'options'))) {
 		return "";
 	}
 		$social_icons = "";
-		foreach ($acf_footer['social_networks'] as $soc) {
+		foreach (get_field('footer_social_networks', 'options') as $soc) {
 			$social_icons .= <<<EOL
 <a href="{$soc['network_url']}"><i class="{$soc['icon_class']}"></i></a>
 EOL;
@@ -23,14 +21,13 @@ add_shortcode('footer-social', 'footer_social_shortcode');
 /* This is logo at footer */
 function footer_logo_shortcode()
 {
-	global $acf_footer;
-	if (empty($acf_footer['logo'])) {
+	if (empty($get_logo = get_field('footer_logo', 'options'))) {
 		return "";
 	}
 		$logo_url = home_url('/');
-		$logo_src = wp_get_attachment_image($acf_footer['logo'], array(80, 80));
+		$logo_src = wp_get_attachment_image($get_logo, array(50, 50));
 		$footer_logo = <<<EOL
-	<a href="{$logo_url}">{$logo_src}</a>
+	<a class="list-inline" href="{$logo_url}">{$logo_src}</a>
 EOL;
 		return $footer_logo;
 }
@@ -40,13 +37,12 @@ add_shortcode('footer-logo', 'footer_logo_shortcode');
 /* This is footer`s description */
 function footer_description_shortcode()
 {
-	global $acf_footer;
-	if (empty($acf_footer['footer_description'])) {
+	if (empty( $description = get_field('footer_description', 'options'))) {
 		return "";
 	}
 		$footer_description = <<<EOL
 <p class="text-warning text-left">
-{$acf_footer['footer_description']}
+{$description}
 </p>
 EOL;
 		return $footer_description;
@@ -58,11 +54,9 @@ add_shortcode('footer-description', 'footer_description_shortcode');
 function footer_phone_shortcode()
 {
 	global $acf_footer;
-	if (empty($acf_footer['phone']['phone_title']) || empty($acf_footer['phone']['phone_number'])) {
+	if (empty($tel_title = get_field('footer_phone_phone_title', 'options')) || empty($tel_numb = get_field('footer_phone_phone_number', 'options'))) {
 		return "";
 	}
-		$tel_title = $acf_footer['phone']['phone_title'];
-		$tel_numb = $acf_footer['phone']['phone_number'];
 		$phone = <<<EOL
 <p class="text-danger">{$tel_title}<br>
 <a href="tel:{$tel_numb}"><button class="btn btn-warning">{$tel_numb}</button></a></p>

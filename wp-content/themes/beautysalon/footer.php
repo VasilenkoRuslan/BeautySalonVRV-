@@ -8,14 +8,17 @@
 	</div>
 	<div class="container">
 		<div class="row justify-content-between">
-			<div class="col-12 col-md-3 col-lg-3 centered">
+			<div class="col-12 col-sm-4 col-md-3 col-lg-3 centered">
 				<?php dynamic_sidebar('footer Column 1'); ?>
 			</div>
-			<div class="col-12 col-md-9 col-lg-6 centered">
+			<div class="col-6 col-sm-2 col-md-2 col-lg-2 centered">
 				<?php dynamic_sidebar('footer Column 2'); ?>
 			</div>
-			<div class="col-12 col-md-12 col-lg-3 centered">
+			<div class="col-6 col-sm-6 col-md-7 col-lg-4 centered">
 				<?php dynamic_sidebar('footer Column 3'); ?>
+			</div>
+			<div class="col-6 col-sm-12 col-md-12 col-lg-3 centered">
+				<?php dynamic_sidebar('footer Column 4'); ?>
 			</div>
 		</div>
 	</div>

@@ -9,5 +9,6 @@ require_once THEME_DIR .'/inc/wp/enqueue_scripts.php';
 require_once THEME_DIR .'/inc/wp/theme_support.php';
 require_once THEME_DIR .'/inc/wp/image-sizes.php';
 require_once THEME_DIR .'/inc/wp/widget_arias.php';
+require_once THEME_DIR .'/inc/wp/menus.php';
 require_once THEME_DIR .'/inc/acf/options-pages.php';
 require_once THEME_DIR .'/inc/shortcodes/footer_shortcodes.php';
