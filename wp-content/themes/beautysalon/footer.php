@@ -3,11 +3,22 @@
 <div id="f">
 	<div class="container">
 		<div class="row centered">
-			<a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-dribbble"></i></a>
+			<?php dynamic_sidebar('footer Row 1'); ?>
 		</div>
-		<!-- row -->
 	</div>
-	<!-- container -->
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-12 col-md-3 col-lg-3 centered">
+				<?php dynamic_sidebar('footer Column 1'); ?>
+			</div>
+			<div class="col-12 col-md-9 col-lg-6 centered">
+				<?php dynamic_sidebar('footer Column 2'); ?>
+			</div>
+			<div class="col-12 col-md-12 col-lg-3 centered">
+				<?php dynamic_sidebar('footer Column 3'); ?>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- Footer -->
 
