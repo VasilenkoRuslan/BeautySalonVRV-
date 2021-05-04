@@ -2,6 +2,18 @@
 function beauty_widget_arias(){
 
 	register_sidebar( array(
+		'name'          => __('Sidebar'),
+		'id'            => "sidebar",
+		'description'   => '',
+		'class'         => '',
+		'before_widget' => '',
+		'after_widget'  => "",
+		'before_title'  => '',
+		'after_title'   => "",
+		'before_sidebar' => '',
+		'after_sidebar'  => '',
+	) );
+	register_sidebar( array(
 		'name'          => __('footer Row 1'),
 		'id'            => "footer Row 1",
 		'description'   => '',

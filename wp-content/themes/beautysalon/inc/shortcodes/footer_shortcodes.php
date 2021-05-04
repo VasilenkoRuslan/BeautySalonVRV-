@@ -37,14 +37,14 @@ add_shortcode('footer-logo', 'footer_logo_shortcode');
 /* This is footer`s description */
 function footer_description_shortcode()
 {
-	if (empty( $description = get_field('footer_description', 'options'))) {
+	if (empty( $description = get_field('footer_footer_description', 'options'))) {
 		return "";
 	}
-		$footer_description = <<<EOL
+		$footer_description = <<<HTML
 <p class="text-warning text-left">
 {$description}
 </p>
-EOL;
+HTML;
 		return $footer_description;
 }
 
@@ -53,7 +53,6 @@ add_shortcode('footer-description', 'footer_description_shortcode');
 /* This is block-phone or block="Call me!!!" at footer */
 function footer_phone_shortcode()
 {
-	global $acf_footer;
 	if (empty($tel_title = get_field('footer_phone_phone_title', 'options')) || empty($tel_numb = get_field('footer_phone_phone_number', 'options'))) {
 		return "";
 	}

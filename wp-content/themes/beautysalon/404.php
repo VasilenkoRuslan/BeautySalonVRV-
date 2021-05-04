@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<div>
-	<h1><?php _e('404 not found!'); ?></h1>
-</div>
+<?php $page_title = __('404 not found!'); ?>
+<?= get_theme_page_title($page_title, false); ?>
 <?php get_footer(); ?>

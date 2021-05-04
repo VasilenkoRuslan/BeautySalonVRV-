@@ -1,135 +1,42 @@
-<?php global $temp_html_dir; ?>
-<?php get_header(); ?>
-<div id="headerwrap">
-	<div class="container">
-		<div class="row centered">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h1>It Doesn't Take a Rocket <b>Scientist</b></h1>
-				<h2>It Takes a Designer</h2>
-			</div>
+<?php global $temp_html_dir;
+global $wp_query;
+$page_title = $wp_query->queried_object->post_title;
+
+get_header();
+echo get_theme_page_title($page_title); ?>
+<div class="container desc">
+	<div class="row">
+		<div class="col-9 col-md-9 col-lg-9">
+			<?php
+			if (have_posts()) {
+				while (have_posts()) {
+					the_post();
+					get_template_part('template-parts/posts/post', 'item');
+				}
+				echo get_the_posts_pagination(array(
+						'prev_text' => '«',
+						'next_text' => '»',
+						'screen_reader_text' => __('&nbsp;'),
+						'aria_label' => '',
+				));
+			} else {
+				echo __('Sorry, no posts!', 'beautysalon');
+			}
+			?>
 		</div>
-		<!-- row -->
+		<div class="sidebar col-3 col-md-3 col-lg-3">
+			<?php get_sidebar(); ?>
+		</div>
 	</div>
-	<!-- container -->
-</div>
-<!-- headerwrap -->
-
-<div class="container w">
-	<div class="row centered">
-		<br><br>
-		<div class="col-lg-4">
-			<i class="fa fa-heart"></i>
-			<h4>DESIGN</h4>
-			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-				in some form, by injected humour, or randomised words which don't look even believable.</p>
-		</div>
-		<!-- col-lg-4 -->
-
-		<div class="col-lg-4">
-			<i class="fa fa-laptop"></i>
-			<h4>BOOTSTRAP</h4>
-			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-				in some form, by injected humour, or randomised words which don't look even believable.</p>
-		</div>
-		<!-- col-lg-4 -->
-
-		<div class="col-lg-4">
-			<i class="fa fa-trophy"></i>
-			<h4>SUPPORT</h4>
-			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-				in some form, by injected humour, or randomised words which don't look even believable.</p>
-		</div>
-		<!-- col-lg-4 -->
-	</div>
-	<!-- row -->
-	<br>
-	<br>
 </div>
 <!-- container -->
-
-<!-- PORTFOLIO SECTION -->
-<div id="dg">
-	<div class="container">
-		<div class="row centered">
-			<h4>LATEST WORKS</h4>
-			<br>
-			<div class="col-lg-4">
-				<div class="tilt">
-					<a href="#"><img src="<?= $temp_html_dir; ?>img/p01.png" alt=""></a>
-				</div>
-			</div>
-
-			<div class="col-lg-4">
-				<div class="tilt">
-					<a href="#"><img src="<?= $temp_html_dir; ?>img/p03.png" alt=""></a>
-				</div>
-			</div>
-
-			<div class="col-lg-4">
-				<div class="tilt">
-					<a href="#"><img src="<?= $temp_html_dir; ?>img/p02.png" alt=""></a>
-				</div>
-			</div>
-		</div>
-		<!-- row -->
-	</div>
-	<!-- container -->
-</div>
-<!-- DG -->
-
-<!-- FEATURE SECTION -->
-<div class="container wb">
-	<div class="row centered">
-		<br><br>
-		<div class="col-lg-8 col-lg-offset-2">
-			<h4>WE CREATE FIRST CLASS DESIGN</h4>
-			<p>By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love
-				becomes a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole
-				story the audience embraces. That’s
-				when the brand can truly flex its muscles.</p>
-			<p><br/><br/></p>
-		</div>
-		<div class="col-lg-2"></div>
-		<div class="col-lg-10 col-lg-offset-1">
-			<img class="img-responsive" src="<?= $temp_html_dir; ?>img/munter.png" alt="">
-		</div>
-	</div>
-	<!-- row -->
-</div>
-<!-- container -->
-
-<div id="lg">
-	<div class="container">
-		<div class="row centered">
-			<h4>OUR AWESOME CLIENTS</h4>
-			<div class="col-lg-2 col-lg-offset-1">
-				<img src="<?= $temp_html_dir; ?>img/c01.gif" alt="">
-			</div>
-			<div class="col-lg-2">
-				<img src="<?= $temp_html_dir; ?>img/c02.gif" alt="">
-			</div>
-			<div class="col-lg-2">
-				<img src="<?= $temp_html_dir; ?>img/c03.gif" alt="">
-			</div>
-			<div class="col-lg-2">
-				<img src="<?= $temp_html_dir; ?>img/c04.gif" alt="">
-			</div>
-			<div class="col-lg-2">
-				<img src="<?= $temp_html_dir; ?>img/c05.gif" alt="">
-			</div>
-		</div>
-		<!-- row -->
-	</div>
-	<!-- container -->
-</div>
-<!-- dg -->
 
 <div id="r">
 	<div class="container">
 		<div class="row centered">
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4>WE ARE STORYTELLERS. BRANDS ARE OUR SUBJECTS. DESIGN IS OUR VOICE.</h4>
-				<p>We believe ideas come from everyone, everywhere. At BlackTie, everyone within our agency walls is a
+				<p>We believe ideas come from everyone, everywhere. At OurCompany, everyone within our agency walls is a
 					designer in their own right. And there are a few principles we believe—and we believe everyone
 					should believe—about our design craft. These truths
 					drive us, motivate us, and ultimately help us redefine the power of design.</p>

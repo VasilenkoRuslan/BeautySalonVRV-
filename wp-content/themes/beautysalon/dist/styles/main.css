@@ -16065,7 +16065,7 @@ hr {
 
 #blue {
   background: #3498db;
-  padding-top: 35px;
+  padding-top: 55px;
   padding-bottom: 35px;
 }
 
@@ -16085,13 +16085,15 @@ hr {
 /* line 101, assets/styles/layouts/sections/_wrap.scss */
 
 #blue #breadcrumbs {
-  color: red;
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
 }
 
-/* line 104, assets/styles/layouts/sections/_wrap.scss */
+/* line 106, assets/styles/layouts/sections/_wrap.scss */
 
 #blue #breadcrumbs:hover {
-  color: yellow;
+  color: #ff7878;
 }
 
 /****** SECTIONS *****/
@@ -16146,6 +16148,15 @@ hr {
   color: #ff7878;
   font-size: 12px;
   padding: 5px;
+}
+
+/* line 38, assets/styles/layouts/sections/_sections.scss */
+
+.desc .sidebar {
+  padding: 15px;
+  border-color: #0c0c0c;
+  border-radius: 5px;
+  background-color: #d9edf7;
 }
 
 /* line 3, assets/styles/layouts/blocks/_tilt.scss */

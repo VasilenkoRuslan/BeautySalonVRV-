@@ -14,7 +14,7 @@
 <!-- Fixed navbar -->
 
 
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-inverse">
 	<div class="container">
 		<?php echo $header_theme->get_icon_bar(); ?>
 		<?php echo $header_theme->get_phone_block(); ?>
