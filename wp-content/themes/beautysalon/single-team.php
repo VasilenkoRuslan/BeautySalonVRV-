@@ -6,7 +6,6 @@ $thumbnail = get_the_post_thumbnail(NULL,'Medium');
 $content = get_the_content();
 
 $term = get_the_taxonomies();
-var_dump($term);
 ?>
 
 <?php get_header();
@@ -32,14 +31,8 @@ echo get_theme_page_title($title); ?>
 			<p><?= $content ?></p>
 		</div>
 	</div>
-	<!-- row -->
-
-
 	<br><br>
 </div>
-<!-- container -->
-
-
 <?php
 get_footer();
 ?>
