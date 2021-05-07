@@ -32,7 +32,7 @@ echo get_theme_page_title($title); ?>
 		</div>
 	</div>
 	<br><br>
-</div>
+</div>.p
 <?php
 get_footer();
 ?>
