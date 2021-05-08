@@ -1,4 +1,5 @@
 <?php global $temp_html_dir; ?>
+<?php echo do_shortcode('[footer-red]'); ?>
 <!-- FOOTER -->
 <div id="f">
 	<div class="container">

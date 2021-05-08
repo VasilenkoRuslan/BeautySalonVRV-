@@ -15738,6 +15738,30 @@ button.close {
   clip: auto;
 }
 
+/* line 2, assets/styles/components/_comments.scss */
+
+.comment.depth-1 .depth-2 {
+  margin-left: 50px;
+}
+
+/* line 5, assets/styles/components/_comments.scss */
+
+.comment.depth-1 .depth-2 .depth-3 {
+  margin-left: 50px;
+}
+
+/* line 8, assets/styles/components/_comments.scss */
+
+.comment.depth-1 .depth-2 .depth-3 .depth-4 {
+  margin-left: 50px;
+}
+
+/* line 11, assets/styles/components/_comments.scss */
+
+.comment.depth-1 .depth-2 .depth-3 .depth-4 .depth-5 {
+  margin-left: 50px;
+}
+
 /* line 3, assets/styles/commons/_general.scss */
 
 body {

@@ -1,0 +1,17 @@
+.comment.depth-1 {
+  .depth-2 {
+    margin-left: 50px;
+
+    .depth-3 {
+      margin-left: 50px;
+
+      .depth-4 {
+        margin-left: 50px;
+
+        .depth-5 {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}

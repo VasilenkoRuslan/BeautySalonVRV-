@@ -25,9 +25,9 @@ function footer_logo_shortcode()
 		return "";
 	}
 		$logo_url = home_url('/');
-		$logo_src = wp_get_attachment_image($get_logo, array(50, 50));
+		$logo_src = wp_get_attachment_image($get_logo, array(25,25));
 		$footer_logo = <<<EOL
-	<a class="list-inline" href="{$logo_url}">{$logo_src}</a>
+	<div class="logo"><a class="list-inline" href="{$logo_url}">{$logo_src}</a></div>
 EOL;
 		return $footer_logo;
 }
@@ -64,3 +64,28 @@ EOL;
 }
 
 add_shortcode('footer-phone', 'footer_phone_shortcode');
+
+/* This is red block description at footer */
+function footer_red_shortcode()
+{
+	if (empty($description_red_title = get_field('footer_description_red_red_title', 'options')) || empty($description_red_text = get_field('footer_description_red_red_text', 'options'))) {
+		return "";
+	}
+	$footer_description_red = <<<HTML
+<div id="r">
+	<div class="container">
+		<div class="row centered">
+			<div class="col-lg-12">
+				<h4>{$description_red_title}</h4>
+				<p>{$description_red_text}</p>
+			</div>
+		</div>
+		<!-- row -->
+	</div>
+	<!-- container -->
+</div>
+HTML;
+	return $footer_description_red;
+}
+
+add_shortcode('footer-red', 'footer_red_shortcode');
