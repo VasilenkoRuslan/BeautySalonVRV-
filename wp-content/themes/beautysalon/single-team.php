@@ -23,7 +23,7 @@ echo get_theme_page_title($title); ?>
 		<div class="col-lg-12 text-left">
 			<p><?php
 				foreach ($term as $taxonomy) {
-					echo "<b>".__("Taxonomy - ", "beautysalon")."</b>".$taxonomy."<hr>";
+					echo "<b>".$taxonomy."</b><hr>";
 				}
 				?></p>
 		</div>
@@ -32,7 +32,7 @@ echo get_theme_page_title($title); ?>
 		</div>
 	</div>
 	<br><br>
-</div>.p
+</div>
 <?php
 get_footer();
 ?>

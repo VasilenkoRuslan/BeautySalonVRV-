@@ -74,7 +74,7 @@ module.exports = jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(7);
+module.exports = __webpack_require__(8);
 
 
 /***/ }),
@@ -91,6 +91,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__plugins_php_mail_form_validate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__plugins_php_mail_form_validate__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__plugins_js_main__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__plugins_js_main___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__plugins_js_main__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__plugins_js_team__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__plugins_js_team___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__plugins_js_team__);
+
 
 
 
@@ -2760,6 +2763,42 @@ jQuery(document).ready(function ($) {
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
+  if ($('.team_page').length > 0) {
+    // Click on department link
+    $('.team_departments a').click(function () {
+      // Если текущая ссылка содержит класс active, то прекращаем выполнение кода
+      if ($(this).hasClass('active')) {
+        return false;
+      } // Get department id from link data attribute
+
+
+      var department_id = $(this).data('department'); // Remove previous active department link
+
+      $('.team_departments a.active').removeClass('active'); // Display current department link
+
+      $(this).addClass('active');
+
+      if (department_id === 'all') {
+        // Hide previous active department list
+        $('.dep-block').addClass('active');
+        return false;
+      } // Hide previous active department list
+
+
+      $('.dep-block.active').removeClass('active'); // Display current department list
+
+      $('.dep-block[data-department="' + department_id + '"]').addClass('active');
+      return false;
+    });
+  }
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

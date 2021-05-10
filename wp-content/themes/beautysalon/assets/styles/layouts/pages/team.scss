@@ -1,0 +1,40 @@
+.team_page {
+  background-color: #cec;
+
+  .team_departments {
+    padding: 20px 0;
+
+    ul {
+      text-align: center;
+
+      li {
+        display: inline-block;
+        padding-left: 40px;
+
+        a {
+          font-size: 20px;
+          color: $theme-color;
+          padding: 10px 12px;
+          border-radius: 10px;
+          border: 2px solid $theme-color;
+
+          &.active {
+            background: $theme-color;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .w {
+    .dep-block {
+      flex-wrap: wrap;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

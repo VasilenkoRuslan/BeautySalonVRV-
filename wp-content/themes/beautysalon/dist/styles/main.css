@@ -16183,6 +16183,62 @@ hr {
   background-color: #d9edf7;
 }
 
+/* line 1, assets/styles/layouts/pages/team.scss */
+
+.team_page {
+  background-color: #cec;
+}
+
+/* line 4, assets/styles/layouts/pages/team.scss */
+
+.team_page .team_departments {
+  padding: 20px 0;
+}
+
+/* line 7, assets/styles/layouts/pages/team.scss */
+
+.team_page .team_departments ul {
+  text-align: center;
+}
+
+/* line 10, assets/styles/layouts/pages/team.scss */
+
+.team_page .team_departments ul li {
+  display: inline-block;
+  padding-left: 40px;
+}
+
+/* line 14, assets/styles/layouts/pages/team.scss */
+
+.team_page .team_departments ul li a {
+  font-size: 20px;
+  color: #ff7878;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 2px solid #ff7878;
+}
+
+/* line 21, assets/styles/layouts/pages/team.scss */
+
+.team_page .team_departments ul li a.active {
+  background: #ff7878;
+  color: #fff;
+}
+
+/* line 31, assets/styles/layouts/pages/team.scss */
+
+.team_page .w .dep-block {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: none;
+}
+
+/* line 35, assets/styles/layouts/pages/team.scss */
+
+.team_page .w .dep-block.active {
+  display: block;
+}
+
 /* line 3, assets/styles/layouts/blocks/_tilt.scss */
 
 .tilt {

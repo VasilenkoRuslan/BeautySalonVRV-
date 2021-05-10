@@ -2,8 +2,10 @@
 /* Template Name: About page */
 
 include_once THEME_DIR . '/inc/classes/ThemeAbout.class.php';
+include_once THEME_DIR . '/inc/classes/ThemeTeam.class.php';
 
 $about = new ThemeAbout();
+$team = new ThemeTeam();
 
 $acf_fields = get_field('content');
 
@@ -24,6 +26,9 @@ if (!empty($acf_fields)) {
 				break;
 		}
 	}
-}
-
+} ?>
+<div class="team_page">
+	<?= $team->display_team_page(); ?>
+</div>
+<?php
 get_footer();

@@ -10,13 +10,8 @@ echo get_theme_page_title(__('Team','beautysalon'));
 
 
 ?>
-	<div class="container">
-		<div class="row">
-				<?php echo $team->get_departments(); ?>
-				<?php $team->get_all_team(); ?>
-		</div>
+	<div class="team_page">
+		<?= $team->display_team_page(); ?>
 	</div>
-
-
 <?php get_footer();
 

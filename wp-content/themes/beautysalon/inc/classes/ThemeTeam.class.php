@@ -2,78 +2,145 @@
 
 class ThemeTeam
 {
-	public $sorted_team_members;
-
+	//get departments in array
 	function get_departments()
 	{
-
 		$departments = get_terms(array(
 			'taxonomy' => 'departments',
 		));
 
 		if (empty($departments)) {
-			return false;
+			return '';
 		}
-
-			$html_departments = "";
+		// get array with key = department id, value = department name
+		$arrayDep = array();
 		foreach ($departments as $dep) {
-			$dep_id = $dep->term_id;
-			$dep_name = $dep->name;
-
-			if (!isset($this->sorted_team_members[$dep_id])) {
-				$this->sorted_team_members[$dep_id] = array();
-			}
-
-			$html_departments .= "<li><a href='#'>" . $dep_name . "</a></li>";
+			$arrayDep[$dep->term_id] = $dep->name;
 		}
-
-		$html_block = '<ul>' . $html_departments . '</ul>';
-		return $html_block;
+		return $arrayDep;
 	}
 
-	function get_all_team()
+	//get html departments for the echo at page
+	function display_departments()
+	{
+		$arr_deps = $this->get_departments();
+		if (empty($arr_deps)) {
+			return '';
+		}
+
+		$dep_count = 0;
+
+		//start html block
+		$block = '<div class="team_departments"><ul>';
+
+		//add html departments to array
+		foreach ($arr_deps as $dep_id => $dep_name) {
+
+			$dep_class = ($dep_count == 0) ? 'active' : null;
+			$dep_count++;
+
+			$block .= '<li><a href="#" class="dep-btn ' . $dep_class . '" data-department="' . $dep_id . '">' . $dep_name . '</a></li>';
+		}
+
+		// add button "all team members"
+		$block .= '<li><a href="#" class="dep-btn" data-department="all">all team members</a></li>';
+
+		//end html block
+		$block .= '</ul></div>';
+		return $block;
+	}
+
+	//get team members array
+	function get_team()
 	{
 		$all_team_members = get_posts(array(
 			'numberposts' => -1,
 			'post_type' => 'team',
 		));
 
-		foreach ($all_team_members as $team_member) {
-			$member_id = $team_member->ID;
-			$member_url = get_permalink($member_id);
-			$member_name = $team_member->post_title;
-			$member_image = get_the_post_thumbnail_url($member_id);
-			$member_position = get_field('work_position', $member_id);
+		$array_all_team = array();
+		$number_team_member = 0;
 
-			$member_department_data = get_the_terms($member_id, "departments");
-			$member_department_id = $member_department_data[0]->term_id;
-			$member_department_name = $member_department_data[0]->name;
-			$member_location_data = get_the_terms($member_id, "locations");
-			$member_location_name = $member_location_data[0]->name;
+		foreach ($all_team_members as $obj_team) {
+			$number_team_member++;
 
-			$this->sorted_team_members[$member_department_id][] = array(
-				'id' => $member_id,
-				'url' => $member_url,
-				'name' => $member_name,
-				'image' => $member_image,
-				'position' => $member_position,
-				'department' => $member_department_name,
-				'location' => $member_location_name,
+			$team_member_id = $obj_team->ID;
+			$team_member_name = $obj_team->post_title;
+
+			$team_member_avatar = get_the_post_thumbnail_url($team_member_id);
+			$team_member_avatar = (empty($team_member_avatar)) ? THEME_DIR_URI . '/assets/images/no_avatar.jpg' : $team_member_avatar;
+
+			$team_member_position = get_field('work_position', $team_member_id);
+
+			$team_member_location = get_the_terms($team_member_id, 'locations');
+			$team_member_location_name = (isset($team_member_location[0])) ? $team_member_location[0]->name : null;
+
+			$team_member_dep_id = get_field('department', $team_member_id);
+
+			$array_all_team[$team_member_dep_id][$number_team_member] = array(
+				'avatar' => $team_member_avatar,
+				'name' => $team_member_name,
+				'work_position' => $team_member_position,
+				'location' => $team_member_location_name
 			);
-
 		}
+		return $array_all_team;
+	}
 
-		$html_member = '';
-		foreach ($this->sorted_team_members as $member) {
-			$html_member .= <<<HTML
+	//get html team members for the echo at page
+	function display_team_members()
+	{
+		$arr_team_members = $this->get_team();
 
-<div class="member_item">
-	<a href="#"><div class="member_image"></div></a>
-	<div class="member_name"></div>
-	<div class="member_position"></div>
+		//Create word 'from' before name location to display
+		$pre_loc = __('from', 'beautysalon');
+
+		//start Team members block
+		$block = <<<HTML
+<div class="container w">
+    <hr>
+    <div class="row centered">
+HTML;
+		//select to first department`s members
+		$dep_count = 0;
+
+		//add Team members to block
+		foreach ($arr_team_members as $dep_id => $dep_list) {
+
+			//select to first department`s members
+			$dep_class = ($dep_count == 0) ? 'active' : null;
+			$dep_count++;
+
+			$block .= "<div class='dep-block {$dep_class}' data-department='{$dep_id}'>";
+			foreach ($dep_list as $team_member) {
+				$block .= <<<HTML
+<div class="col-sm-12 col-md-6 col-lg-4">
+	<a href="#">
+		<img class="img-circle" src="{$team_member['avatar']}" width="110" height="110" alt="">
+        <h4>{$team_member['name']}</h4>
+	</a>
+	<p>{$team_member['work_position']}<br>
+		<div class="btn btn-info">{$pre_loc} {$team_member['location']}</div>
+	</p>
 </div>
 HTML;
+			}
+			$block .= "</div>";
 		}
-		return "";
+
+		//end Team members block
+		$block .= <<<HTML
+    </div>
+	<hr><br>
+</div>
+HTML;
+
+		return $block;
+	}
+
+	//get all result html of this class
+	function display_team_page()
+	{
+		return $this->display_departments() . $this->display_team_members();
 	}
 }

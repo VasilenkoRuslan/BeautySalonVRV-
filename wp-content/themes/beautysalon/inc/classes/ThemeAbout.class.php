@@ -38,16 +38,16 @@ HTML;
 		}
 
 		$html_block_center = "";
-		foreach ($data_skills as $key=>$skill) {
+		$number_canvas=1;
+		foreach ($data_skills as $skill) {
 			//canvas number
-			$key++;
 			$title = $skill['title'];
 			$description = $skill['description'];
 
-			if($key !== 1) {
+			if($number_canvas !== 1) {
 				$html_block_center .= <<<HTML
 		<div class="col-lg-3">
-          <canvas id="canvas{$key}" height="130" width="130"></canvas>
+          <canvas id="canvas{$number_canvas}" height="130" width="130"></canvas>
           <br>
           <p><b>{$title}</b></p>
           <p><small>{$description}</small></p>
@@ -63,13 +63,15 @@ HTML;
         </div>
 HTML;
 			}
+			$number_canvas++;
 		}
+		$name_block = __('OUR SKILLS','beautysalon');
 
 		$html_block =<<<HTML
 <div id="dg">
     <div class="container">
       <div class="row centered">
-        <h4>OUR SKILLS</h4>
+        <h4>{$name_block}</h4>
         <br>
         {$html_block_center}
       </div>

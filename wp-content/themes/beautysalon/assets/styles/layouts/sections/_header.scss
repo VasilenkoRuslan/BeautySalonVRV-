@@ -30,7 +30,7 @@ hr {
   }
 
   i {
-    color: #ff7878;
+    color: $theme-color;
     font-size: 22px;
     letter-spacing: 1px;
   }
@@ -41,7 +41,7 @@ hr {
 }
 
 .navbar-nav > .active > a {
-  background: #ff7878;
+  background: $theme-color;
 }
 
 #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item > a.mega-menu-link {
@@ -61,7 +61,7 @@ hr {
 }
 
 #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link {
-  background: #ff7878;
+  background: $theme-color;
 
   &:hover {
     background: #090909;
