@@ -16183,32 +16183,32 @@ hr {
   background-color: #d9edf7;
 }
 
-/* line 1, assets/styles/layouts/pages/team.scss */
+/* line 1, assets/styles/layouts/pages/_team.scss */
 
 .team_page {
   background-color: #cec;
 }
 
-/* line 4, assets/styles/layouts/pages/team.scss */
+/* line 4, assets/styles/layouts/pages/_team.scss */
 
 .team_page .team_departments {
   padding: 20px 0;
 }
 
-/* line 7, assets/styles/layouts/pages/team.scss */
+/* line 7, assets/styles/layouts/pages/_team.scss */
 
 .team_page .team_departments ul {
   text-align: center;
 }
 
-/* line 10, assets/styles/layouts/pages/team.scss */
+/* line 10, assets/styles/layouts/pages/_team.scss */
 
 .team_page .team_departments ul li {
   display: inline-block;
   padding-left: 40px;
 }
 
-/* line 14, assets/styles/layouts/pages/team.scss */
+/* line 14, assets/styles/layouts/pages/_team.scss */
 
 .team_page .team_departments ul li a {
   font-size: 20px;
@@ -16218,14 +16218,14 @@ hr {
   border: 2px solid #ff7878;
 }
 
-/* line 21, assets/styles/layouts/pages/team.scss */
+/* line 21, assets/styles/layouts/pages/_team.scss */
 
 .team_page .team_departments ul li a.active {
   background: #ff7878;
   color: #fff;
 }
 
-/* line 31, assets/styles/layouts/pages/team.scss */
+/* line 31, assets/styles/layouts/pages/_team.scss */
 
 .team_page .w .dep-block {
   -ms-flex-wrap: wrap;
@@ -16233,10 +16233,110 @@ hr {
   display: none;
 }
 
-/* line 35, assets/styles/layouts/pages/team.scss */
+/* line 35, assets/styles/layouts/pages/_team.scss */
 
 .team_page .w .dep-block.active {
   display: block;
+}
+
+/* line 1, assets/styles/layouts/pages/_contact.scss */
+
+body .contact-form {
+  text-align: left;
+  padding: 0 15px;
+}
+
+/* line 5, assets/styles/layouts/pages/_contact.scss */
+
+body .contact-form .form-group {
+  display: block;
+}
+
+/* line 8, assets/styles/layouts/pages/_contact.scss */
+
+body .contact-form .form-group label {
+  color: #999;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* line 16, assets/styles/layouts/pages/_contact.scss */
+
+body .contact-form .form-group input,
+body .contact-form .form-group textarea {
+  padding: 10px 12px;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 14px;
+  height: auto;
+}
+
+/* line 25, assets/styles/layouts/pages/_contact.scss */
+
+body .contact-form .form-group .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* line 34, assets/styles/layouts/pages/_contact.scss */
+
+body .contact-form .loading {
+  display: none;
+  color: #555;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+/* line 43, assets/styles/layouts/pages/_contact.scss */
+
+body .contact-form .error-message,
+body .contact-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+/* line 54, assets/styles/layouts/pages/_contact.scss */
+
+body .contact-form .sent-message {
+  background: #18d26e;
+}
+
+/* line 58, assets/styles/layouts/pages/_contact.scss */
+
+body .contact-form .form-send {
+  text-align: center;
+}
+
+/* line 61, assets/styles/layouts/pages/_contact.scss */
+
+body .contact-form .form-send input {
+  background: #d9534f;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+/* line 69, assets/styles/layouts/pages/_contact.scss */
+
+body .contact-form .form-send input:hover {
+  text-decoration: none;
+  background: #e65f5b;
 }
 
 /* line 3, assets/styles/layouts/blocks/_tilt.scss */
