@@ -37,6 +37,9 @@ define( 'DB_PASSWORD', $cred[$cred_name]['DB_PASSWORD'] );
 /** MySQL hostname */
 define( 'DB_HOST', $cred[$cred_name]['DB_HOST'] );
 
+/** Bugs */
+define( 'WP_DEBUG', $cred[$cred_name]['WP_DEBUG'] );
+
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
 
@@ -83,7 +86,7 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', true );
+
 
 /* That's all, stop editing! Happy publishing. */
 
