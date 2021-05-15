@@ -15,6 +15,11 @@ function theme_scripts() {
 	// Main JS
 	wp_enqueue_script('main-javascript', asset_path('scripts/main.js'), [ 'jquery' ], '1.0.0', true);
 
+	// google maps
+	if(!empty($key=get_field('maps_key','options'))) {
+		wp_enqueue_script('googleapis', 'https://maps.googleapis.com/maps/api/js?key='.$key, [], '1.0.0', false);
+	}
+
 	//wp comment reply
 	wp_enqueue_script('comment-reply');
 
@@ -27,3 +32,4 @@ function theme_scripts() {
 	wp_localize_script('main-javascript', 'themeVars', $theme_vars);
 }
 add_action('wp_enqueue_scripts', 'theme_scripts');
+

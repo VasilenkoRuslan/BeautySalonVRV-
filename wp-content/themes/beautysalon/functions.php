@@ -12,6 +12,14 @@ require_once THEME_DIR . '/inc/wp/image-sizes.php';
 require_once THEME_DIR . '/inc/wp/widget_arias.php';
 require_once THEME_DIR . '/inc/wp/menus.php';
 require_once THEME_DIR . '/inc/acf/options-pages.php';
+
 require_once THEME_DIR . '/inc/hooks/images.php';
+require_once THEME_DIR . '/inc/hooks/googlemaps.php';
+
 require_once THEME_DIR . '/inc/shortcodes/footer_shortcodes.php';
 require_once THEME_DIR . '/inc/shortcodes/front_page_shortcodes.php';
+
+
+
+
+
