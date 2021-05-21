@@ -8,7 +8,7 @@ get_header();
 
 echo get_theme_page_title(get_the_title()); ?>
 
-<div class="team_page">
+<div class="container team_page">
 	<?= $team->display_team_page(); ?>
 </div>
 

@@ -33,3 +33,9 @@ function theme_scripts() {
 }
 add_action('wp_enqueue_scripts', 'theme_scripts');
 
+//admin css
+function load_admin_styles() {
+	wp_enqueue_style('admin-scc', THEME_DIR_URI.'/assets/styles/admin.css');
+}
+add_action( 'admin_enqueue_scripts', 'load_admin_styles' );
+

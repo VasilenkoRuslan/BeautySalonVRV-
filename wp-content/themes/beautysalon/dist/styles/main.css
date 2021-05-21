@@ -15927,6 +15927,55 @@ hr {
   background: #090909;
 }
 
+/* line 72, assets/styles/layouts/sections/_header.scss */
+
+.lang-container ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 77, assets/styles/layouts/sections/_header.scss */
+
+.lang-container ul li.wpml-ls-item a {
+  padding: 0;
+}
+
+/* line 81, assets/styles/layouts/sections/_header.scss */
+
+.lang-container ul li.wpml-ls-item ul.sub-menu {
+  display: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 88, assets/styles/layouts/sections/_header.scss */
+
+.lang-container ul li.wpml-ls-item:hover ul.sub-menu {
+  display: block;
+  right: 0;
+}
+
+/* line 92, assets/styles/layouts/sections/_header.scss */
+
+.lang-container ul li.wpml-ls-item:hover ul.sub-menu li {
+  list-style-type: none;
+}
+
+/* line 95, assets/styles/layouts/sections/_header.scss */
+
+.lang-container ul li.wpml-ls-item:hover ul.sub-menu li a {
+  color: #ff7878;
+  text-decoration: none;
+  padding: 0;
+}
+
+/* line 100, assets/styles/layouts/sections/_header.scss */
+
+.lang-container ul li.wpml-ls-item:hover ul.sub-menu li a:hover {
+  background-color: #eee;
+  color: #111;
+}
+
 /* Footer Wrap */
 
 /* line 3, assets/styles/layouts/sections/_footer.scss */
@@ -16206,9 +16255,10 @@ hr {
 .team_page .team_departments ul li {
   display: inline-block;
   padding-left: 40px;
+  margin: 20px;
 }
 
-/* line 14, assets/styles/layouts/pages/_team.scss */
+/* line 15, assets/styles/layouts/pages/_team.scss */
 
 .team_page .team_departments ul li a {
   font-size: 20px;
@@ -16218,14 +16268,14 @@ hr {
   border: 2px solid #ff7878;
 }
 
-/* line 21, assets/styles/layouts/pages/_team.scss */
+/* line 22, assets/styles/layouts/pages/_team.scss */
 
 .team_page .team_departments ul li a.active {
   background: #ff7878;
   color: #fff;
 }
 
-/* line 31, assets/styles/layouts/pages/_team.scss */
+/* line 32, assets/styles/layouts/pages/_team.scss */
 
 .team_page .w .dep-block {
   -ms-flex-wrap: wrap;
@@ -16233,7 +16283,7 @@ hr {
   display: none;
 }
 
-/* line 35, assets/styles/layouts/pages/_team.scss */
+/* line 36, assets/styles/layouts/pages/_team.scss */
 
 .team_page .w .dep-block.active {
   display: block;

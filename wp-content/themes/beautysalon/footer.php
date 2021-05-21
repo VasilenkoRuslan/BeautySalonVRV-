@@ -86,7 +86,7 @@
 <div id="copyrights">
 	<div class="container">
 		<p>
-			&copy; Copyrights <strong>Spot</strong>. All Rights Reserved
+			&copy; <?php _e('Copyrights','beautysalon'); ?> <strong><?= $name_copyrights = get_field('footer_copyrights','options'); ?></strong>. <?php _e('All Rights Reserved', 'beautysalon'); ?>
 		</p>
 		<div class="credits">
 			<!--
@@ -95,7 +95,7 @@
 			  Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/spot-bootstrap-freelance-template/
 			  Licensing information: https://templatemag.com/license/
 			-->
-			Created with Spot template by <a href="https://templatemag.com/">TemplateMag</a>
+			<?= __('Created with', 'beautysalon').' '.$name_copyrights.' '.__('template by','beautysalon').'<a href="'.get_field('footer_link_by_author_url_link','options').'">'.get_field('footer_link_by_author_name_link','options'); ?>
 		</div>
 	</div>
 </div>

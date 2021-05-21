@@ -19,7 +19,7 @@ echo get_theme_page_title($title); ?>
 		<div class="col-lg-12 justify-content-center text-left">
 			<h4><?= $title; ?></h4>
 			<p><i class="fa fa-calendar"></i><?= $date; ?></p>
-			<h5><?php echo __('product by: ', 'beautysalon').$author; ?></h5>
+			<h5><?php echo __('product by: ', 'beautysalon')." ".$author; ?></h5>
 		</div>
 		<div class="col-lg-12">
 			<p><?= $content ?></p>

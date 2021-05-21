@@ -24,11 +24,11 @@ HTML;
 	{
 		$phone_title = $this->acf_fields['phone']['phone_title'];
 		$phone_numb = $this->acf_fields['phone']['phone_number'];
-
+		$word_tel=__('tel', 'beautysalon');
 		return <<<HTML
 <div class="navbar navbar-header">
 	<h4>{$phone_title}</h4>
-	<h4>tel: <a href="tel: {$phone_numb}">{$phone_numb}</a></h4>
+	<h4>{$word_tel}: <a href="tel: {$phone_numb}">{$phone_numb}</a></h4>
 </div>
 HTML;
 	}
@@ -44,5 +44,17 @@ HTML;
 			"echo" => false,
 		));
 		return $main_menu;
+	}
+	function get_languages_menu()
+	{
+		$lang_menu = wp_nav_menu(array(
+			'theme_location' => 'lang-menu',
+			'container'       => '',
+			'container_class' => '',
+			'menu_class' => 'nav navbar-nav navbar-right',
+			'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+			"echo" => false,
+		));
+		return $lang_menu;
 	}
 }

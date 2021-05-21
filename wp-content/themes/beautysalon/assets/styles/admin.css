@@ -1,0 +1,5 @@
+/*fixing wpml taxonomy popup*/
+.wpml-dialog-translate .wpml-form-row input,
+.wpml-dialog-translate .wpml-form-row textarea {
+	width: 250px !important;
+}

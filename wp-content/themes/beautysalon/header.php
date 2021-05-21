@@ -12,8 +12,15 @@
 <?php wp_body_open(); ?>
 
 <!-- Fixed navbar -->
-
-
+<div class="bg-warning">
+	<div class="container lang-container">
+		<div class="row">
+			<div class="col-2 col-lg-2">
+				<?php echo $header_theme->get_languages_menu(); ?>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="navbar navbar-inverse">
 	<div class="container">
 		<?php echo $header_theme->get_icon_bar(); ?>

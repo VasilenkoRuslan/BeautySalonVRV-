@@ -26,19 +26,20 @@ HTML;
 		<div class="container">
 			<div class="row">
 				<div class="map">
-					<h4 class="modal-title centered" id="myModalLabel">google maps</h4>
+					<h4 class="modal-title centered" id="myModalLabel"><? _e('google maps', 'beautysalon'); ?></h4>
 				</div>
 			</div>
 			<div class="modal-body">
 				<div class="row centered">
-					<p>We are available 24/7, so don't hesitate to contact us.</p>
 					<p>
-						Somestreet Ave, 987<br/> London, UK.<br/> +44 8948-4343<br/> contact@example.com
+						<?php  _e('We are available 24/7, so don`t hesitate to contact us.', 'beautysalon'); ?></p>
+					<p>
+						<?= __('Somestreet Ave, 987','beautysalon').'<br/>'.__('London, UK','beautysalon').'.<br/> +44 8948-4343<br/> contact@example.com'; ?>
 					</p>
 				</div>
 			</div>
 			<div class="modal-header">
-				<h4 class="modal-title centered" id="myModalLabel">Send message to us!</h4>
+				<h4 class="modal-title centered" id="myModalLabel"><?php _e('Send message to us!','beautysalon'); ?></h4>
 
 			</div>
 			<div class="modal-body">

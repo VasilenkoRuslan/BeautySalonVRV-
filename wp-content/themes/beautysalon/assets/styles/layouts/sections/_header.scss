@@ -67,3 +67,44 @@ hr {
     background: #090909;
   }
 }
+
+.lang-container {
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+
+    li.wpml-ls-item {
+      a {
+        padding: 0;
+      }
+
+      ul.sub-menu {
+        display: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      &:hover {
+        ul.sub-menu {
+          display: block;
+          right: 0;
+
+          li {
+            list-style-type: none;
+
+            a {
+              color: $theme-color;
+              text-decoration: none;
+              padding: 0;
+
+              &:hover {
+                background-color: #eee;
+                color: #111;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

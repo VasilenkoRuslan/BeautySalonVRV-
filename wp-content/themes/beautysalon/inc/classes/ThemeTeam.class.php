@@ -31,7 +31,7 @@ class ThemeTeam
 		$dep_count = 0;
 
 		//start html block
-		$block = '<div class="team_departments"><ul>';
+		$block = '<div class="row team_departments"><ul>';
 
 		//add html departments to array
 		foreach ($arr_deps as $dep_id => $dep_name) {
@@ -43,7 +43,8 @@ class ThemeTeam
 		}
 
 		// add button "all team members"
-		$block .= '<li><a href="#" class="dep-btn" data-department="all">all team members</a></li>';
+		$words_all_t_m=__('all team members','beautysalon');
+		$block .= '<li><a href="#" class="dep-btn" data-department="all">'.$words_all_t_m.'</a></li>';
 
 		//end html block
 		$block .= '</ul></div>';
@@ -56,6 +57,7 @@ class ThemeTeam
 		$all_team_members = get_posts(array(
 			'numberposts' => -1,
 			'post_type' => 'team',
+			'suppress_filters' => false,
 		));
 
 		$array_all_team = array();
