@@ -5,6 +5,9 @@ get_header();
 
 echo get_theme_page_title(get_the_title());
 
+$id_form = get_field('contact_forms');
+$id_subscription_form = get_field('subscription_block');
+
 $map = get_field('map');
 $html_map = NULL;
 if (!empty($map)) {
@@ -40,16 +43,18 @@ HTML;
 			</div>
 			<div class="modal-header">
 				<h4 class="modal-title centered" id="myModalLabel"><?php _e('Send message to us!','beautysalon'); ?></h4>
-
 			</div>
 			<div class="modal-body">
 				<div class="row centered">
 
-					<?php echo do_shortcode('[contact-form-7 id="213"]'); ?>
+					<?php echo do_shortcode('[contact-form-7 id="'.$id_form.'"]'); ?>
 				</div>
 			</div>
 			<div class="row">
-				<?= do_shortcode('[contact-form-7 id="214" title="Subscription block(end section Contact page)"]'); ?>
+				<div class="modal-header">
+				<h4 class="modal-title centered" id="myModalLabel"><?php _e('Subscription','beautysalon'); ?></h4>
+				</div>
+				<?= do_shortcode('[contact-form-7 id="'.$id_subscription_form.'"]'); ?>
 			</div>
 		</div>
 	</div>

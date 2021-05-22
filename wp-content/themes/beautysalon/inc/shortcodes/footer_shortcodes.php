@@ -25,9 +25,8 @@ function footer_logo_shortcode()
 		return "";
 	}
 		$logo_url = home_url('/');
-		$logo_src = wp_get_attachment_image($get_logo, array(25,25));
 		$footer_logo = <<<EOL
-	<div class="logo"><a class="list-inline" href="{$logo_url}">{$logo_src}</a></div>
+	<a class="logo" href="{$logo_url}"><img src="{$get_logo}" style="max-width: 100px;" alt=""></a>
 EOL;
 		return $footer_logo;
 }

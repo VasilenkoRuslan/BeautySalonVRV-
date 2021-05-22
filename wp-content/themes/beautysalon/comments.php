@@ -29,27 +29,15 @@ if ( $comments ) {
 
 			<h2 class="comment-reply-title">
 				<?php
-				if ( ! have_comments() ) {
-					_e( 'Leave a comment', 'beautysalon' );
-				} elseif ( 1 === $comments_number ) {
-					/* translators: %s: Post title. */
-					printf( _x( 'One reply on &ldquo;%s&rdquo;', 'comments title', 'beautysalon' ), get_the_title() );
-				} else {
-					printf(
-					/* translators: 1: Number of comments, 2: Post title. */
-							_nx(
-									'%1$s reply on &ldquo;%2$s&rdquo;',
-									'%1$s replies on &ldquo;%2$s&rdquo;',
-									$comments_number,
-									'comments title',
-									'beautysalon'
-							),
-							number_format_i18n( $comments_number ),
-							get_the_title()
-					);
-				}
-
-				?>
+	if (have_comments()) {
+		$comments_num = get_comments_number();
+		$comments_text_count = decl_of_num($comments_num, array(
+				__('%d comment', 'beautysalon'),
+				_x('%d comments','2-4','beautysalon'),
+				__("%d comments",'beautysalon'),
+		)); ?>
+		<h2 class="comments-title"><?= $comments_text_count; ?></h2>
+	<?php } ?>
 			</h2><!-- .comments-title -->
 
 		</div><!-- .comments-header -->

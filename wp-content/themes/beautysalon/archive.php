@@ -4,7 +4,7 @@ $title = get_the_archive_title();
 echo get_theme_page_title($title); ?>
 <div class="container desc">
 	<div class="row">
-		<div class="col-9 col-md-9 col-lg-9">
+		<div class="col-6 col-md-6 col-lg-6">
 		<?php
 		if (have_posts()) {
 			while (have_posts()) {

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
+<head><style>img.lazy{min-height:1px}</style><link rel="preload" href="http://beauty.loc/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js" as="script">
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
@@ -52,6 +52,12 @@ img.emoji {
 <link rel='stylesheet' id='megamenu-css'  href='http://beauty.loc/wp-content/uploads/maxmegamenu/style_en.css?ver=e50815' type='text/css' media='all' />
 <link rel='stylesheet' id='dashicons-css'  href='http://beauty.loc/wp-includes/css/dashicons.min.css?ver=5.7.2' type='text/css' media='all' />
 <link rel='stylesheet' id='main-stylesheet-css'  href='http://beauty.loc/wp-content/themes/beautysalon/dist/styles/main.css?ver=1.0.0' type='text/css' media='all' />
+<script type='text/javascript' id='eio-lazy-load-js-extra'>
+/* <![CDATA[ */
+var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":"0","threshold":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://beauty.loc/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=614' id='eio-lazy-load-js'></script>
 <script type='text/javascript' src='https://code.jquery.com/jquery-1.12.4.min.js?ver=1.12.4' id='jquery-js'></script>
 <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCPLzjPB6K2Uw5-ti7-6RQgypYMOxy53mg&#038;ver=1.0.0' id='googleapis-js'></script>
 <link rel="https://api.w.org/" href="http://beauty.loc/wp-json/" /><link rel="alternate" type="application/json" href="http://beauty.loc/wp-json/wp/v2/pages/15/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://beauty.loc/xmlrpc.php?rsd" />
@@ -61,7 +67,7 @@ img.emoji {
 <link rel="alternate" type="application/json+oembed" href="http://beauty.loc/wp-json/oembed/1.0/embed/?url=http%3A%2F%2Fbeauty.loc%2F" />
 <link rel="alternate" type="text/xml+oembed" href="http://beauty.loc/wp-json/oembed/1.0/embed/?url=http%3A%2F%2Fbeauty.loc%2F&#038;format=xml" />
 <meta name="generator" content="WPML ver:4.4.4 stt:1,45;" />
-<link rel="icon" href="http://beauty.loc/wp-content/uploads/2021/05/time.png" sizes="32x32" />
+<noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style><link rel="icon" href="http://beauty.loc/wp-content/uploads/2021/05/time.png" sizes="32x32" />
 <link rel="icon" href="http://beauty.loc/wp-content/uploads/2021/05/time.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="http://beauty.loc/wp-content/uploads/2021/05/time.png" />
 <meta name="msapplication-TileImage" content="http://beauty.loc/wp-content/uploads/2021/05/time.png" />
@@ -86,7 +92,7 @@ img.emoji {
 <div class="navbar navbar-inverse">
 	<div class="container">
 		<div class="navbar-header">
-	<a class="navbar-brand" href="http://beauty.loc/"><img src="http://beauty.loc/wp-content/uploads/2021/04/towel.svg" alt="new logo"></a>
+	<a class="navbar-brand" href="http://beauty.loc/"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="new logo" data-src="http://beauty.loc/wp-content/uploads/2021/04/towel.svg" class="lazyload"><noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3E%3C/svg%3E" data-src="http://beauty.loc/wp-content/uploads/2021/04/towel.svg" alt="new logo" data-eio="l"></noscript></a>
 </div>		<div class="navbar navbar-header">
 	<h4>My friend, call me, please</h4>
 	<h4>tel: <a href="tel: +3 8(099)2889266">+3 8(099)2889266</a></h4>
@@ -115,11 +121,11 @@ img.emoji {
 </li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-columns-3-of-12 mega-menu-item-88' id='mega-menu-item-88'><a class="mega-menu-link" href="#">Other pages<span class="mega-indicator"></span></a>
 	<ul class="mega-sub-menu">
 <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-92' id='mega-menu-item-92'><a class="mega-menu-link" href="#">444</a></li>	</ul>
-</li><li class='mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-columns-6-of-12 mega-menu-clear mega-menu-item-custom_html-2' id='mega-menu-item-custom_html-2'><div class="textwidget custom-html-widget"><a href="#" class=""><img src="https://blog.reship.com/wp-content/uploads/2016/07/Top-30-Best-Online-Makeup-stores.jpg" alt="make up"></a></div></li><li class='mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-columns-6-of-12 mega-menu-item-custom_html-3' id='mega-menu-item-custom_html-3'><div class="textwidget custom-html-widget"><a href="#" class=""><img src="https://allure.com.ng/wp-content/uploads/2021/01/Makeup-banner.jpg" alt="make up"></a></div></li></ul>
+</li><li class='mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-columns-6-of-12 mega-menu-clear mega-menu-item-custom_html-2' id='mega-menu-item-custom_html-2'><div class="textwidget custom-html-widget"><a href="#" class=""><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="make up" data-src="https://blog.reship.com/wp-content/uploads/2016/07/Top-30-Best-Online-Makeup-stores.jpg" class="lazyload"><noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://blog.reship.com/wp-content/uploads/2016/07/Top-30-Best-Online-Makeup-stores.jpg" alt="make up" data-eio="l"></noscript></a></div></li><li class='mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-columns-6-of-12 mega-menu-item-custom_html-3' id='mega-menu-item-custom_html-3'><div class="textwidget custom-html-widget"><a href="#" class=""><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="make up" data-src="https://allure.com.ng/wp-content/uploads/2021/01/Makeup-banner.jpg" class="lazyload"><noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://allure.com.ng/wp-content/uploads/2021/01/Makeup-banner.jpg" alt="make up" data-eio="l"></noscript></a></div></li></ul>
 </li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-73' id='mega-menu-item-73'><a class="mega-menu-link" href="http://beauty.loc/about-us/" tabindex="0">About us</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-74' id='mega-menu-item-74'><a class="mega-menu-link" href="http://beauty.loc/faq/" tabindex="0">FAQ</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-75' id='mega-menu-item-75'><a class="mega-menu-link" href="http://beauty.loc/news/" tabindex="0">News</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-76' id='mega-menu-item-76'><a class="mega-menu-link" href="http://beauty.loc/our-team/" tabindex="0">Our team</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-77' id='mega-menu-item-77'><a class="mega-menu-link" href="http://beauty.loc/services/" tabindex="0">Services</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-78' id='mega-menu-item-78'><a class="mega-menu-link" href="http://beauty.loc/works/" tabindex="0">Our works</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-81' id='mega-menu-item-81'><a class="mega-menu-link" href="http://beauty.loc/contact-us/" tabindex="0">Contact us</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-94' id='mega-menu-item-94'><a class="mega-menu-link" href="#myModal" tabindex="0"><i class="fa fa-envelope-o"></i></a></li></ul></div>	</div>
 </div>
 
-<div id="headerwrap" style='background-image: url("http://beauty.loc/wp-content/themes/beautysalon/assets/images/header-bg.jpg")'>
+<div id="headerwrap" style='' class="lazyload" data-bg="http://beauty.loc/wp-content/themes/beautysalon/assets/images/header-bg.jpg">
 	<div class="container">
 		<div class="row centered">
 			<div class="col-lg-8 col-lg-offset-2">
@@ -155,15 +161,15 @@ img.emoji {
         <h4>LATEST WORKS</h4>
         <br>        <div class="col-lg-4">
           <div class="tilt">
-            <a href="https://www.calendar.com/"><img src="http://beauty.loc/wp-content/uploads/2021/05/p01.png" alt=""></a>
+            <a href="https://www.calendar.com/"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-src="http://beauty.loc/wp-content/uploads/2021/05/p01.png" class="lazyload"><noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20426'%3E%3C/svg%3E" data-src="http://beauty.loc/wp-content/uploads/2021/05/p01.png" alt="" data-eio="l"></noscript></a>
           </div>
         </div>        <div class="col-lg-4">
           <div class="tilt">
-            <a href="http://www6.clique.com"><img src="http://beauty.loc/wp-content/uploads/2021/05/p03.png" alt=""></a>
+            <a href="http://www6.clique.com"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-src="http://beauty.loc/wp-content/uploads/2021/05/p03.png" class="lazyload"><noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20426'%3E%3C/svg%3E" data-src="http://beauty.loc/wp-content/uploads/2021/05/p03.png" alt="" data-eio="l"></noscript></a>
           </div>
         </div>        <div class="col-lg-4">
           <div class="tilt">
-            <a href="https://www.vodafone.com/"><img src="http://beauty.loc/wp-content/uploads/2021/05/p02.png" alt=""></a>
+            <a href="https://www.vodafone.com/"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-src="http://beauty.loc/wp-content/uploads/2021/05/p02.png" class="lazyload"><noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20426'%3E%3C/svg%3E" data-src="http://beauty.loc/wp-content/uploads/2021/05/p02.png" alt="" data-eio="l"></noscript></a>
           </div>
         </div>      </div>
       <!-- row -->
@@ -181,7 +187,7 @@ img.emoji {
 		</div>
 		<div class="col-lg-2"></div>
 		<div class="col-lg-10 col-lg-offset-1">
-			<img class="img-responsive" src="http://beauty.loc/wp-content/themes/beautysalon/temp-spot-beauty/img/munter.png" alt="">
+			<img class="img-responsive lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-src="http://beauty.loc/wp-content/themes/beautysalon/temp-spot-beauty/img/munter.png"><noscript><img class="img-responsive lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="http://beauty.loc/wp-content/themes/beautysalon/temp-spot-beauty/img/munter.png" alt="" data-eio="l"></noscript>
 		</div>
 	</div>
 	<!-- row -->
@@ -190,15 +196,15 @@ img.emoji {
 	<div class="container">
 		<div class="row centered">
 			<h4>OUR AWESOME CLIENTS</h4>			<div class="col-lg-2 col-lg-offset-1">
-				<img src="http://beauty.loc/wp-content/uploads/2021/05/c01.gif" alt = "" >
+				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt = ""  data-src="http://beauty.loc/wp-content/uploads/2021/05/c01.gif" class="lazyload"><noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20170%20200'%3E%3C/svg%3E" data-src="http://beauty.loc/wp-content/uploads/2021/05/c01.gif" alt = ""  data-eio="l"></noscript>
 			</div>			<div class="col-lg-2">
-				<img src="http://beauty.loc/wp-content/uploads/2021/05/c02.gif" alt = "" >
+				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt = ""  data-src="http://beauty.loc/wp-content/uploads/2021/05/c02.gif" class="lazyload"><noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20170%20200'%3E%3C/svg%3E" data-src="http://beauty.loc/wp-content/uploads/2021/05/c02.gif" alt = ""  data-eio="l"></noscript>
 			</div>			<div class="col-lg-2">
-				<img src="http://beauty.loc/wp-content/uploads/2021/05/c03.gif" alt = "" >
+				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt = ""  data-src="http://beauty.loc/wp-content/uploads/2021/05/c03.gif" class="lazyload"><noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20170%20200'%3E%3C/svg%3E" data-src="http://beauty.loc/wp-content/uploads/2021/05/c03.gif" alt = ""  data-eio="l"></noscript>
 			</div>			<div class="col-lg-2">
-				<img src="http://beauty.loc/wp-content/uploads/2021/05/c04.gif" alt = "" >
+				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt = ""  data-src="http://beauty.loc/wp-content/uploads/2021/05/c04.gif" class="lazyload"><noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20170%20200'%3E%3C/svg%3E" data-src="http://beauty.loc/wp-content/uploads/2021/05/c04.gif" alt = ""  data-eio="l"></noscript>
 			</div>			<div class="col-lg-2">
-				<img src="http://beauty.loc/wp-content/uploads/2021/05/c05.gif" alt = "" >
+				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt = ""  data-src="http://beauty.loc/wp-content/uploads/2021/05/c05.gif" class="lazyload"><noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20170%20200'%3E%3C/svg%3E" data-src="http://beauty.loc/wp-content/uploads/2021/05/c05.gif" alt = ""  data-eio="l"></noscript>
 			</div>		</div >
 		<!--row -->
 	</div >
@@ -233,7 +239,7 @@ img.emoji {
 <li id="menu-item-55" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55"><a href="#">WORKS</a></li>
 </ul></div></div></ul></nav>			</div>
 			<div class="col-6 col-sm-2 col-md-2 col-lg-2 centered">
-							<div class="textwidget">	<div class="logo"><a class="list-inline" href="http://beauty.loc/"><img src="http://beauty.loc/wp-content/uploads/2021/05/towel.svg" class="attachment-25x25 size-25x25" alt="" loading="lazy" srcset="http://beauty.loc/wp-content/uploads//2021/05/towel.svg 150w, http://beauty.loc/wp-content/uploads//2021/05/towel.svg 300w, http://beauty.loc/wp-content/uploads//2021/05/towel.svg 1024w, http://beauty.loc/wp-content/uploads//2021/05/towel.svg 512w" sizes="(max-width: 25px) 100vw, 25px" /></a></div>
+							<div class="textwidget">	<div class="logo"><a class="list-inline" href="http://beauty.loc/"><img  class="attachment-25x25 size-25x25 lazyload" alt="" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  data-src="http://beauty.loc/wp-content/uploads/2021/05/towel.svg" data-srcset="http://beauty.loc/wp-content/uploads//2021/05/towel.svg 150w, http://beauty.loc/wp-content/uploads//2021/05/towel.svg 300w, http://beauty.loc/wp-content/uploads//2021/05/towel.svg 1024w, http://beauty.loc/wp-content/uploads//2021/05/towel.svg 512w" data-sizes="auto" /><noscript><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3E%3C/svg%3E" data-src="http://beauty.loc/wp-content/uploads/2021/05/towel.svg" class="attachment-25x25 size-25x25 lazy" alt="" data-srcset="http://beauty.loc/wp-content/uploads//2021/05/towel.svg 150w, http://beauty.loc/wp-content/uploads//2021/05/towel.svg 300w, http://beauty.loc/wp-content/uploads//2021/05/towel.svg 1024w, http://beauty.loc/wp-content/uploads//2021/05/towel.svg 512w" data-sizes="(max-width: 25px) 100vw, 25px" data-eio="l" /></noscript></a></div>
 </div>
 					</div>
 			<div class="col-6 col-sm-6 col-md-7 col-lg-4 centered">
@@ -424,13 +430,15 @@ var megamenu = {"timeout":"300","interval":"100"};
 		  }
 		}, true)
 		</script>
-	</body>
+	<script>window.w3tc_lazyload=1,window.lazyLoadOptions={elements_selector:".lazy",callback_loaded:function(t){var e;try{e=new CustomEvent("w3tc_lazyload_loaded",{detail:{e:t}})}catch(a){(e=document.createEvent("CustomEvent")).initCustomEvent("w3tc_lazyload_loaded",!1,!1,{e:t})}window.dispatchEvent(e)}}</script><script async src="http://beauty.loc/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js"></script></body>
 </html>
 
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
 Page Caching using disk: enhanced 
+Lazy Loading
+Database Caching using disk (Request-wide modification query)
 
-Served from: beauty.loc @ 2021-05-21 00:44:07 by W3 Total Cache
+Served from: beauty.loc @ 2021-05-21 15:58:28 by W3 Total Cache
 -->
