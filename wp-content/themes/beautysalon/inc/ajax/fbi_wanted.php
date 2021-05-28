@@ -9,10 +9,18 @@ function ajax_get_fbi_data()
 
 		$api_url = 'https://api.fbi.gov/@wanted?pageSize=12&page=' . $page . '&field_offices=' . $office;
 		$api_row_data = file_get_contents($api_url);
-		if (!isset($api_row_data)) {
+		if (empty($api_row_data)) {
 			$output = array(
 				'status' => 'error',
 				'error' => __('Wrong data or wrong api_url!', 'beautysalon'),
+			);
+			echo json_encode($output);
+			die();
+		}
+		if ($api_row_data = "{'total': 0, 'items': [], 'page': 1}") {
+			$output = array(
+				'status' => 'success',
+				'result' => _x('This office not has wanted items!', 'fbi-page', 'beautysalon'),
 			);
 			echo json_encode($output);
 			die();
@@ -47,14 +55,13 @@ function ajax_get_fbi_data()
 			$description = (!empty($description)) ? $description : $no_description_text;
 			$result['result'] .= <<<HTML
 <div class='col-9 col-md-6 col-lg-6 card fbi_wanted_item'>
-	<div class='card-img-top img_prisoner' style='background-image: url("{$url_img}");'></div>
+	<a href="{$url_single_page}" target="_blank"><div class='card-img-top img_prisoner' style='background-image: url("{$url_img}");'></div></a>
 	<div class='card-body'>
-		<div class='name_prisoner card-title'>
+		<a href="{$url_single_page}" target="_blank"><div class='name_prisoner card-title'>
 			<h5>{$name}</h5>
-		</div>
+		</div></a>
 		<p class='card-text reward'>{$reward}</p>
 		<p class='card-text description'>{$description}</p>
-		<a href="$url_single_page" class="btn btn-primary">See Profile</a>
 	</div>
 </div>
 
@@ -72,7 +79,7 @@ HTML;
 			}
 		}
 
-		set_transient('data_cache_office' . $office . '_page_' . $page . '_language_' . ICL_LANGUAGE_CODE , $result, 18000 );
+		set_transient('data_cache_office' . $office . '_page_' . $page . '_language_' . ICL_LANGUAGE_CODE, $result, 18000);
 		wp_send_json($result);
 	} else {
 		wp_send_json($data_for_cache);

@@ -7,6 +7,7 @@ $thumbnail = (empty($thumbnail)) ? '<img src="'.THEME_DIR_URI . '/assets/images/
 $content = get_the_content();
 
 $term = get_the_taxonomies();
+
 ?>
 
 <?php get_header();

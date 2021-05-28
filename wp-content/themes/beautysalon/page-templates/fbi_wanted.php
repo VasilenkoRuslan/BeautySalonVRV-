@@ -11,7 +11,7 @@ echo get_theme_page_title(get_the_title());
 			<div class="col-lg-12 centered office-items">
 				<select id="fbi-field-offices">
 					<option value="false" selected
-							disabled><?php _ex('--- Choose the office ---', 'fbi-page', 'beautysalon'); ?> </option>
+							disabled>--- <?php _ex('Choose the office', 'fbi-page', 'beautysalon'); ?> ---</option>
 					<option value="albany"><?php _ex('Albany', 'fbi-page', 'beautysalon'); ?></option>
 					<option value="albuquerque"><?php _ex('Albuquerque', 'fbi-page', 'beautysalon'); ?></option>
 					<option value="anchorage"><?php _ex('Anchorage', 'fbi-page', 'beautysalon'); ?></option>

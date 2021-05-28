@@ -2941,7 +2941,6 @@ jQuery(document).ready(function ($) {
         beforeSend: function beforeSend() {
           $('.FBI_page .fbi_results .error_message').hide();
           $('.FBI_page .fbi_results .load_spin').show();
-          console.log('upp spin');
         },
         success: function success(data) {
           /* функция которая будет выполнена после успешного запроса.  */

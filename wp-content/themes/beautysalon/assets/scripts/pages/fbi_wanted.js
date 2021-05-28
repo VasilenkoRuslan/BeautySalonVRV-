@@ -14,13 +14,13 @@ $(document).ready(function () {
 				beforeSend: () => {
 					$('.FBI_page .fbi_results .error_message').hide();
 					$('.FBI_page .fbi_results .load_spin').show();
-					console.log('upp spin');
 				},
 				success: function (data) {/* функция которая будет выполнена после успешного запроса.  */
 					$('.list_of_prisoners').empty();
 					$('.pagination-block .pagination').empty();
 					if (data.status === 'success') {
 						let list = data.result;
+
 						$('.FBI_page .fbi_results .list_of_prisoners').append(list).show(200);
 						$('.pagination-block .pagination').append(data.pages);
 					} else {
