@@ -2,6 +2,7 @@
 $title = get_the_title();
 
 $thumbnail = get_the_post_thumbnail(NULL,'Medium');
+$thumbnail = (empty($thumbnail)) ? '<img src="'.THEME_DIR_URI . '/assets/images/no_avatar.jpg" alt="">' : $thumbnail;
 
 $content = get_the_content();
 

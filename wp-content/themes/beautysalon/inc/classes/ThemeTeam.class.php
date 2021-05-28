@@ -68,6 +68,7 @@ class ThemeTeam
 
 			$team_member_id = $obj_team->ID;
 			$team_member_name = $obj_team->post_title;
+			$team_link = get_page_link($team_member_id);
 
 			$team_member_avatar = get_the_post_thumbnail_url($team_member_id);
 			$team_member_avatar = (empty($team_member_avatar)) ? THEME_DIR_URI . '/assets/images/no_avatar.jpg' : $team_member_avatar;
@@ -83,7 +84,8 @@ class ThemeTeam
 				'avatar' => $team_member_avatar,
 				'name' => $team_member_name,
 				'work_position' => $team_member_position,
-				'location' => $team_member_location_name
+				'location' => $team_member_location_name,
+				'link' => $team_link,
 			);
 		}
 		return $array_all_team;
@@ -117,13 +119,12 @@ HTML;
 			foreach ($dep_list as $team_member) {
 				$block .= <<<HTML
 <div class="col-sm-12 col-md-6 col-lg-4">
-	<a href="#">
+	<a href="{$team_member['link']}">
 		<img class="img-circle" src="{$team_member['avatar']}" width="110" height="110" alt="">
         <h4>{$team_member['name']}</h4>
-	</a>
-	<p>{$team_member['work_position']}<br>
-		<div class="btn btn-info">{$pre_loc} {$team_member['location']}</div>
+	<p class="text-info">{$team_member['work_position']}<br>{$pre_loc} {$team_member['location']}
 	</p>
+		</a>
 </div>
 HTML;
 			}

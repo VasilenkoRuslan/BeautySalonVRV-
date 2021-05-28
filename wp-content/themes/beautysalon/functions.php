@@ -18,7 +18,6 @@ require_once THEME_DIR . '/inc/hooks/images.php';
 require_once THEME_DIR . '/inc/hooks/googlemaps.php';
 
 require_once THEME_DIR . '/inc/shortcodes/footer_shortcodes.php';
-require_once THEME_DIR . '/inc/shortcodes/front_page_shortcodes.php';
 
 require_once THEME_DIR . '/inc/ajax/fbi_wanted.php';
 

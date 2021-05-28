@@ -4541,7 +4541,7 @@ function get_the_taxonomies( $post = 0, $args = array() ) {
 		$args,
 		array(
 			/* translators: %s: Taxonomy label, %l: List of terms formatted as per $term_template. */
-			'template'      => __( '%s: %l.' ),
+			'template'      => __( '%s: %l.','beautysalon' ),
 			'term_template' => '<a href="%1$s">%2$s</a>',
 		)
 	);
