@@ -17,14 +17,6 @@ function ajax_get_fbi_data()
 			echo json_encode($output);
 			die();
 		}
-		if ($api_row_data = "{'total': 0, 'items': [], 'page': 1}") {
-			$output = array(
-				'status' => 'success',
-				'result' => _x('This office not has wanted items!', 'fbi-page', 'beautysalon'),
-			);
-			echo json_encode($output);
-			die();
-		}
 
 		$api_data = json_decode($api_row_data);
 
@@ -34,13 +26,19 @@ function ajax_get_fbi_data()
 		);
 
 		$total_prisoners = $api_data->total;
+
+		if ($total_prisoners === 0) {
+			$result['result'] = _x('This office not has wanted items!', 'fbi-page', 'beautysalon');
+			echo json_encode($result);
+			die();
+		}
+
 		$how_much_pages = ceil($total_prisoners / 12);
 
 		$items = $api_data->items;
 		$no_reward_text = _x('information is absent', 'fbi-page', 'beautysalon');
 		$no_description_text = _x('information is absent', 'fbi-page', 'beautysalon');
 
-		//var_dump($result); die();
 		foreach ($items as $prisoner) {
 
 			$name = $prisoner->title;

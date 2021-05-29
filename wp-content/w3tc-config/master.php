@@ -9,7 +9,7 @@
     "dbcache.configuration_overloaded": false,
     "dbcache.debug": false,
     "dbcache.debug_purge": false,
-    "dbcache.enabled": true,
+    "dbcache.enabled": false,
     "dbcache.engine": "file",
     "dbcache.file.gc": 3600,
     "dbcache.file.locking": false,
@@ -133,7 +133,7 @@
     "objectcache.lifetime": 180,
     "objectcache.purge.all": false,
     "pgcache.configuration_overloaded": false,
-    "pgcache.enabled": true,
+    "pgcache.enabled": false,
     "pgcache.comment_cookie_ttl": 1800,
     "pgcache.debug": false,
     "pgcache.debug_purge": false,
@@ -536,9 +536,11 @@
     "varnish.configuration_overloaded": false,
     "varnish.enabled": false,
     "varnish.debug": false,
-    "varnish.servers": [],
+    "varnish.servers": [
+        ""
+    ],
     "browsercache.configuration_overloaded": false,
-    "browsercache.enabled": true,
+    "browsercache.enabled": false,
     "browsercache.rewrite": false,
     "browsercache.no404wp": false,
     "browsercache.no404wp.exceptions": [
@@ -895,5 +897,8 @@
     "plugin.license_key": "",
     "plugin.type": "",
     "jquerymigrate.disabled": false,
-    "lazyload_process_background": true
+    "lazyload_process_background": true,
+    "fragmentcache": {
+        "engine": ""
+    }
 }
