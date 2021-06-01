@@ -16411,7 +16411,7 @@ body .contact-form .form-send input:hover {
 
 /* line 17, assets/styles/layouts/pages/_fbi_wanted.scss */
 
-.FBI_page .fbi_results .error-message {
+.FBI_page .fbi_results .error_message {
   color: red;
   text-align: center;
   font-size: 16px;
@@ -16420,11 +16420,20 @@ body .contact-form .form-send input:hover {
 
 /* line 24, assets/styles/layouts/pages/_fbi_wanted.scss */
 
+.FBI_page .fbi_results .no_data {
+  color: green;
+  text-align: center;
+  font-size: 20px;
+  display: none;
+}
+
+/* line 31, assets/styles/layouts/pages/_fbi_wanted.scss */
+
 .FBI_page .fbi_results .list_of_prisoners {
   display: none;
 }
 
-/* line 27, assets/styles/layouts/pages/_fbi_wanted.scss */
+/* line 34, assets/styles/layouts/pages/_fbi_wanted.scss */
 
 .FBI_page .fbi_results .list_of_prisoners .fbi_wanted_item {
   height: 750px;
@@ -16435,7 +16444,7 @@ body .contact-form .form-send input:hover {
   text-align: center;
 }
 
-/* line 35, assets/styles/layouts/pages/_fbi_wanted.scss */
+/* line 42, assets/styles/layouts/pages/_fbi_wanted.scss */
 
 .FBI_page .fbi_results .list_of_prisoners .fbi_wanted_item .img_prisoner {
   background-size: contain;
@@ -16446,6 +16455,18 @@ body .contact-form .form-send input:hover {
   height: auto;
   margin: 10px auto 0;
   border-radius: 40%;
+}
+
+/* line 54, assets/styles/layouts/pages/_fbi_wanted.scss */
+
+.FBI_page .fbi_results .list_of_prisoners .pagination.page-numbers li {
+  border-radius: 50%;
+}
+
+/* line 57, assets/styles/layouts/pages/_fbi_wanted.scss */
+
+.FBI_page .fbi_results .list_of_prisoners .pagination.page-numbers li.current {
+  background-color: #1da1f2;
 }
 
 /* line 3, assets/styles/layouts/blocks/_tilt.scss */

@@ -1,7 +1,6 @@
 <?php require_once THEME_DIR . '/inc/classes/ThemeHeader.class.php'; ?>
 <?php $header_theme = new ThemeHeader(); ?>
 <?php global $temp_html_dir; ?>
-<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">

@@ -27,12 +27,6 @@ function ajax_get_fbi_data()
 
 		$total_prisoners = $api_data->total;
 
-		if ($total_prisoners === 0) {
-			$result['result'] = _x('This office not has wanted items!', 'fbi-page', 'beautysalon');
-			echo json_encode($result);
-			die();
-		}
-
 		$how_much_pages = ceil($total_prisoners / 12);
 
 		$items = $api_data->items;

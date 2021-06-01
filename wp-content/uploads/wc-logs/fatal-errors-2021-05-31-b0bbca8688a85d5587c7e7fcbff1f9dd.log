@@ -1,0 +1,26 @@
+2021-05-31T20:23:31+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in /var/www/html/beauty.loc/wp-content/themes/beautysalon/page-templates/fbi_wanted.php:83
+Stack trace:
+#0 /var/www/html/beauty.loc/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/beauty.loc/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/beauty.loc/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/beauty.loc/wp-content/themes/beautysalon/page-templates/fbi_wanted.php on line 83
+
+2021-05-31T20:23:46+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in /var/www/html/beauty.loc/wp-content/themes/beautysalon/page-templates/fbi_wanted.php:83
+Stack trace:
+#0 /var/www/html/beauty.loc/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/beauty.loc/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/beauty.loc/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/beauty.loc/wp-content/themes/beautysalon/page-templates/fbi_wanted.php on line 83
+
+2021-05-31T20:25:37+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in /var/www/html/beauty.loc/wp-content/themes/beautysalon/page-templates/fbi_wanted.php:83
+Stack trace:
+#0 /var/www/html/beauty.loc/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/beauty.loc/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/beauty.loc/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/beauty.loc/wp-content/themes/beautysalon/page-templates/fbi_wanted.php on line 83
+
+2021-05-31T20:33:25+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /var/www/html/beauty.loc/wp-content/themes/beautysalon/page-templates/fbi_wanted.php on line 91
+

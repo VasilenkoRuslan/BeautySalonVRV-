@@ -2940,6 +2940,7 @@ jQuery(document).ready(function ($) {
         data: 'action=get_fbi_data&field_offices=' + office,
         beforeSend: function beforeSend() {
           $('.FBI_page .fbi_results .error_message').hide();
+          $('.FBI_page .fbi_results .no_data').hide();
           $('.FBI_page .fbi_results .load_spin').show();
         },
         success: function success(data) {
@@ -2948,9 +2949,13 @@ jQuery(document).ready(function ($) {
           $('.pagination-block .pagination').empty();
 
           if (data.status === 'success') {
-            var list = data.result;
-            $('.FBI_page .fbi_results .list_of_prisoners').append(list).show(200);
-            $('.pagination-block .pagination').append(data.pages);
+            if (data.result.length > 0) {
+              var list = data.result;
+              $('.FBI_page .fbi_results .list_of_prisoners').append(list).show(200);
+              $('.pagination-block .pagination').append(data.pages);
+            } else {
+              $('.FBI_page .fbi_results .no_data').show(200);
+            }
           } else {
             var error_message = data.error;
             $('.FBI_page .fbi_results .error_message').text(error_message).show(300);
@@ -2965,19 +2970,21 @@ jQuery(document).ready(function ($) {
         return '';
       }
 
+      var currentPage = $(this);
       $.ajax({
         url: themeVars.ajaxurl,
         type: 'GET',
         data: 'action=get_fbi_data&field_offices=' + $('.FBI_page .office-items select').val() + '&page=' + $(this).data('page'),
         beforeSend: function beforeSend() {
           $('.FBI_page .fbi_results .error_message').hide();
+          $('.FBI_page .fbi_results .no_data').hide();
         },
         success: function success(data) {
           $('.list_of_prisoners').empty();
           $('.FBI_page .fbi_results .list_of_prisoners').append(data.result);
           $('.FBI_page .fbi_results .load_spin').hide();
           $('.pagination.page-numbers > li').removeClass('current');
-          $(this).addClass('current');
+          currentPage.addClass('current');
           $('html, body').animate({
             scrollTop: $('.FBI_page').offset().top
           }, 1000);

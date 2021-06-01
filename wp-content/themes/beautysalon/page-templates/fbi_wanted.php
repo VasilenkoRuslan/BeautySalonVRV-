@@ -72,10 +72,13 @@ echo get_theme_page_title(get_the_title());
 			</div>
 		</div>
 		<div class="row fbi_results">
-			<div class="spinner-border text-success load_spin"></div>
-			<div class="container"><div class="spinner-border text-success"></div></div>
-			<div class="error-message">
-				<p class="text-danger"><?php _ex('Sorry, there is no data for this office!', 'ajax-playground', 'liquormaster'); ?></p>
+			<div class="spinner-grow spinner-grow-lg load_spin" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+			<div class="error_message">
+			</div>
+			<div class="no_data">
+				<p><?= _x('This office not has wanted items!', 'fbi-page', 'beautysalon'); ?></p>
 			</div>
 			<div class="list_of_prisoners">
 			</div>
