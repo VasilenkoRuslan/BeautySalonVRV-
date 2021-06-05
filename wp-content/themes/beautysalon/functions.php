@@ -16,6 +16,7 @@ require_once THEME_DIR . '/inc/acf/options-pages.php';
 
 require_once THEME_DIR . '/inc/hooks/images.php';
 require_once THEME_DIR . '/inc/hooks/googlemaps.php';
+require_once THEME_DIR . '/inc/hooks/woocommerce/woocommerce_init.php';
 
 require_once THEME_DIR . '/inc/shortcodes/footer_shortcodes.php';
 

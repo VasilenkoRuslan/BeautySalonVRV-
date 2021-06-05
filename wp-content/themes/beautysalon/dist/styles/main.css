@@ -16469,6 +16469,314 @@ body .contact-form .form-send input:hover {
   background-color: #1da1f2;
 }
 
+/*************************
+*******Product Details CSS******
+**************************/
+
+/* line 5, assets/styles/layouts/pages/_single_product.scss */
+
+.product-details {
+  overflow: hidden;
+}
+
+/* line 9, assets/styles/layouts/pages/_single_product.scss */
+
+#similar-product {
+  margin-top: 40px;
+}
+
+/* line 13, assets/styles/layouts/pages/_single_product.scss */
+
+#reviews {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* line 18, assets/styles/layouts/pages/_single_product.scss */
+
+.product-details {
+  margin-bottom: 40px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+/* line 24, assets/styles/layouts/pages/_single_product.scss */
+
+.view-product {
+  position: relative;
+}
+
+/* line 28, assets/styles/layouts/pages/_single_product.scss */
+
+.view-product img {
+  border: 1px solid #f7f7f0;
+  height: 380px;
+  width: 100%;
+}
+
+/* line 34, assets/styles/layouts/pages/_single_product.scss */
+
+.view-product h3 {
+  background: #fe980f;
+  bottom: 0;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding: 8px 20px;
+  position: absolute;
+  right: 0;
+}
+
+/* line 47, assets/styles/layouts/pages/_single_product.scss */
+
+#similar-product .carousel-inner .item {
+  padding-left: 0;
+}
+
+/* line 51, assets/styles/layouts/pages/_single_product.scss */
+
+#similar-product .carousel-inner .item img {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+/* line 56, assets/styles/layouts/pages/_single_product.scss */
+
+.item-control {
+  position: absolute;
+  top: 35%;
+}
+
+/* line 61, assets/styles/layouts/pages/_single_product.scss */
+
+.item-control i {
+  background: #fe980f;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+/* line 68, assets/styles/layouts/pages/_single_product.scss */
+
+.item-control i:hover {
+  background: #ccccc6;
+}
+
+/* line 72, assets/styles/layouts/pages/_single_product.scss */
+
+.product-information {
+  border: 1px solid #f7f7f0;
+  overflow: hidden;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-top: 60px;
+  position: relative;
+}
+
+/* line 81, assets/styles/layouts/pages/_single_product.scss */
+
+.newarrival {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 87, assets/styles/layouts/pages/_single_product.scss */
+
+.product-information h2 {
+  color: #363432;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+/* line 94, assets/styles/layouts/pages/_single_product.scss */
+
+.product-information p {
+  color: #696763;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+}
+
+/* line 100, assets/styles/layouts/pages/_single_product.scss */
+
+.product-information span {
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-top: 18px;
+}
+
+/* line 106, assets/styles/layouts/pages/_single_product.scss */
+
+.product-information span span {
+  color: #fe980f;
+  float: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 20px;
+  margin-top: 0;
+}
+
+/* line 116, assets/styles/layouts/pages/_single_product.scss */
+
+.product-information span input {
+  border: 1px solid #dededc;
+  color: #696763;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  height: 33px;
+  outline: medium none;
+  text-align: center;
+  width: 50px;
+}
+
+/* line 128, assets/styles/layouts/pages/_single_product.scss */
+
+.product-information span label {
+  color: #696763;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+/* line 135, assets/styles/layouts/pages/_single_product.scss */
+
+.share {
+  margin-top: 15px;
+}
+
+/* line 139, assets/styles/layouts/pages/_single_product.scss */
+
+.cart {
+  background: #fe980e;
+  border: 0 none;
+  border-radius: 0;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+/* line 150, assets/styles/layouts/pages/_single_product.scss */
+
+.shop-details-tab {
+  border: 1px solid #f7f7f0;
+  margin-bottom: 75px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 10px;
+}
+
+/* line 158, assets/styles/layouts/pages/_single_product.scss */
+
+.shop-details-tab .col-sm-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 163, assets/styles/layouts/pages/_single_product.scss */
+
+#reviews ul {
+  background: #fff;
+  border: 0 none;
+  list-style: none outside none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+/* line 171, assets/styles/layouts/pages/_single_product.scss */
+
+#reviews ul li {
+  display: inline-block;
+}
+
+/* line 175, assets/styles/layouts/pages/_single_product.scss */
+
+#reviews ul li a {
+  color: #696763;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+/* line 183, assets/styles/layouts/pages/_single_product.scss */
+
+#reviews ul li a i {
+  color: #fe980f;
+  padding-right: 8px;
+}
+
+/* line 188, assets/styles/layouts/pages/_single_product.scss */
+
+#reviews ul li a:hover {
+  background: #fff;
+  color: #fe980f;
+}
+
+/* line 193, assets/styles/layouts/pages/_single_product.scss */
+
+#reviews p {
+  color: #363432;
+}
+
+/* line 197, assets/styles/layouts/pages/_single_product.scss */
+
+#reviews form span {
+  display: block;
+}
+
+/* line 201, assets/styles/layouts/pages/_single_product.scss */
+
+#reviews form span input {
+  background: #f0f0e9;
+  border: 0 none;
+  color: #a6a6a1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  outline: medium none;
+  padding: 8px;
+  width: 48%;
+}
+
+/* line 212, assets/styles/layouts/pages/_single_product.scss */
+
+#reviews form span input:last-child {
+  margin-left: 3%;
+}
+
+/* line 216, assets/styles/layouts/pages/_single_product.scss */
+
+#reviews textarea {
+  background: #f0f0e9;
+  border: medium none;
+  color: #a6a6a1;
+  height: 195px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  outline: medium none;
+  padding-left: 10px;
+  padding-top: 15px;
+  resize: none;
+  width: 99.5%;
+}
+
+/* line 230, assets/styles/layouts/pages/_single_product.scss */
+
+#reviews button {
+  background: #fe980f;
+  border: 0 none;
+  border-radius: 0;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
 /* line 3, assets/styles/layouts/blocks/_tilt.scss */
 
 .tilt {
