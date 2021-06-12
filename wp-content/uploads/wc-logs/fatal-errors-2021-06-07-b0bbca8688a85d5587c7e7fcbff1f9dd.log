@@ -1,0 +1,22 @@
+2021-06-07T18:11:03+00:00 CRITICAL Uncaught Error: Call to undefined function edm_get_gallery_thumbnail() in /var/www/html/beauty.loc/wp-content/themes/beautysalon/woocommerce/single-product/product-image.php:57
+Stack trace:
+#0 /var/www/html/beauty.loc/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/beauty.loc/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1482): wc_get_template('single-product/...')
+#2 /var/www/html/beauty.loc/wp-includes/class-wp-hook.php(292): woocommerce_show_product_images('')
+#3 /var/www/html/beauty.loc/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 /var/www/html/beauty.loc/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /var/www/html/beauty.loc/wp-content/themes/beautysalon/woocommerce/content-single-product.php(44): do_action('woocommerce_bef...')
+#6 /var/www/html/beauty.loc/wp-includes/template.php(732): require('/var/www/html/b...')
+#7 /var/www/html/beauty.loc/wp-content/plugins/woocommerce/includes/wc-core-functio in /var/www/html/beauty.loc/wp-content/themes/beautysalon/woocommerce/single-product/product-image.php on line 57
+
+2021-06-07T18:11:04+00:00 CRITICAL Uncaught Error: Call to undefined function edm_get_gallery_thumbnail() in /var/www/html/beauty.loc/wp-content/themes/beautysalon/woocommerce/single-product/product-image.php:57
+Stack trace:
+#0 /var/www/html/beauty.loc/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/beauty.loc/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1482): wc_get_template('single-product/...')
+#2 /var/www/html/beauty.loc/wp-includes/class-wp-hook.php(292): woocommerce_show_product_images('')
+#3 /var/www/html/beauty.loc/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 /var/www/html/beauty.loc/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /var/www/html/beauty.loc/wp-content/themes/beautysalon/woocommerce/content-single-product.php(44): do_action('woocommerce_bef...')
+#6 /var/www/html/beauty.loc/wp-includes/template.php(732): require('/var/www/html/b...')
+#7 /var/www/html/beauty.loc/wp-content/plugins/woocommerce/includes/wc-core-functio in /var/www/html/beauty.loc/wp-content/themes/beautysalon/woocommerce/single-product/product-image.php on line 57
+

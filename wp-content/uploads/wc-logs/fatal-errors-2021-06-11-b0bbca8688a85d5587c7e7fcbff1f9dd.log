@@ -1,0 +1,22 @@
+2021-06-11T18:01:56+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_attribut() in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/single_product/tabs.php:8
+Stack trace:
+#0 /var/www/html/beauty.loc/wp-includes/class-wp-hook.php(292): woo_beauty_custom_product_tab(Array)
+#1 /var/www/html/beauty.loc/wp-includes/plugin.php(212): WP_Hook->apply_filters(Array, Array)
+#2 /var/www/html/beauty.loc/wp-content/plugins/woocommerce/templates/single-product/tabs/tabs.php(29): apply_filters('woocommerce_pro...', Array)
+#3 /var/www/html/beauty.loc/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/b...')
+#4 /var/www/html/beauty.loc/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1544): wc_get_template('single-product/...')
+#5 /var/www/html/beauty.loc/wp-includes/class-wp-hook.php(292): woocommerce_output_product_data_tabs('')
+#6 /var/www/html/beauty.loc/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#7 /var/www/html/beau in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/single_product/tabs.php on line 8
+
+2021-06-11T18:09:27+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_attribut() in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/single_product/tabs.php:8
+Stack trace:
+#0 /var/www/html/beauty.loc/wp-includes/class-wp-hook.php(292): woo_beauty_custom_product_tab(Array)
+#1 /var/www/html/beauty.loc/wp-includes/plugin.php(212): WP_Hook->apply_filters(Array, Array)
+#2 /var/www/html/beauty.loc/wp-content/plugins/woocommerce/templates/single-product/tabs/tabs.php(29): apply_filters('woocommerce_pro...', Array)
+#3 /var/www/html/beauty.loc/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/b...')
+#4 /var/www/html/beauty.loc/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1544): wc_get_template('single-product/...')
+#5 /var/www/html/beauty.loc/wp-includes/class-wp-hook.php(292): woocommerce_output_product_data_tabs('')
+#6 /var/www/html/beauty.loc/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#7 /var/www/html/beau in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/single_product/tabs.php on line 8
+

@@ -6,6 +6,11 @@ function theme_scripts() {
 	// Main CSS
 	wp_enqueue_style('main-stylesheet', asset_path( 'styles/main.css' ), false, '1.0.0');
 
+	if (is_singular('product')) {
+		wp_enqueue_style('fa5', THEME_DIR_URI . '/assets/styles/product_gallery/fontawesome.min.css', [], '5.9.0');
+		wp_enqueue_style('fa5-solid', THEME_DIR_URI . '/assets/styles/product_gallery/solid.min.css', [], '5.9.0');
+	}
+
 	// Deregister the jquery version bundled with WordPress
 	wp_deregister_script('jquery');
 
@@ -30,6 +35,10 @@ function theme_scripts() {
 		'is_auth' => is_user_logged_in(),
 	);
 	wp_localize_script('main-javascript', 'themeVars', $theme_vars);
+
+	if (is_singular('product')) {
+		wp_enqueue_script('frontend-js', THEME_DIR_URI . '/assets/scripts/plugins/slider/frontend.js', array('jquery', 'flexslider'), '1.0.0', true);
+	}
 }
 add_action('wp_enqueue_scripts', 'theme_scripts');
 

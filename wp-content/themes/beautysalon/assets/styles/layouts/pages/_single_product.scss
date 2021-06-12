@@ -1,3 +1,232 @@
 /*************************
-*******Product Details CSS******
+*******Single product Details CSS******
 **************************/
+
+.woocommerce div.product {
+  background-color: #fff;
+}
+
+/* padding and margin product block */
+.product-type-simple {
+  padding: 30px 0;
+
+  .woocommerce-product-gallery__wrapper {
+    .flex-active-slide img {
+      border: 4px solid #eee;
+      border-radius: 10px;
+    }
+  }
+
+  .woocommerce-product-gallery-thumbnails__wrapper {
+    .flex-active-slide img {
+      border-bottom: 4px solid #ff744e;
+    }
+  }
+
+  #product-thumbnails {
+    padding: 20px 0;
+  }
+}
+
+/* Custom style for "Sale" span */
+.woocommerce span.on_sale {
+  min-height: 4.236em;
+  min-width: 6.236em;
+  padding: 0.502em;
+  font-weight: 900;
+  position: absolute;
+  text-align: center;
+  line-height: 3.236;
+  top: 1em;
+  right: 1.5em;
+  margin: 0;
+  border-radius: 80%;
+  background-color: #00d084;
+  color: #fff;
+  font-size: 0.857em;
+  z-index: 9;
+}
+
+/* Custom style for Gallery, Slider images */
+.woocommerce-product-gallery {
+  display: flex;
+}
+
+.flex-control-thumbs {
+  display: none;
+}
+
+.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images {
+  width: 100%;
+}
+
+.woocommerce-product-gallery__wrapper {
+  .woocommerce-product-gallery__image {
+    max-height: 400px;
+  }
+
+  img {
+    height: 100% !important;
+    width: auto !important;
+    margin: auto;
+  }
+}
+
+/* Thumbnails at the bottom */
+.woocommerce-product-gallery {
+  flex-flow: column;
+}
+
+#product-thumbnails {
+  order: 5;
+  position: relative;
+  margin-top: 4px;
+}
+
+.woocommerce-product-gallery__image > img {
+  cursor: pointer;
+}
+
+/* Carousel navigation */
+.flex-direction-nav {
+  list-style-type: none;
+  margin: 0;
+
+  & > li > a {
+    font-size: 0;
+    position: absolute;
+    top: 41%;
+  }
+
+  .flex-prev {
+    left: 10px;
+  }
+
+  .flex-next {
+    right: 10px;
+  }
+
+  .flex-prev::after,
+  .flex-next::after {
+    font-family: 'Font Awesome 5 Free', 'FontAwesome', sans-serif; /* Fallback to font awesome 4 */
+    color: #ff744e;
+    font-size: 20px;
+  }
+
+  .flex-prev::after {
+    content: '\f053';
+  }
+
+  .flex-next::after {
+    content: '\f054';
+  }
+
+  /* Hide nav arrows if it is disabled */
+  .flex-disabled {
+    display: none;
+  }
+}
+
+/* style of price product */
+p.total_price {
+  color: #00d084;
+  //font-family: "Courier New", Courier, monospace;
+  //font-size: 24px;
+  //font-weight: 900;
+  margin-bottom: 7px;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 20px;
+  margin-top: 0;
+
+  del {
+    color: #00d084;
+    font-weight: 600;
+
+    span {
+      font-size: 22px;
+      color: #999;
+    }
+  }
+}
+
+/* title styles */
+.woocommerce div.product .product_title {
+  color: #363432;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* custom style cart button */
+.cart {
+  display: flex;
+  align-items: center;
+
+  .quantity {
+    .input-text {
+      border: 1px solid #dededc;
+      color: #696763;
+      font-size: 20px;
+      font-weight: 700;
+      outline: medium none;
+      text-align: center;
+      width: 50px;
+      min-height: 40px;
+    }
+  }
+
+  .single_add_to_cart_button.button.alt {
+    background: #fe980f;
+    border: 4px solid #fe980f;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    min-width: 40px;
+    min-height: 40px;
+    margin-left: 40px;
+
+    &:hover {
+      background: #fff;
+      color: #fe980f;
+      border: 4px solid #fe980f;
+    }
+  }
+}
+
+/* custom short-description */
+.block_description {
+  color: #363432;
+  margin: 0 0 10px;
+  box-sizing: border-box;
+  line-height: 1.428571429;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* style stock */
+div.product .stock.beauty_stock {
+  color: #5b5b5b;
+  font-size: 20px;
+  line-height: 1.428571429;
+  margin-bottom: 10px;
+
+  b {
+    font-weight: bold;
+  }
+}
+
+/* meta style */
+.product_meta {
+  margin-bottom: 10px;
+
+  .sku_wrapper {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+

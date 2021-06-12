@@ -1,5 +1,5 @@
 <?php
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 3);
-remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
-add_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 4);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 7);

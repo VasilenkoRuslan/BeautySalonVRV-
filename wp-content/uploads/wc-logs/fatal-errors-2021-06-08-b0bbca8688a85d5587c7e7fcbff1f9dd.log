@@ -1,0 +1,4 @@
+2021-06-08T23:29:50+00:00 CRITICAL syntax error, unexpected '$product' (T_VARIABLE) in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/global/price.php on line 4
+
+2021-06-08T23:38:41+00:00 CRITICAL syntax error, unexpected ')' in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/single_product/reorder_blocks.php on line 5
+
