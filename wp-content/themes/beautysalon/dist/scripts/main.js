@@ -74,7 +74,7 @@ module.exports = jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(10);
+module.exports = __webpack_require__(13);
 
 
 /***/ }),
@@ -87,20 +87,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_sass_assets_javascripts_bootstrap_min___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bootstrap_sass_assets_javascripts_bootstrap_min__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__plugins_chart_chart__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__plugins_chart_chart___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__plugins_chart_chart__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__plugins_php_mail_form_validate__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__plugins_php_mail_form_validate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__plugins_php_mail_form_validate__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__plugins_popup_minicart_popup_minicart__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__plugins_popup_minicart_popup_minicart___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__plugins_popup_minicart_popup_minicart__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__plugins_js_main__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__plugins_js_main___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__plugins_js_main__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_team__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_team___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__pages_team__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_map__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__pages_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_fbi_wanted__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_fbi_wanted___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__pages_fbi_wanted__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__plugins_slider_frontend__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__plugins_slider_frontend___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__plugins_slider_frontend__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__plugins_slider_price_range__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_team__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_team___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__pages_team__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_map__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__pages_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_fbi_wanted__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_fbi_wanted___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__pages_fbi_wanted__);
  //plugins
 
 
  //main scripts
+
+
 
  //pages
 
@@ -2670,143 +2675,127 @@ window.Chart = function (context) {
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* eslint-disable */
-jQuery(document).ready(function ($) {
-  "use strict"; //Contact
+/* WEBPACK VAR INJECTION */(function(jQuery, $) {/**
+ * created by @jaynoe
+ * https://github.com/jaynoe
+ *
+ * Plugin: offcanvas-mobile-menu
+ * https://github.com/jaynoe/offcanvas-mobile-menu
+ */
+(function ($) {
+  $.fn.offcanvasmenu = function (options) {
+    // Default options
+    options = $.extend({
+      menuTrigger: "trigger",
+      position: "right",
+      speed: "0.3",
+      width: "30vw",
+      fixedContainer: false,
+      fixedContainerName: ""
+    }, options); // Build the vars
+    // Containers:
 
-  $('form.php-mail-form').submit(function () {
-    var f, ferror, emailExp;
-    f = $(this).find('.form-group');
-    ferror = false;
-    emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
-    f.children('input').each(function () {
-      // run all inputs
-      var i = $(this); // current input
+    var canvas = $(this);
+    var trigger = $("#" + options.menuTrigger);
+    var body = $("body");
+    var link = canvas.find("a");
+    var pos = options.position;
+    var fc = $("#" + options.fixedContainerName); // inline styles
+    // for body
 
-      var rule = i.attr('data-rule');
+    body.css({
+      "-webkit-transition": "all " + options.speed + "s ease-in-out",
+      "transition": "all " + options.speed + "s ease-in-out",
+      "position": "relative"
+    }); // for offcanvas:
 
-      if (rule !== undefined) {
-        var ierror = false; // error flag for current input
+    canvas.css({
+      "-webkit-transition": "all " + options.speed + "s ease-in-out",
+      "transition": "all " + options.speed + "s ease-in-out",
+      "width": options.width,
+      "display": "block"
+    }); // for fixedContainer
 
-        var pos = rule.indexOf(':', 0);
+    if (options.fixedContainer === true) {
+      fc.css({
+        "-webkit-transition": "all " + options.speed + "s ease-in-out",
+        "transition": "all " + options.speed + "s ease-in-out"
+      });
+    } // check position
 
-        if (pos >= 0) {
-          var exp = rule.substr(pos + 1, rule.length);
-          rule = rule.substr(0, pos);
-        } else {
-          rule = rule.substr(pos + 1, rule.length);
-        }
 
-        switch (rule) {
-          case 'required':
-            if (i.val() === '') {
-              ferror = ierror = true;
-            }
+    if (pos === "right") {
+      body.css("left", "0");
+      canvas.css({
+        "right": "0",
+        "-webkit-transform": "translate(" + options.width + ", 0)",
+        "transform": "translate(" + options.width + ", 0)"
+      });
+      fc.css("left", "0");
+    } else {
+      body.css("right", "0");
+      canvas.css({
+        "left": "0",
+        "-webkit-transform": "translate(-" + options.width + ", 0)",
+        "transform": "translate(-" + options.width + ", 0)"
+      });
+      fc.css("right", "0");
+    } // function out & hide
 
-            break;
 
-          case 'minlen':
-            if (i.val().length < parseInt(exp)) {
-              ferror = ierror = true;
-            }
+    function canvasOut() {
+      canvas.css({
+        "-webkit-transform": "translate(0, 0)",
+        "transform": "translate(0, 0)"
+      });
 
-            break;
-
-          case 'email':
-            if (!emailExp.test(i.val())) {
-              ferror = ierror = true;
-            }
-
-            break;
-
-          case 'checked':
-            if (!i.is(':checked')) {
-              ferror = ierror = true;
-            }
-
-            break;
-
-          case 'regexp':
-            exp = new RegExp(exp);
-
-            if (!exp.test(i.val())) {
-              ferror = ierror = true;
-            }
-
-            break;
-        }
-
-        i.next('.validate').html(ierror ? i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input' : '').show('blind');
+      if (pos === "right") {
+        body.css("left", "-" + options.width);
+        fc.css("left", "-" + options.width);
+      } else {
+        body.css("right", "-" + options.width);
+        fc.css("right", "-" + options.width);
       }
-    });
-    f.children('textarea').each(function () {
-      // run all inputs
-      var i = $(this); // current input
-
-      var rule = i.attr('data-rule');
-
-      if (rule !== undefined) {
-        var ierror = false; // error flag for current input
-
-        var pos = rule.indexOf(':', 0);
-
-        if (pos >= 0) {
-          var exp = rule.substr(pos + 1, rule.length);
-          rule = rule.substr(0, pos);
-        } else {
-          rule = rule.substr(pos + 1, rule.length);
-        }
-
-        switch (rule) {
-          case 'required':
-            if (i.val() === '') {
-              ferror = ierror = true;
-            }
-
-            break;
-
-          case 'minlen':
-            if (i.val().length < parseInt(exp)) {
-              ferror = ierror = true;
-            }
-
-            break;
-        }
-
-        i.next('.validate').html(ierror ? i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input' : '').show('blind');
-      }
-    });
-    if (ferror) return false;else var str = $(this).serialize();
-    var action = $(this).attr('action');
-
-    if (!action) {
-      action = 'contactform/contactform.php';
     }
 
-    var this_form = $(this);
-    this_form.find('.sent-message').slideUp();
-    this_form.find('.error-message').slideUp();
-    this_form.find('.loading').slideDown();
-    $.ajax({
-      type: "POST",
-      url: action,
-      data: str,
-      success: function success(msg) {
-        if (msg == 'OK') {
-          this_form.find('.loading').slideUp();
-          this_form.find('.sent-message').slideDown();
-          this_form.find("input, textarea").val('');
-        } else {
-          this_form.find('.loading').slideUp();
-          this_form.find('.error-message').slideDown().html(msg);
-        }
+    function canvasHide() {
+      if (pos === "right") {
+        body.css("left", "0");
+        canvas.css({
+          "-webkit-transform": "translate(" + options.width + ", 0)",
+          "transform": "translate(" + options.width + ", 0)"
+        });
+        fc.css("left", "0");
+      } else {
+        body.css("right", "0");
+        canvas.css({
+          "left": "0",
+          "-webkit-transform": "translate(-" + options.width + ", 0)",
+          "transform": "translate(-" + options.width + ", 0)"
+        });
+        fc.css("right", "0");
       }
+    } // if click on the trigger
+
+
+    trigger.click(function () {
+      canvasOut();
+      $('#gray').toggle();
+    }); // close when click on link in menu
+
+    link.click(function () {
+      canvasHide();
+      $('#gray').toggle();
     });
-    return false;
-  });
-});
-/* eslint-enable */
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+    $('#gray').click(function () {
+      canvasHide();
+      $('#gray').toggle();
+    });
+  };
+})(jQuery);
+
+$("#offcanvas").offcanvasmenu();
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(0)))
 
 /***/ }),
 /* 6 */
@@ -2867,6 +2856,421 @@ jQuery(document).ready(function ($) {
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
+/* WEBPACK VAR INJECTION */(function(jQuery) {var $ = jQuery.noConflict();
+$('#product-thumbnails').flexslider({
+  animation: "slide",
+  controlNav: false,
+  animationLoop: false,
+  slideshow: false,
+  itemWidth: 80,
+  itemMargin: 5,
+  maxItems: 4,
+  asNavFor: '.woocommerce-product-gallery',
+  selector: ".woocommerce-product-gallery-thumbnails__wrapper > div"
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_typeof__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_typeof___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_typeof__);
+
+
+/* =========================================================
+ * bootstrap-slider.js v2.0.0
+ * http://www.eyecon.ro/bootstrap-slider
+ * =========================================================
+ * Copyright 2012 Stefan Petre
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ========================================================= */
+!function ($) {
+  var Slider = function Slider(element, options) {
+    this.element = $(element);
+    this.picker = $('<div class="slider">' + '<div class="slider-track">' + '<div class="slider-selection"></div>' + '<div class="slider-handle"></div>' + '<div class="slider-handle"></div>' + '</div>' + '<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>' + '</div>').insertBefore(this.element).append(this.element);
+    this.id = this.element.data('slider-id') || options.id;
+
+    if (this.id) {
+      this.picker[0].id = this.id;
+    }
+
+    var Modernizr;
+
+    if (typeof Modernizr !== 'undefined' && Modernizr.touch) {
+      this.touchCapable = true;
+    }
+
+    var tooltip = this.element.data('slider-tooltip') || options.tooltip;
+    this.tooltip = this.picker.find('.tooltip');
+    this.tooltipInner = this.tooltip.find('div.tooltip-inner');
+    this.orientation = this.element.data('slider-orientation') || options.orientation;
+
+    switch (this.orientation) {
+      case 'vertical':
+        this.picker.addClass('slider-vertical');
+        this.stylePos = 'top';
+        this.mousePos = 'pageY';
+        this.sizePos = 'offsetHeight';
+        this.tooltip.addClass('right')[0].style.left = '100%';
+        break;
+
+      default:
+        this.picker.addClass('slider-horizontal').css('width', this.element.outerWidth());
+        this.orientation = 'horizontal';
+        this.stylePos = 'left';
+        this.mousePos = 'pageX';
+        this.sizePos = 'offsetWidth';
+        this.tooltip.addClass('top')[0].style.top = -this.tooltip.outerHeight() - 14 + 'px';
+        break;
+    }
+
+    this.min = this.element.data('slider-min') || options.min;
+    this.max = this.element.data('slider-max') || options.max;
+    this.step = this.element.data('slider-step') || options.step;
+    this.value = this.element.data('slider-value') || options.value;
+
+    if (this.value[1]) {
+      this.range = true;
+    }
+
+    this.selection = this.element.data('slider-selection') || options.selection;
+    this.selectionEl = this.picker.find('.slider-selection');
+
+    if (this.selection === 'none') {
+      this.selectionEl.addClass('hide');
+    }
+
+    this.selectionElStyle = this.selectionEl[0].style;
+    this.handle1 = this.picker.find('.slider-handle:first');
+    this.handle1Stype = this.handle1[0].style;
+    this.handle2 = this.picker.find('.slider-handle:last');
+    this.handle2Stype = this.handle2[0].style;
+    var handle = this.element.data('slider-handle') || options.handle;
+
+    switch (handle) {
+      case 'round':
+        this.handle1.addClass('round left-round');
+        this.handle2.addClass('round');
+        break;
+
+      case 'triangle':
+        this.handle1.addClass('triangle');
+        this.handle2.addClass('triangle');
+        break;
+    }
+
+    if (this.range) {
+      this.value[0] = Math.max(this.min, Math.min(this.max, this.value[0]));
+      this.value[1] = Math.max(this.min, Math.min(this.max, this.value[1]));
+    } else {
+      this.value = [Math.max(this.min, Math.min(this.max, this.value))];
+      this.handle2.addClass('hide');
+
+      if (this.selection == 'after') {
+        this.value[1] = this.max;
+      } else {
+        this.value[1] = this.min;
+      }
+    }
+
+    this.diff = this.max - this.min;
+    this.percentage = [(this.value[0] - this.min) * 100 / this.diff, (this.value[1] - this.min) * 100 / this.diff, this.step * 100 / this.diff];
+    this.offset = this.picker.offset();
+    this.size = this.picker[0][this.sizePos];
+    this.formater = options.formater;
+    this.layout();
+
+    if (this.touchCapable) {
+      // Touch: Bind touch events:
+      this.picker.on({
+        touchstart: $.proxy(this.mousedown, this)
+      });
+    } else {
+      this.picker.on({
+        mousedown: $.proxy(this.mousedown, this)
+      });
+    }
+
+    if (tooltip === 'show') {
+      this.picker.on({
+        mouseenter: $.proxy(this.showTooltip, this),
+        mouseleave: $.proxy(this.hideTooltip, this)
+      });
+    } else {
+      this.tooltip.addClass('hide');
+    }
+  };
+
+  Slider.prototype = {
+    constructor: Slider,
+    over: false,
+    inDrag: false,
+    showTooltip: function showTooltip() {
+      this.tooltip.addClass('in'); //var left = Math.round(this.percent*this.width);
+      //this.tooltip.css('left', left - this.tooltip.outerWidth()/2);
+
+      this.over = true;
+    },
+    hideTooltip: function hideTooltip() {
+      if (this.inDrag === false) {
+        this.tooltip.removeClass('in');
+      }
+
+      this.over = false;
+    },
+    layout: function layout() {
+      this.handle1Stype[this.stylePos] = this.percentage[0] + '%';
+      this.handle2Stype[this.stylePos] = this.percentage[1] + '%';
+
+      if (this.orientation == 'vertical') {
+        this.selectionElStyle.top = Math.min(this.percentage[0], this.percentage[1]) + '%';
+        this.selectionElStyle.height = Math.abs(this.percentage[0] - this.percentage[1]) + '%';
+      } else {
+        this.selectionElStyle.left = Math.min(this.percentage[0], this.percentage[1]) + '%';
+        this.selectionElStyle.width = Math.abs(this.percentage[0] - this.percentage[1]) + '%';
+      }
+
+      if (this.range) {
+        this.tooltipInner.text(this.formater(this.value[0]) + ' : ' + this.formater(this.value[1]));
+        this.tooltip[0].style[this.stylePos] = this.size * (this.percentage[0] + (this.percentage[1] - this.percentage[0]) / 2) / 100 - (this.orientation === 'vertical' ? this.tooltip.outerHeight() / 2 : this.tooltip.outerWidth() / 2) + 'px';
+      } else {
+        this.tooltipInner.text(this.formater(this.value[0]));
+        this.tooltip[0].style[this.stylePos] = this.size * this.percentage[0] / 100 - (this.orientation === 'vertical' ? this.tooltip.outerHeight() / 2 : this.tooltip.outerWidth() / 2) + 'px';
+      }
+    },
+    mousedown: function mousedown(ev) {
+      // Touch: Get the original event:
+      if (this.touchCapable && ev.type === 'touchstart') {
+        ev = ev.originalEvent;
+      }
+
+      this.offset = this.picker.offset();
+      this.size = this.picker[0][this.sizePos];
+      var percentage = this.getPercentage(ev);
+
+      if (this.range) {
+        var diff1 = Math.abs(this.percentage[0] - percentage);
+        var diff2 = Math.abs(this.percentage[1] - percentage);
+        this.dragged = diff1 < diff2 ? 0 : 1;
+      } else {
+        this.dragged = 0;
+      }
+
+      this.percentage[this.dragged] = percentage;
+      this.layout();
+
+      if (this.touchCapable) {
+        // Touch: Bind touch events:
+        $(document).on({
+          touchmove: $.proxy(this.mousemove, this),
+          touchend: $.proxy(this.mouseup, this)
+        });
+      } else {
+        $(document).on({
+          mousemove: $.proxy(this.mousemove, this),
+          mouseup: $.proxy(this.mouseup, this)
+        });
+      }
+
+      this.inDrag = true;
+      var val = this.calculateValue();
+      this.element.trigger({
+        type: 'slideStart',
+        value: val
+      }).trigger({
+        type: 'slide',
+        value: val
+      });
+      return false;
+    },
+    mousemove: function mousemove(ev) {
+      // Touch: Get the original event:
+      if (this.touchCapable && ev.type === 'touchmove') {
+        ev = ev.originalEvent;
+      }
+
+      var percentage = this.getPercentage(ev);
+
+      if (this.range) {
+        if (this.dragged === 0 && this.percentage[1] < percentage) {
+          this.percentage[0] = this.percentage[1];
+          this.dragged = 1;
+        } else if (this.dragged === 1 && this.percentage[0] > percentage) {
+          this.percentage[1] = this.percentage[0];
+          this.dragged = 0;
+        }
+      }
+
+      this.percentage[this.dragged] = percentage;
+      this.layout();
+      var val = this.calculateValue();
+      this.element.trigger({
+        type: 'slide',
+        value: val
+      }).data('value', val).prop('value', val);
+      return false;
+    },
+
+    /* eslint-disable */
+    mouseup: function mouseup(ev) {
+      if (this.touchCapable) {
+        // Touch: Bind touch events:
+        $(document).off({
+          touchmove: this.mousemove,
+          touchend: this.mouseup
+        });
+      } else {
+        $(document).off({
+          mousemove: this.mousemove,
+          mouseup: this.mouseup
+        });
+      }
+      /* eslint-enable */
+
+
+      this.inDrag = false;
+
+      if (this.over == false) {
+        this.hideTooltip();
+      }
+
+      this.element;
+      var val = this.calculateValue();
+      this.element.trigger({
+        type: 'slideStop',
+        value: val
+      }).data('value', val).prop('value', val);
+      return false;
+    },
+    calculateValue: function calculateValue() {
+      var val;
+
+      if (this.range) {
+        val = [this.min + Math.round(this.diff * this.percentage[0] / 100 / this.step) * this.step, this.min + Math.round(this.diff * this.percentage[1] / 100 / this.step) * this.step];
+        this.value = val;
+      } else {
+        val = this.min + Math.round(this.diff * this.percentage[0] / 100 / this.step) * this.step;
+        this.value = [val, this.value[1]];
+      }
+
+      return val;
+    },
+    getPercentage: function getPercentage(ev) {
+      if (this.touchCapable) {
+        ev = ev.touches[0];
+      }
+
+      var percentage = (ev[this.mousePos] - this.offset[this.stylePos]) * 100 / this.size;
+      percentage = Math.round(percentage / this.percentage[2]) * this.percentage[2];
+      return Math.max(0, Math.min(100, percentage));
+    },
+    getValue: function getValue() {
+      if (this.range) {
+        return this.value;
+      }
+
+      return this.value[0];
+    },
+    setValue: function setValue(val) {
+      this.value = val;
+
+      if (this.range) {
+        this.value[0] = Math.max(this.min, Math.min(this.max, this.value[0]));
+        this.value[1] = Math.max(this.min, Math.min(this.max, this.value[1]));
+      } else {
+        this.value = [Math.max(this.min, Math.min(this.max, this.value))];
+        this.handle2.addClass('hide');
+
+        if (this.selection == 'after') {
+          this.value[1] = this.max;
+        } else {
+          this.value[1] = this.min;
+        }
+      }
+
+      this.diff = this.max - this.min;
+      this.percentage = [(this.value[0] - this.min) * 100 / this.diff, (this.value[1] - this.min) * 100 / this.diff, this.step * 100 / this.diff];
+      this.layout();
+    }
+  };
+
+  $.fn.slider = function (option, val) {
+    return this.each(function () {
+      var $this = $(this),
+          data = $this.data('slider'),
+          options = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_typeof___default()(option) === 'object' && option;
+
+      if (!data) {
+        $this.data('slider', data = new Slider(this, $.extend({}, $.fn.slider.defaults, options)));
+      }
+
+      if (typeof option == 'string') {
+        data[option](val);
+      }
+    });
+  };
+
+  $.fn.slider.defaults = {
+    min: 0,
+    max: 10,
+    step: 1,
+    orientation: 'horizontal',
+    value: 5,
+    selection: 'before',
+    tooltip: 'show',
+    handle: 'round',
+    formater: function formater(value) {
+      return value;
+    }
+  };
+  $.fn.slider.Constructor = Slider;
+}(__webpack_provided_window_dot_jQuery);
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    module.exports = _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+
+    module.exports["default"] = module.exports, module.exports.__esModule = true;
+  } else {
+    module.exports = _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+
+    module.exports["default"] = module.exports, module.exports.__esModule = true;
+  }
+
+  return _typeof(obj);
+}
+
+module.exports = _typeof;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
   if ($('.team_page').length > 0) {
     // Click on department link
@@ -2900,7 +3304,7 @@ jQuery(document).ready(function ($) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 8 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {(function ($) {
@@ -3015,7 +3419,7 @@ jQuery(document).ready(function ($) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 9 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
@@ -3089,7 +3493,7 @@ jQuery(document).ready(function ($) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 10 */
+/* 13 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

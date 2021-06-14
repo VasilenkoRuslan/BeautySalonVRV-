@@ -1,5 +1,82 @@
 <?php global $temp_html_dir; ?>
 <?php echo do_shortcode('[footer-red]'); ?>
+
+<section id="offcanvas">
+	<div class="minicart">
+		<div class="minicart--item-container">
+			You have
+			<span class="minicart--item-count" style="font-weight: 600;">3 items</span>
+			in your cart!
+		</div>
+		<hr>
+		<ul>
+			<li class="minicart--item">
+				<div class="placeholder"></div>
+				<h1 class="title"> Title of Product 01</h1>
+				<p class="material">
+					<span style="font-weight: 600">Material:</span>
+					Copper
+				</p>
+				<p class='size'>
+					<span style='font-weight: 600'>Size:</span>
+					6 1/2
+				</p>
+				<p class='price'>$90.00 USD (x1)</p>
+				<p class='remove'>
+					<a href='#'>
+						<i class='fa fa-trash-o'></i>
+						Remove from cart
+					</a>
+				</p>
+			</li>
+			<li class="minicart--item">
+				<div class="placeholder"></div>
+				<h1 class="title"> Title of Product 01</h1>
+				<p class="material">
+					<span style="font-weight: 600">Material:</span>
+					Copper
+				</p>
+				<p class='size'>
+					<span style='font-weight: 600'>Size:</span>
+					6 1/2
+				</p>
+				<p class='price'>$90.00 USD (x1)</p>
+				<p class='remove'>
+					<a href='#'>
+						<i class='fa fa-trash-o'></i>
+						Remove from cart
+					</a>
+				</p>
+			</li>
+			<li class="minicart--item">
+				<div class="placeholder"></div>
+				<h1 class="title"> Title of Product 01</h1>
+				<p class="material">
+					<span style="font-weight: 600">Material:</span>
+					Copper
+				</p>
+				<p class='size'>
+					<span style='font-weight: 600'>Size:</span>
+					6 1/2
+				</p>
+				<p class='price'>$90.00 USD (x1)</p>
+				<p class='remove'>
+					<a href='#'>
+						<i class='fa fa-trash-o'></i>
+						Remove from cart
+					</a>
+				</p>
+			</li>
+		</ul>
+		<hr>
+		<div class='minicart--subtotal'>
+			<p class='minicart--subtotal-title'>Subtotal</p>
+			<p class='minicart--subtotal-amount'>$270.00 USD</p>
+		</div>
+		<input type='button' value='View Cart'>
+		<input type='button' value='Checkout'>
+	</div>
+</section>
 <!-- FOOTER -->
 <div id="f">
 	<div class="container">
@@ -28,7 +105,8 @@
 <div id="copyrights">
 	<div class="container">
 		<p>
-			&copy; <?php _e('Copyrights','beautysalon'); ?> <strong><?= $name_copyrights = get_field('footer_copyrights','options'); ?></strong>. <?php _e('All Rights Reserved', 'beautysalon'); ?>
+			&copy; <?php _e('Copyrights', 'beautysalon'); ?>
+			<strong><?= $name_copyrights = get_field('footer_copyrights', 'options'); ?></strong>. <?php _e('All Rights Reserved', 'beautysalon'); ?>
 		</p>
 		<div class="credits">
 			<!--
@@ -37,7 +115,7 @@
 			  Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/spot-bootstrap-freelance-template/
 			  Licensing information: https://templatemag.com/license/
 			-->
-			<?= __('Created with', 'beautysalon').' '.$name_copyrights.' '.__('template by','beautysalon').'<a href="'.get_field('footer_link_by_author_url_link','options').'">'.get_field('footer_link_by_author_name_link','options'); ?>
+			<?= __('Created with', 'beautysalon') . ' ' . $name_copyrights . ' ' . __('template by', 'beautysalon') . '<a href="' . get_field('footer_link_by_author_url_link', 'options') . '">' . get_field('footer_link_by_author_name_link', 'options'); ?>
 		</div>
 	</div>
 </div>

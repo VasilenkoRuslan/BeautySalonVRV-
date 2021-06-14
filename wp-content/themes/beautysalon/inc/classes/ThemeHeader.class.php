@@ -24,7 +24,7 @@ HTML;
 	{
 		$phone_title = $this->acf_fields['phone']['phone_title'];
 		$phone_numb = $this->acf_fields['phone']['phone_number'];
-		$word_tel=__('tel', 'beautysalon');
+		$word_tel = __('tel', 'beautysalon');
 		return <<<HTML
 <div class="navbar navbar-header">
 	<h4>{$phone_title}</h4>
@@ -33,11 +33,30 @@ HTML;
 HTML;
 	}
 
+	function get_cart_icons()
+	{
+		ob_start();
+		woocommerce_mini_cart();
+		$mini_cart = ob_get_contents();
+		ob_end_clean();
+
+		return <<<HTML
+		<div class="row cart-icons">
+			<ul>
+				<li><p><span><i class="fa fa-random fa-3x"></i></span></p></li>
+				<li><p><span><i class="fa fa-heart fa-3x"></i></span></p></li>
+				<li><p id="trigger"><span><i class="fa fa-shopping-bag fa-3x"></i></span></p></li>
+			</ul>
+		</div>
+HTML;
+	}
+
+
 	function get_header_menu()
 	{
 		$main_menu = wp_nav_menu(array(
 			'theme_location' => 'main-menu',
-			'container'       => 'div',
+			'container' => 'div',
 			'container_class' => 'navbar-collapse collapse',
 			'menu_class' => 'nav navbar-nav navbar-right',
 			'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
@@ -45,11 +64,12 @@ HTML;
 		));
 		return $main_menu;
 	}
+
 	function get_languages_menu()
 	{
 		$lang_menu = wp_nav_menu(array(
 			'theme_location' => 'lang-menu',
-			'container'       => '',
+			'container' => '',
 			'container_class' => '',
 			'menu_class' => 'nav navbar-nav navbar-right',
 			'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',

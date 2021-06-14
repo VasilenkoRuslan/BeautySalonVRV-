@@ -9,3 +9,5 @@ Stack trace:
 #6 {main}
   thrown in /var/www/html/beauty.loc/wp-content/plugins/wp-all-import-pro/models/model/record.php on line 148
 
+2021-06-12T10:54:47+00:00 CRITICAL require_once(): Failed opening required '/var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/global/price.php' (include_path='.:/usr/share/php') in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/woocommerce_init.php on line 6
+

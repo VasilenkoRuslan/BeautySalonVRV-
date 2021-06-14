@@ -27,6 +27,10 @@
 		<?php echo get_search_form(array(
 				'echo' => false,
 		));; ?>
+		<?php echo $header_theme->get_cart_icons(); ?>
 		<?php echo $header_theme->get_header_menu(); ?>
 	</div>
 </div>
+<section id="main">
+</section>
+<div id="gray"></div>

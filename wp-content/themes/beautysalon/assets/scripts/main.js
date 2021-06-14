@@ -2,10 +2,12 @@ import 'bootstrap-sass/assets/javascripts/bootstrap.min';
 
 //plugins
 import './plugins/chart/chart';
-import './plugins/php-mail-form/validate';
+import './plugins/popup-minicart/popup-minicart';
 
 //main scripts
 import './plugins/js/main';
+import './plugins/slider/frontend';
+import './plugins/slider/price-range';
 
 //pages
 import './pages/team';

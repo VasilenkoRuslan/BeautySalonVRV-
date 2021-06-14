@@ -162,6 +162,11 @@ p.total_price {
 }
 
 /* custom style cart button */
+.woocommerce div.product form.cart div.quantity {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
 .cart {
   display: flex;
   align-items: center;
@@ -188,7 +193,6 @@ p.total_price {
     border-radius: 10px;
     min-width: 40px;
     min-height: 40px;
-    margin-left: 40px;
 
     &:hover {
       background: #fff;
@@ -228,5 +232,31 @@ div.product .stock.beauty_stock {
     font-size: 20px;
     font-weight: 500;
   }
+}
+
+/* style icons cart in the header */
+.cart-icons ul {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+
+  li {
+    margin-right: 20px;
+    list-style-type: none;
+    cursor: pointer;
+
+    p {
+      margin: 0;
+
+      i {
+        color: darkturquoise;
+      }
+    }
+  }
+}
+
+/* fix block select on the variation product page */
+.woocommerce div.product form.cart .variations {
+  width: auto;
 }
 
