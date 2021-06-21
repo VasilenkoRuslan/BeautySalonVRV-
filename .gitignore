@@ -5,3 +5,4 @@ task38.php
 .idea
 credentials.php
 wp-content/wflogs
+wp-content/cache

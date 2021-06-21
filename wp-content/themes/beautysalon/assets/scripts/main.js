@@ -6,8 +6,9 @@ import './plugins/popup-minicart/popup-minicart';
 
 //main scripts
 import './plugins/js/main';
-import './plugins/slider/frontend';
-import './plugins/slider/price-range';
+// import './plugins/slider/frontend';
+// import './plugins/slider/price-range';
+// import './plugins/add_to_wishlist_header_count';
 
 //pages
 import './pages/team';

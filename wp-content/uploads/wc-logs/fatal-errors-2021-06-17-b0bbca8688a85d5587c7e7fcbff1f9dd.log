@@ -1,0 +1,14 @@
+2021-06-17T21:28:51+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/global/mini-cart.php on line 3
+
+2021-06-17T21:28:53+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/global/mini-cart.php on line 3
+
+2021-06-17T21:29:07+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/global/mini-cart.php on line 3
+
+2021-06-17T22:38:09+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/global/add_to_cart.php on line 6
+
+2021-06-17T22:38:09+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/global/add_to_cart.php on line 6
+
+2021-06-17T22:38:11+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/global/add_to_cart.php on line 6
+
+2021-06-17T22:38:26+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/beauty.loc/wp-content/themes/beautysalon/inc/hooks/woocommerce/global/add_to_cart.php on line 6
+

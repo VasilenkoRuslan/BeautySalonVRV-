@@ -35,22 +35,20 @@ HTML;
 
 	function get_cart_icons()
 	{
-		ob_start();
-		woocommerce_mini_cart();
-		$mini_cart = ob_get_contents();
-		ob_end_clean();
-
 		return <<<HTML
-		<div class="row cart-icons">
+<div class="container">
+	<div class="row">
+		<div class="col-3 col-sm-6 col-md-4 col-lg-3 cart-icons">
 			<ul>
-				<li><p><span><i class="fa fa-random fa-3x"></i></span></p></li>
-				<li><p><span><i class="fa fa-heart fa-3x"></i></span></p></li>
-				<li><p id="trigger"><span><i class="fa fa-shopping-bag fa-3x"></i></span></p></li>
+				<li><p><span class="position_relative"><i class="fa fa-random fa-2x"></i><span class="badge">3</span></span></p></li>
+				<li class="header_heart_count"><p><span><i class="fa fa-heart fa-2x"></i><span class="badge">1</span></p></li>
+				<li><p id="trigger"><span class="position_relative"><i class="fa fa-shopping-bag fa-2x"></i><span class="badge">2</span></p></li>
 			</ul>
 		</div>
+	</div>
+</div>
 HTML;
 	}
-
 
 	function get_header_menu()
 	{

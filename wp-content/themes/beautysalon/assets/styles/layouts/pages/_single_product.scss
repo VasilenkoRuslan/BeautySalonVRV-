@@ -69,6 +69,7 @@
     height: 100% !important;
     width: auto !important;
     margin: auto;
+    max-height: 400px !important;
   }
 }
 
@@ -130,9 +131,6 @@
 /* style of price product */
 p.total_price {
   color: #00d084;
-  //font-family: "Courier New", Courier, monospace;
-  //font-size: 24px;
-  //font-weight: 900;
   margin-bottom: 7px;
   letter-spacing: 1px;
   font-family: 'Roboto', sans-serif;
@@ -167,7 +165,7 @@ p.total_price {
   margin-bottom: 10px;
 }
 
-.cart {
+form.cart {
   display: flex;
   align-items: center;
 
@@ -235,21 +233,25 @@ div.product .stock.beauty_stock {
 }
 
 /* style icons cart in the header */
-.cart-icons ul {
-  display: flex;
-  justify-content: center;
-  margin: 15px 0;
+.cart-icons {
+  float: right;
 
-  li {
-    margin-right: 20px;
-    list-style-type: none;
-    cursor: pointer;
+  ul {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
 
-    p {
-      margin: 0;
+    li {
+      margin-right: 20px;
+      list-style-type: none;
+      cursor: pointer;
 
-      i {
-        color: darkturquoise;
+      p {
+        margin: 0;
+
+        i {
+          color: darkturquoise;
+        }
       }
     }
   }
