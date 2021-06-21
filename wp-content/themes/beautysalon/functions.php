@@ -23,6 +23,7 @@ require_once THEME_DIR . '/inc/hooks/woocommerce/woocommerce_init.php';
 require_once THEME_DIR . '/inc/shortcodes/footer_shortcodes.php';
 
 require_once THEME_DIR . '/inc/ajax/fbi_wanted.php';
+require_once THEME_DIR . '/inc/ajax/header_icon_counters.php';
 
 
 

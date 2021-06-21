@@ -35,15 +35,20 @@ HTML;
 
 	function get_cart_icons()
 	{
+		$txt_total_price = __('Total price on cart','beautysalon');
+
 		return <<<HTML
 <div class="container">
 	<div class="row">
 		<div class="col-3 col-sm-6 col-md-4 col-lg-3 cart-icons">
 			<ul>
-				<li><p><span class="position_relative"><i class="fa fa-random fa-2x"></i><span class="badge">3</span></span></p></li>
-				<li class="header_heart_count"><p><span><i class="fa fa-heart fa-2x"></i><span class="badge">1</span></p></li>
-				<li><p id="trigger"><span class="position_relative"><i class="fa fa-shopping-bag fa-2x"></i><span class="badge">2</span></p></li>
+				<li class="header_compare"><p><span class="position_relative"><i class="fa fa-random fa-2x"></i><span class="badge"></span></span></p></li>
+				<li class="header_heart_count"><p><span class="position_relative"><i class="fa fa-heart fa-2x"></i><span class="badge"></span></span></p></li>
+				<li><p id="trigger"><span class="position_relative"><i class="fa fa-shopping-bag fa-2x"></i><span class="badge atc"></span></span></p></li>
 			</ul>
+		</div>
+		<div class="col-3 col-sm-6 col-md-4 col-lg-3 cart-total-price">
+			<p>{$txt_total_price}: <span class="cart_total"></span></p>
 		</div>
 	</div>
 </div>

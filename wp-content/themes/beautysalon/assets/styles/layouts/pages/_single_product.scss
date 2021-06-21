@@ -232,31 +232,6 @@ div.product .stock.beauty_stock {
   }
 }
 
-/* style icons cart in the header */
-.cart-icons {
-  float: right;
-
-  ul {
-    display: flex;
-    justify-content: center;
-    margin: 15px 0;
-
-    li {
-      margin-right: 20px;
-      list-style-type: none;
-      cursor: pointer;
-
-      p {
-        margin: 0;
-
-        i {
-          color: darkturquoise;
-        }
-      }
-    }
-  }
-}
-
 /* fix block select on the variation product page */
 .woocommerce div.product form.cart .variations {
   width: auto;

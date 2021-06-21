@@ -16763,49 +16763,9 @@ div.product .stock.beauty_stock b {
   font-weight: 500;
 }
 
-/* style icons cart in the header */
-
-/* line 236, assets/styles/layouts/pages/_single_product.scss */
-
-.cart-icons {
-  float: right;
-}
-
-/* line 239, assets/styles/layouts/pages/_single_product.scss */
-
-.cart-icons ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 15px 0;
-}
-
-/* line 244, assets/styles/layouts/pages/_single_product.scss */
-
-.cart-icons ul li {
-  margin-right: 20px;
-  list-style-type: none;
-  cursor: pointer;
-}
-
-/* line 249, assets/styles/layouts/pages/_single_product.scss */
-
-.cart-icons ul li p {
-  margin: 0;
-}
-
-/* line 252, assets/styles/layouts/pages/_single_product.scss */
-
-.cart-icons ul li p i {
-  color: darkturquoise;
-}
-
 /* fix block select on the variation product page */
 
-/* line 261, assets/styles/layouts/pages/_single_product.scss */
+/* line 236, assets/styles/layouts/pages/_single_product.scss */
 
 .woocommerce div.product form.cart .variations {
   width: auto;
@@ -17272,15 +17232,16 @@ div.product .stock.beauty_stock b {
   float: left;
   list-style: none;
   margin-left: 0;
+  min-height: 150px;
 }
 
-/* line 113, assets/styles/layouts/blocks/_popup_minicart.scss */
+/* line 114, assets/styles/layouts/blocks/_popup_minicart.scss */
 
 .minicart--item > * {
   margin-bottom: 5px;
 }
 
-/* line 117, assets/styles/layouts/blocks/_popup_minicart.scss */
+/* line 118, assets/styles/layouts/blocks/_popup_minicart.scss */
 
 .minicart--item .minicart-prod-image {
   width: 40%;
@@ -17290,7 +17251,7 @@ div.product .stock.beauty_stock b {
   float: left;
 }
 
-/* line 124, assets/styles/layouts/blocks/_popup_minicart.scss */
+/* line 125, assets/styles/layouts/blocks/_popup_minicart.scss */
 
 .minicart--item .minicart-prod-image img {
   width: 100% !important;
@@ -17300,7 +17261,7 @@ div.product .stock.beauty_stock b {
   border-radius: 4px;
 }
 
-/* line 133, assets/styles/layouts/blocks/_popup_minicart.scss */
+/* line 134, assets/styles/layouts/blocks/_popup_minicart.scss */
 
 .minicart--item .minicart--item-content {
   width: 50%;
@@ -17308,7 +17269,7 @@ div.product .stock.beauty_stock b {
   color: #fff;
 }
 
-/* line 139, assets/styles/layouts/blocks/_popup_minicart.scss */
+/* line 140, assets/styles/layouts/blocks/_popup_minicart.scss */
 
 .minicart--item .title {
   font-size: 1em;
@@ -17317,26 +17278,26 @@ div.product .stock.beauty_stock b {
   color: #fff;
 }
 
-/* line 146, assets/styles/layouts/blocks/_popup_minicart.scss */
+/* line 147, assets/styles/layouts/blocks/_popup_minicart.scss */
 
 .minicart--item .material {
   font-size: 0.8em;
 }
 
-/* line 150, assets/styles/layouts/blocks/_popup_minicart.scss */
+/* line 151, assets/styles/layouts/blocks/_popup_minicart.scss */
 
 .minicart--item .size {
   font-size: 0.8em;
   margin-bottom: 10px;
 }
 
-/* line 155, assets/styles/layouts/blocks/_popup_minicart.scss */
+/* line 156, assets/styles/layouts/blocks/_popup_minicart.scss */
 
 .minicart--item .price {
   margin-bottom: 10px;
 }
 
-/* line 160, assets/styles/layouts/blocks/_popup_minicart.scss */
+/* line 161, assets/styles/layouts/blocks/_popup_minicart.scss */
 
 .woocommerce a.remove {
   float: right;
@@ -17346,16 +17307,83 @@ div.product .stock.beauty_stock b {
 
 /* line 166, assets/styles/layouts/blocks/_popup_minicart.scss */
 
+.minicart--subtotal {
+  padding-top: 130px;
+}
+
+/* line 169, assets/styles/layouts/blocks/_popup_minicart.scss */
+
 .minicart--subtotal .minicart--subtotal-title {
   font-weight: 700;
   color: #fe980f;
 }
 
-/* line 171, assets/styles/layouts/blocks/_popup_minicart.scss */
+/* line 174, assets/styles/layouts/blocks/_popup_minicart.scss */
 
 .minicart--subtotal .minicart--subtotal-amount {
   border-bottom: 2px solid #fe980f;
   letter-spacing: 3px;
+}
+
+/* style icons cart in the header */
+
+/* line 2, assets/styles/layouts/blocks/_cart_icons.scss */
+
+.cart-icons {
+  float: right;
+}
+
+/* line 5, assets/styles/layouts/blocks/_cart_icons.scss */
+
+.cart-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px 0;
+}
+
+/* line 10, assets/styles/layouts/blocks/_cart_icons.scss */
+
+.cart-icons ul li {
+  margin-right: 20px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+/* line 15, assets/styles/layouts/blocks/_cart_icons.scss */
+
+.cart-icons ul li p {
+  margin: 0;
+}
+
+/* line 18, assets/styles/layouts/blocks/_cart_icons.scss */
+
+.cart-icons ul li p i {
+  color: darkturquoise;
+}
+
+/* style total_price_cart in the header */
+
+/* line 28, assets/styles/layouts/blocks/_cart_icons.scss */
+
+.cart-total-price p {
+  margin: 15px 0;
+  color: #111;
+  border-bottom: 2px solid #eee;
+  line-height: 15px;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* line 37, assets/styles/layouts/blocks/_cart_icons.scss */
+
+.cart-total-price p span {
+  padding-left: 6px;
+  color: #f85c37;
 }
 
 

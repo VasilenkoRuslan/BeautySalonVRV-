@@ -128,8 +128,6 @@
 		});
 	};
 
-})(jQuery);
-
 $("#offcanvas").offcanvasmenu();
 
 /* add to cart at single simple prod page */
@@ -171,3 +169,5 @@ $('form.cart').on('submit', function (e) {
 		dataType: 'json',
 	});
 });
+
+})(jQuery);

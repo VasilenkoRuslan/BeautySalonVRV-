@@ -109,6 +109,7 @@ $cartHeight: 900px;
   float: left;
   list-style: none;
   margin-left: 0;
+  min-height: 150px;
 
   & > * {
     margin-bottom: 5px;
@@ -163,6 +164,8 @@ $cartHeight: 900px;
 
 /* style subtotal block */
 .minicart--subtotal {
+  padding-top: 130px;
+
   .minicart--subtotal-title {
     font-weight: 700;
     color: #fe980f;

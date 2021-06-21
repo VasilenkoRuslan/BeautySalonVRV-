@@ -1,0 +1,42 @@
+/* style icons cart in the header */
+.cart-icons {
+  float: right;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+
+    li {
+      margin-right: 20px;
+      list-style-type: none;
+      cursor: pointer;
+
+      p {
+        margin: 0;
+
+        i {
+          color: darkturquoise;
+        }
+      }
+    }
+  }
+}
+
+/* style total_price_cart in the header */
+.cart-total-price {
+  p {
+    margin: 15px 0;
+    color: #111;
+    border-bottom: 2px solid #eee;
+    line-height: 15px;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    span {
+      padding-left: 6px;
+      color: #f85c37;
+    }
+  }
+}

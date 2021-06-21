@@ -74,7 +74,7 @@ module.exports = jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(10);
+module.exports = __webpack_require__(12);
 
 
 /***/ }),
@@ -91,21 +91,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__plugins_popup_minicart_popup_minicart___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__plugins_popup_minicart_popup_minicart__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__plugins_js_main__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__plugins_js_main___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__plugins_js_main__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_team__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_team___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__pages_team__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_map__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__pages_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_fbi_wanted__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_fbi_wanted___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__pages_fbi_wanted__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__plugins_wishlist_add_to_wishlist__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__plugins_wishlist_add_to_wishlist___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__plugins_wishlist_add_to_wishlist__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__plugins_compare_add_to_compare__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__plugins_compare_add_to_compare___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__plugins_compare_add_to_compare__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_team__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_team___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__pages_team__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_map__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__pages_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_fbi_wanted__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_fbi_wanted___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__pages_fbi_wanted__);
  //plugins
 
 
  //main scripts
 
- // import './plugins/slider/frontend';
-// import './plugins/slider/price-range';
-// import './plugins/add_to_wishlist_header_count';
-//pages
+
+
+ //pages
 
 
 
@@ -2673,7 +2676,7 @@ window.Chart = function (context) {
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery, $) {/* global wc_add_to_cart_params */
+/* WEBPACK VAR INJECTION */(function(jQuery) {/* global wc_add_to_cart_params */
 
 /*
  * Plugin: offcanvas-mobile-menu
@@ -2795,50 +2798,50 @@ window.Chart = function (context) {
       $('#gray').toggle();
     });
   };
-})(jQuery);
 
-$("#offcanvas").offcanvasmenu();
-/* add to cart at single simple prod page */
+  $("#offcanvas").offcanvasmenu();
+  /* add to cart at single simple prod page */
 
-$('form.cart').on('submit', function (e) {
-  e.preventDefault();
-  var obj = $(this),
-      prod_id = obj.find('.single_add_to_cart_button').val(),
-      form_data = obj.serializeArray();
+  $('form.cart').on('submit', function (e) {
+    e.preventDefault();
+    var obj = $(this),
+        prod_id = obj.find('.single_add_to_cart_button').val(),
+        form_data = obj.serializeArray();
 
-  if (prod_id !== '') {
-    form_data.push({
-      name: 'product_id',
-      value: prod_id
+    if (prod_id !== '') {
+      form_data.push({
+        name: 'product_id',
+        value: prod_id
+      });
+    }
+
+    if (typeof wc_add_to_cart_params === 'undefined') {
+      return false;
+    }
+
+    console.log(form_data);
+    $.ajax({
+      type: 'POST',
+      url: wc_add_to_cart_params.wc_ajax_url.toString().replace('%%endpoint%%', 'add_to_cart'),
+      data: form_data,
+      success: function success(response) {
+        if (!response) {
+          return;
+        }
+
+        if (response.error && response.product_url) {
+          window.location = response.product_url;
+          return;
+        } // Trigger event so themes can refresh other areas.
+
+
+        $(document.body).trigger('added_to_cart', [response.fragments, response.cart_hash, obj]);
+      },
+      dataType: 'json'
     });
-  }
-
-  if (typeof wc_add_to_cart_params === 'undefined') {
-    return false;
-  }
-
-  console.log(form_data);
-  $.ajax({
-    type: 'POST',
-    url: wc_add_to_cart_params.wc_ajax_url.toString().replace('%%endpoint%%', 'add_to_cart'),
-    data: form_data,
-    success: function success(response) {
-      if (!response) {
-        return;
-      }
-
-      if (response.error && response.product_url) {
-        window.location = response.product_url;
-        return;
-      } // Trigger event so themes can refresh other areas.
-
-
-      $(document.body).trigger('added_to_cart', [response.fragments, response.cart_hash, obj]);
-    },
-    dataType: 'json'
   });
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(0)))
+})(jQuery);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 6 */
@@ -2899,6 +2902,86 @@ $('form.cart').on('submit', function (e) {
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
+/* WEBPACK VAR INJECTION */(function(jQuery) {(function ($) {
+  function ajax_get_wishlist_count() {
+    $.ajax({
+      url: themeVars.ajaxurl,
+      type: 'get',
+      dataType: 'json',
+      data: {
+        action: 'get_wishlist_count'
+      },
+      success: function success(data) {
+        if (!data) {
+          return;
+        }
+
+        $.each(data, function (key, value) {
+          $(key).empty().append(value);
+          sessionStorage.setItem('wishlist_count', value);
+        });
+      }
+    });
+  }
+
+  var wishlist_count = sessionStorage.getItem('wishlist_count');
+
+  if (wishlist_count == null) {
+    ajax_get_wishlist_count();
+  } else {
+    $('.header_heart_count .badge').text(wishlist_count);
+  }
+
+  $(document).on('added_to_wishlist removed_from_wishlist', function () {
+    ajax_get_wishlist_count();
+  });
+})(jQuery);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(jQuery) {(function ($) {
+  function ajax_get_compare_count() {
+    $.ajax({
+      url: themeVars.ajaxurl,
+      type: 'get',
+      dataType: 'json',
+      data: {
+        action: 'get_compare_count'
+      },
+      success: function success(data) {
+        if (!data) {
+          return;
+        }
+
+        $.each(data, function (key, value) {
+          $(key).empty().append(value);
+          sessionStorage.setItem('compare_count', value);
+        });
+      }
+    });
+  }
+
+  var compare_count = sessionStorage.getItem('compare_count');
+
+  if (compare_count == null) {
+    ajax_get_compare_count();
+  } else {
+    $('.header_compare .badge').text(compare_count);
+  }
+
+  $(document).on('yith_woocompare_open_popup yith_woocompare_product_removed', function () {
+    ajax_get_compare_count();
+  });
+})(jQuery);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
   if ($('.team_page').length > 0) {
     // Click on department link
@@ -2932,7 +3015,7 @@ $('form.cart').on('submit', function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 8 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {(function ($) {
@@ -3047,7 +3130,7 @@ $('form.cart').on('submit', function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
@@ -3121,7 +3204,7 @@ $('form.cart').on('submit', function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
