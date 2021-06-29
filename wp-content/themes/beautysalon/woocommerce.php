@@ -1,10 +1,16 @@
 <?php global $temp_html_dir;
-$title = get_the_title();
+$title = woocommerce_page_title(false);
 
 get_header();
-echo get_theme_page_title($title);
-echo '<div class="container">';
-woocommerce_content();
-echo '</div>';
+echo get_theme_page_title($title); ?>
 
-get_footer();
+
+
+<?php if (is_archive()) {
+	require_once THEME_DIR.'/template-parts/woocommerce/archive/archive.php';
+} else { ?>
+<div class="container">
+	<?php woocommerce_content(); ?>
+</div>
+<?php } ?>
+<?php get_footer();

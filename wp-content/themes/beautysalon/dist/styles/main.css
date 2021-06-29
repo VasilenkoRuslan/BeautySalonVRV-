@@ -16635,16 +16635,17 @@ p.total_price {
   font-weight: 700;
   margin-right: 20px;
   margin-top: 0;
+  padding-top: 10px;
 }
 
-/* line 142, assets/styles/layouts/pages/_single_product.scss */
+/* line 143, assets/styles/layouts/pages/_single_product.scss */
 
 p.total_price del {
   color: #00d084;
   font-weight: 600;
 }
 
-/* line 146, assets/styles/layouts/pages/_single_product.scss */
+/* line 147, assets/styles/layouts/pages/_single_product.scss */
 
 p.total_price del span {
   font-size: 22px;
@@ -16653,7 +16654,7 @@ p.total_price del span {
 
 /* title styles */
 
-/* line 154, assets/styles/layouts/pages/_single_product.scss */
+/* line 155, assets/styles/layouts/pages/_single_product.scss */
 
 .woocommerce div.product .product_title {
   color: #363432;
@@ -16665,14 +16666,14 @@ p.total_price del span {
 
 /* custom style cart button */
 
-/* line 163, assets/styles/layouts/pages/_single_product.scss */
+/* line 164, assets/styles/layouts/pages/_single_product.scss */
 
 .woocommerce div.product form.cart div.quantity {
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-/* line 168, assets/styles/layouts/pages/_single_product.scss */
+/* line 169, assets/styles/layouts/pages/_single_product.scss */
 
 form.cart {
   display: -webkit-box;
@@ -16683,7 +16684,7 @@ form.cart {
           align-items: center;
 }
 
-/* line 173, assets/styles/layouts/pages/_single_product.scss */
+/* line 174, assets/styles/layouts/pages/_single_product.scss */
 
 form.cart .quantity .input-text {
   border: 1px solid #dededc;
@@ -16696,7 +16697,7 @@ form.cart .quantity .input-text {
   min-height: 40px;
 }
 
-/* line 185, assets/styles/layouts/pages/_single_product.scss */
+/* line 186, assets/styles/layouts/pages/_single_product.scss */
 
 form.cart .single_add_to_cart_button.button.alt {
   background: #fe980f;
@@ -16709,7 +16710,7 @@ form.cart .single_add_to_cart_button.button.alt {
   min-height: 40px;
 }
 
-/* line 195, assets/styles/layouts/pages/_single_product.scss */
+/* line 196, assets/styles/layouts/pages/_single_product.scss */
 
 form.cart .single_add_to_cart_button.button.alt:hover {
   background: #fff;
@@ -16719,7 +16720,7 @@ form.cart .single_add_to_cart_button.button.alt:hover {
 
 /* custom short-description */
 
-/* line 204, assets/styles/layouts/pages/_single_product.scss */
+/* line 205, assets/styles/layouts/pages/_single_product.scss */
 
 .block_description {
   color: #363432;
@@ -16733,7 +16734,7 @@ form.cart .single_add_to_cart_button.button.alt:hover {
 
 /* style stock */
 
-/* line 214, assets/styles/layouts/pages/_single_product.scss */
+/* line 215, assets/styles/layouts/pages/_single_product.scss */
 
 div.product .stock.beauty_stock {
   color: #5b5b5b;
@@ -16742,7 +16743,7 @@ div.product .stock.beauty_stock {
   margin-bottom: 10px;
 }
 
-/* line 220, assets/styles/layouts/pages/_single_product.scss */
+/* line 221, assets/styles/layouts/pages/_single_product.scss */
 
 div.product .stock.beauty_stock b {
   font-weight: bold;
@@ -16750,13 +16751,13 @@ div.product .stock.beauty_stock b {
 
 /* meta style */
 
-/* line 226, assets/styles/layouts/pages/_single_product.scss */
+/* line 227, assets/styles/layouts/pages/_single_product.scss */
 
 .product_meta {
   margin-bottom: 10px;
 }
 
-/* line 229, assets/styles/layouts/pages/_single_product.scss */
+/* line 230, assets/styles/layouts/pages/_single_product.scss */
 
 .product_meta .sku_wrapper {
   font-size: 20px;
@@ -16765,10 +16766,70 @@ div.product .stock.beauty_stock b {
 
 /* fix block select on the variation product page */
 
-/* line 236, assets/styles/layouts/pages/_single_product.scss */
+/* line 237, assets/styles/layouts/pages/_single_product.scss */
 
 .woocommerce div.product form.cart .variations {
   width: auto;
+}
+
+/* line 243, assets/styles/layouts/pages/_single_product.scss */
+
+.productinfo .title {
+  height: 25px;
+}
+
+/* line 248, assets/styles/layouts/pages/_single_product.scss */
+
+.features_items .product-type-simple {
+  padding: 0;
+}
+
+/* line 252, assets/styles/layouts/pages/_single_product.scss */
+
+.product-overlay {
+  background: rgba(254, 152, 15, 0.8);
+  top: 0;
+  display: block;
+  height: 0;
+  position: absolute;
+  -webkit-transition: height 500ms ease 0s;
+  transition: height 500ms ease 0s;
+  width: 100%;
+}
+
+/* line 262, assets/styles/layouts/pages/_single_product.scss */
+
+.product-overlay .overlay-content {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 269, assets/styles/layouts/pages/_single_product.scss */
+
+.product-overlay .add-to-cart {
+  background: #fff;
+  border: 0 none;
+  border-radius: 0;
+  color: #fe980f;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* line 279, assets/styles/layouts/pages/_single_product.scss */
+
+.product-overlay .add-to-cart:hover {
+  background: #fff;
+  color: #fe980f;
+}
+
+/* line 285, assets/styles/layouts/pages/_single_product.scss */
+
+.single-products:hover .product-overlay {
+  display: block;
+  height: 100%;
 }
 
 /* line 3, assets/styles/layouts/blocks/_tilt.scss */

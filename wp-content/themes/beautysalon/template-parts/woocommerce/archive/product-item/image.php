@@ -9,5 +9,5 @@ if(!empty($pr_img_id)) {
 	$pr_img = wc_placeholder_img_src('shop_catalog');
 }
 ?>
-<a href="<?php echo $pr_link; ?>"><img src="<?php echo $pr_img; ?>" alt="thumbnail"></a>
+<a href="<?php echo $pr_link; ?>"><img src="<?php echo $pr_img; ?>" alt="thumbnail" style="width=100%;"></a>
 

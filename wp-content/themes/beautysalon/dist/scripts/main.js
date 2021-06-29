@@ -2972,7 +2972,10 @@ window.Chart = function (context) {
     $('.header_compare .badge').text(compare_count);
   }
 
-  $(document).on('yith_woocompare_open_popup yith_woocompare_product_removed', function () {
+  $(document).on('yith_woocompare_open_popup', function () {
+    ajax_get_compare_count();
+  });
+  $(document).on('yith_woocompare_product_removed', function () {
     ajax_get_compare_count();
   });
 })(jQuery);

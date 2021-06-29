@@ -14,11 +14,11 @@ add_action("wp_ajax_nopriv_get_wishlist_count", 'get_wishlist_count');
 
 function get_compare_count()
 {
-	global $yith_woocompare;
-	$total_compare_products = count($yith_woocompare->obj->products_list);
+	$compared_products = $_COOKIE['yith_woocompare_list'];
+	$compared_products_count = count(json_decode($compared_products));
 
-	$output = array(
-		'.header_compare .badge'=> $total_compare_products
+		$output = array(
+		'.header_compare .badge'=> $compared_products_count
 	);
 
 	echo json_encode($output);

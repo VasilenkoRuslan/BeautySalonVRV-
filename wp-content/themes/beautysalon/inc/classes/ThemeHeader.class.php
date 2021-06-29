@@ -36,14 +36,15 @@ HTML;
 	function get_cart_icons()
 	{
 		$txt_total_price = __('Total price on cart','beautysalon');
+		$link_wishlist = get_home_url().'/wishlist';
 
 		return <<<HTML
 <div class="container">
 	<div class="row">
 		<div class="col-3 col-sm-6 col-md-4 col-lg-3 cart-icons">
 			<ul>
-				<li class="header_compare"><p><span class="position_relative"><i class="fa fa-random fa-2x"></i><span class="badge"></span></span></p></li>
-				<li class="header_heart_count"><p><span class="position_relative"><i class="fa fa-heart fa-2x"></i><span class="badge"></span></span></p></li>
+				<li class="header_compare"><a href="" class="yith-woocompare-open"><p><span class="position_relative"><i class="fa fa-random fa-2x"></i><span class="badge"></span></span></p></a></li>
+				<li class="header_heart_count"><a href="{$link_wishlist}"><p><span class="position_relative"><i class="fa fa-heart fa-2x"></i><span class="badge"></span></span></p></a></li>
 				<li><p id="trigger"><span class="position_relative"><i class="fa fa-shopping-bag fa-2x"></i><span class="badge atc"></span></span></p></li>
 			</ul>
 		</div>
