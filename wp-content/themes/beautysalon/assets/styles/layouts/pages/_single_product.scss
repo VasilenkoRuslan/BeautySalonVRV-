@@ -131,14 +131,12 @@
 /* style of price product */
 p.total_price {
   color: #00d084;
-  margin-bottom: 7px;
   letter-spacing: 1px;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
   font-weight: 700;
-  margin-right: 20px;
-  margin-top: 0;
-  padding-top: 10px;
+  margin: 20px 10px 10px;
+  min-height: 59px;
 
   del {
     color: #00d084;
@@ -237,53 +235,3 @@ div.product .stock.beauty_stock {
 .woocommerce div.product form.cart .variations {
   width: auto;
 }
-
-// custom loop product
-.productinfo {
-  .title {
-    height: 25px;
-  }
-}
-
-.features_items .product-type-simple {
-  padding: 0;
-}
-
-.product-overlay {
-  background: rgba(254, 152, 15, 0.8);
-  top: 0;
-  display: block;
-  height: 0;
-  position: absolute;
-  -webkit-transition: height 500ms ease 0s;
-  transition: height 500ms ease 0s;
-  width: 100%;
-
-  .overlay-content {
-    bottom: 0;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-  }
-
-  .add-to-cart {
-    background: #fff;
-    border: 0 none;
-    border-radius: 0;
-    color: #fe980f;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    margin-bottom: 25px;
-  }
-
-  .add-to-cart:hover {
-    background: #fff;
-    color: #fe980f;
-  }
-}
-
-.single-products:hover .product-overlay {
-  display: block;
-  height: 100%;
-}
-

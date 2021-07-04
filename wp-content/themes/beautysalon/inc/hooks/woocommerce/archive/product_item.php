@@ -39,7 +39,7 @@ function custom_product_item_loop_buttons_wishlist_and_compare () {
 		<div class="choose">
 			<ul class="nav nav-pills nav-justified">
 				<?php get_template_part('template-parts/woocommerce/archive/product-item/btn-add-to-wishlist'); ?>
-				<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+				<?php get_template_part('template-parts/woocommerce/archive/product-item/btn-add-to-compare'); ?>
 			</ul>
 		</div>
 <?php	}

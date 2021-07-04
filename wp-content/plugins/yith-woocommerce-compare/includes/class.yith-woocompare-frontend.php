@@ -223,7 +223,7 @@ if ( ! class_exists( 'YITH_Woocompare_Frontend' ) ) {
 					'table_title'  => apply_filters( 'yith_woocompare_compare_table_title', __( 'Product Comparison', 'yith-woocommerce-compare' ) ),
 					'auto_open'    => get_option( 'yith_woocompare_auto_open', 'yes' ),
 					'loader'       => YITH_WOOCOMPARE_ASSETS_URL . '/images/loader.gif',
-					'button_text'  => get_option( 'yith_woocompare_button_text', __( 'Compare', 'yith-woocommerce-compare' ) ),
+					'button_text'  => get_option( 'yith_woocompare_button_text', '<i class="fa fa-plus-square"></i>'.__( 'Compare', 'yith-woocommerce-compare' ) ),
 					'cookie_name'  => $this->cookie_name,
 					'close_label'  => _x( 'Close', 'Label for popup close icon', 'yith-woocommerce-compare' ),
 				)
@@ -512,8 +512,8 @@ if ( ! class_exists( 'YITH_Woocompare_Frontend' ) ) {
 			$is_button = ! isset( $button_or_link ) || ! $button_or_link ? get_option( 'yith_woocompare_is_button', 'button' ) : $button_or_link;
 
 			if ( ! isset( $button_text ) || 'default' === $button_text ) {
-				$button_text = get_option( 'yith_woocompare_button_text', __( 'Compare', 'yith-woocommerce-compare' ) );
-				do_action( 'wpml_register_single_string', 'Plugins', 'plugin_yit_compare_button_text', $button_text );
+                $button_text = get_option( 'yith_woocompare_button_text', __( 'Compare', 'yith-woocommerce-compare' ) );
+                do_action( 'wpml_register_single_string', 'Plugins', 'plugin_yit_compare_button_text', $button_text );
 				$button_text = apply_filters( 'wpml_translate_single_string', $button_text, 'Plugins', 'plugin_yit_compare_button_text' );
 			}
 

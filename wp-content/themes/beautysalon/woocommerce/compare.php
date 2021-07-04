@@ -374,15 +374,6 @@ if (wp_script_is('responsive-theme', 'enqueued')) {
 			e.preventDefault();
 			window.close();
 		});
-
-		// add hover for
-		// $('table.compare-list tr').hover(function()
-		// {
-		// 	$(this).find('td, th').addClass('hover');
-		// }, function()
-		// {
-		// 	$(this).find('td, th').removeClass('hover');
-		// });
 	});
 
 </script>

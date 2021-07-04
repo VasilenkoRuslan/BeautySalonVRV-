@@ -91,6 +91,7 @@
     "buble-loader": "^0.4.1",
     "cache-loader": "~1.2.0",
     "clean-webpack-plugin": "^0.1.18",
+    "concurrently": "^6.2.0",
     "copy-globs-webpack-plugin": "^0.2.0",
     "css-loader": "^0.28.9",
     "cssnano": "~v4.0.0-rc.2",

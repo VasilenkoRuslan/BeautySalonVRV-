@@ -10,7 +10,7 @@ class ThemeHome
 		}
 
 		$board_bg_img_url = $board_item['board_background'];
-		$board_bg_img_url = (empty($board_bg_img_url)) ? THEME_DIR_URI . '/assets/images/header-bg.jpg' : $board_bg_img_url;
+		$board_bg_img_url = (empty($board_bg_img_url)) ? THEME_DIR_URI . '/assets/images/header_bg.jpg' : $board_bg_img_url;
 
 		$board_title = $board_item['board_title'];
 		$board_subtitle = $board_item['board_subtitle'];

@@ -24,20 +24,16 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<div <?php wc_product_class( 'col-sm-4', $product ); ?>>
-	<div class="product-image-wrapper" style="
-	border: 1px solid #fde4bf;
-    overflow: hidden;
-    margin-bottom: 30px;
-">
-		<div class="single-products" style="position: relative; border-bottom: 1px solid #fde4bf;">
+<div <?php wc_product_class( 'col-xs-12 col-sm-6 col-md-4 col-lg-3', $product ); ?>>
+	<div class="product-image-wrapper">
+		<div class="single-products">
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
 	 *
 	 */
 	do_action( 'woocommerce_before_shop_loop_item' );
-?>	<div class="productinfo text-center" style="position: relative; padding-bottom: 21px;">
+?>	<div class="productinfo text-center">
 <?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item_title.
@@ -73,32 +69,5 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	?>
 	</div><!--</div class="product-image-wrapper">-->
 </div>
-
-
-<!--<div class="col-sm-4">-->
-<!--	<div class="product-image-wrapper">-->
-<!--		<div class="single-products">-->
-<!--			<div class="productinfo text-center">-->
-<!--				<img src="images/shop/product12.jpg" alt="" />-->
-<!--				<h2>$56</h2>-->
-<!--				<p>Easy Polo Black Edition</p>-->
-<!--				<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
-<!--			</div>-->
-<!--			<div class="product-overlay">-->
-<!--				<div class="overlay-content">-->
-<!--					<h2>$56</h2>-->
-<!--					<p>Easy Polo Black Edition</p>-->
-<!--					<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--		<div class="choose">-->
-<!--			<ul class="nav nav-pills nav-justified">-->
-<!--				<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>-->
-<!--				<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>-->
-<!--			</ul>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--</div>-->
 
 

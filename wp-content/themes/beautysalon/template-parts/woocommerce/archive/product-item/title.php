@@ -8,4 +8,4 @@ $title = $product->get_title();
 
 ?>
 
-<h2 class="title"><a href="<?php echo $url; ?>" style="font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 400; color: #696763;"><?php echo $title; ?></a></h2>
+<h2 class="title"><a href="<?php echo $url; ?>"><?php echo $title; ?></a></h2>
