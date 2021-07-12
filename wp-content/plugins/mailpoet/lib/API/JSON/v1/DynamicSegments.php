@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace MailPoet\API\JSON\v1;
 
@@ -11,6 +11,7 @@ use MailPoet\API\JSON\Error;
 use MailPoet\API\JSON\Response;
 use MailPoet\API\JSON\ResponseBuilders\DynamicSegmentsResponseBuilder;
 use MailPoet\Config\AccessControl;
+use MailPoet\Doctrine\Validator\ValidationException;
 use MailPoet\Entities\SegmentEntity;
 use MailPoet\Listing\Handler;
 use MailPoet\Newsletter\Segment\NewsletterSegmentRepository;
@@ -116,7 +117,11 @@ class DynamicSegments extends APIEndpoint {
       ], [], Response::STATUS_BAD_REQUEST);
     } catch (InvalidArgumentException $e) {
       return $this->badRequest([
-        Error::BAD_REQUEST  => __('Another record already exists. Please specify a different "name".', 'mailpoet'),
+        Error::BAD_REQUEST => __('Another record already exists. Please specify a different "name".', 'mailpoet'),
+      ]);
+    } catch (ValidationException $exception) {
+      return $this->badRequest([
+        Error::BAD_REQUEST => __('Please specify a name.', 'mailpoet'),
       ]);
     }
   }
@@ -146,6 +151,8 @@ class DynamicSegments extends APIEndpoint {
         return WPFunctions::get()->__('Please select a type for the comparison, a number of orders and a number of days.', 'mailpoet');
       case InvalidFilterException::MISSING_TOTAL_SPENT_FIELDS:
         return WPFunctions::get()->__('Please select a type for the comparison, an amount and a number of days.', 'mailpoet');
+      case InvalidFilterException::MISSING_FILTER:
+        return WPFunctions::get()->__('Please add at least one condition for filtering.', 'mailpoet');
       default:
         return WPFunctions::get()->__('An error occurred while saving data.', 'mailpoet');
     }

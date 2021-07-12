@@ -109,7 +109,7 @@ class Charity {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => $this->template_image_url . '/header_bg.jpg',
+                      'src' => $this->template_image_url . '/header-bg.jpg',
                       'display' => 'scale',
                      ],
                   'styles' =>

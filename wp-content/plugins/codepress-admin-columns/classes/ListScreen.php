@@ -3,6 +3,7 @@
 namespace AC;
 
 use AC\Column\Placeholder;
+use AC\Sanitize\Kses;
 use AC\Type\ListScreenId;
 use DateTime;
 use LogicException;
@@ -86,11 +87,6 @@ abstract class ListScreen {
 	 * @var Column[]
 	 */
 	private $column_types;
-
-	/**
-	 * @var array [ Column name => Label ]
-	 */
-	private $original_columns;
 
 	/**
 	 * @var string Layout ID
@@ -437,9 +433,7 @@ abstract class ListScreen {
 	 * @return DateTime
 	 */
 	public function get_updated() {
-		return $this->updated
-			? $this->updated
-			: new DateTime();
+		return $this->updated ?: new DateTime();
 	}
 
 	/**
@@ -593,13 +587,6 @@ abstract class ListScreen {
 	 */
 	public function get_original_columns() {
 		return ( new DefaultColumnsRepository() )->get( $this->get_key() );
-	}
-
-	/**
-	 * @param array $columns
-	 */
-	public function set_original_columns( $columns ) {
-		$this->original_columns = (array) $columns;
 	}
 
 	/**
@@ -834,7 +821,7 @@ abstract class ListScreen {
 			return $original_value;
 		}
 
-		$value = $column->get_value( $id );
+		$value = ( new Kses() )->sanitize( $column->get_value( $id ) );
 
 		// You can overwrite the display value for original columns by making sure get_value() does not return an empty string.
 		if ( $column->is_original() && ac_helper()->string->is_empty( $value ) ) {
@@ -941,6 +928,17 @@ abstract class ListScreen {
 	 */
 	public function store( $column_data ) {
 		_deprecated_function( __METHOD__, '4.0' );
+	}
+
+	/**
+	 * @param array $columns
+	 *
+	 * @deprecated 4.3
+	 */
+	public function set_original_columns( $columns ) {
+		_deprecated_function( __METHOD__, '4.3' );
+
+		$this->original_columns = (array) $columns;
 	}
 
 }

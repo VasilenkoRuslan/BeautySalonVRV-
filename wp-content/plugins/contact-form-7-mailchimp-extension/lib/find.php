@@ -68,7 +68,6 @@ function get_log_array () {
 }
 
 
-
 function chimpmatic_logreset () {
 
     global $wpdb;
@@ -153,7 +152,7 @@ function mce_html_panel_listmail( $apivalid, $listdata, $cf7_mch ) {
   $i = 0 ;
   //if ( !isset ( $listdata['lists'] ) ) return ;
 
-  $count = is_array ( $listdata['lists']  ) ? count ( $listdata['lists'] ) : 0 ;
+  $count = isset ( $listdata['lists']  ) ? count ( $listdata['lists'] ) : 0 ;
 
   //if ( $count == 0 ) return ;
 
