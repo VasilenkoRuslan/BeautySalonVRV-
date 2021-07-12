@@ -1,3 +1,3 @@
 <?php
 global $temp_html_dir; ?>
-<?php dynamic_sidebar('Sidebar'); ?>
+<?php dynamic_sidebar('sidebar'); ?>

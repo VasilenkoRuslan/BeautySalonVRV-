@@ -328,28 +328,29 @@ function wpcf7_mch_subscribe_remote($obj) {
         $resultbody = wp_remote_retrieve_body( $mergerfield );
         $arraymerger = json_decode( $resultbody, True );
 
-        $campreque = array_column($arraymerger['merge_fields'],'required','merge_id'); // arr de req campos
+        if (isset ($arraymerger['merge_fields'])  )  {        
+            $campreque = array_column($arraymerger['merge_fields'],'required','merge_id'); // arr de req campos
 
-          foreach($campreque as $clave=>$valor) {
+            foreach($campreque as $clave=>$valor) {
 
-              if ($valor) {
-                  $cadreq = '{"required":false}';
-                  $url_edit   = "$urlmcv3/lists/$list/merge-fields/$clave"; //// $urlmcv3
+                if ($valor) {
+                    $cadreq = '{"required":false}';
+                    $url_edit   = "$urlmcv3/lists/$list/merge-fields/$clave"; //// $urlmcv3
 
-                  $opts = array(
-                            'method' => 'PATCH',
-                            'headers' => $vc_headers,
-                            'body' => $cadreq,
-                            'user-agent' => 'mce-h' . $vc_user_agent
-                          );
+                    $opts = array(
+                              'method' => 'PATCH',
+                              'headers' => $vc_headers,
+                              'body' => $cadreq,
+                              'user-agent' => 'mce-h' . $vc_user_agent
+                            );
 
-                  $resptres = wp_remote_post( $url_edit, $opts );
+                    $resptres = wp_remote_post( $url_edit, $opts );
 
 
-              }
+                }
 
-          }
-
+            }
+        }
 
         // 2
         // ================================================================

@@ -15735,6 +15735,840 @@ button.close {
   margin-left: 50px;
 }
 
+/* responsive.css
+  md */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 4, assets/styles/layouts/_theme_style.scss */
+
+  .header-middle .btn-group .btn {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  /* line 9, assets/styles/layouts/_theme_style.scss */
+
+  .usa {
+    margin-right: 0;
+  }
+
+  /* line 13, assets/styles/layouts/_theme_style.scss */
+
+  .shipping img {
+    width: 100%;
+  }
+
+  /* line 17, assets/styles/layouts/_theme_style.scss */
+
+  .searchform input {
+    width: 160px;
+  }
+
+  /* line 21, assets/styles/layouts/_theme_style.scss */
+
+  .product-information span span {
+    width: 100%;
+  }
+
+  /* line 25, assets/styles/layouts/_theme_style.scss */
+
+  #similar-product .carousel-inner .item img {
+    width: 65px;
+  }
+
+  /* line 29, assets/styles/layouts/_theme_style.scss */
+
+  #cart_items .cart_info .cart_description h4,
+  #cart_items .cart_info .cart_description p {
+    text-align: center;
+  }
+}
+
+/* sm */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 37, assets/styles/layouts/_theme_style.scss */
+
+  .shop-menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 43, assets/styles/layouts/_theme_style.scss */
+
+  .shop-menu ul {
+    display: inline-block;
+    float: none;
+  }
+
+  /* line 48, assets/styles/layouts/_theme_style.scss */
+
+  .shop-menu ul li a {
+    padding-left: 0;
+  }
+
+  /* line 52, assets/styles/layouts/_theme_style.scss */
+
+  #slider-carousel .item {
+    padding-left: 30px;
+  }
+
+  /* line 56, assets/styles/layouts/_theme_style.scss */
+
+  .item h2 {
+    font-size: 24px;
+  }
+
+  /* line 60, assets/styles/layouts/_theme_style.scss */
+
+  .girl {
+    margin-left: 0;
+  }
+
+  /* line 64, assets/styles/layouts/_theme_style.scss */
+
+  .pricing {
+    width: 100px;
+  }
+
+  /* line 68, assets/styles/layouts/_theme_style.scss */
+
+  .shipping img {
+    width: 100%;
+  }
+
+  /* line 72, assets/styles/layouts/_theme_style.scss */
+
+  .slider.slider-horizontal {
+    width: 100% !important;
+  }
+
+  /* line 76, assets/styles/layouts/_theme_style.scss */
+
+  .tab-pane .col-sm-3,
+  .features_items .col-sm-4 {
+    width: 50%;
+  }
+
+  /* line 81, assets/styles/layouts/_theme_style.scss */
+
+  .footer-widget .col-sm-2 {
+    width: 33%;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+
+  /* line 87, assets/styles/layouts/_theme_style.scss */
+
+  .footer-widget .col-sm-3 {
+    display: inline-block;
+    width: 40%;
+  }
+
+  /* line 92, assets/styles/layouts/_theme_style.scss */
+
+  #similar-product .carousel-inner .item img {
+    width: 60px;
+    margin-left: 0;
+  }
+
+  /* line 97, assets/styles/layouts/_theme_style.scss */
+
+  .product-information span span {
+    display: block;
+    width: 100%;
+  }
+
+  /* line 102, assets/styles/layouts/_theme_style.scss */
+
+  .product-information .cart {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  /* line 107, assets/styles/layouts/_theme_style.scss */
+
+  .item-control i {
+    font-size: 12px;
+    padding: 5px 6px;
+  }
+
+  /* line 112, assets/styles/layouts/_theme_style.scss */
+
+  #cart_items .cart_info .cart_description h4,
+  #cart_items .cart_info .cart_description p {
+    text-align: center;
+  }
+
+  /* line 117, assets/styles/layouts/_theme_style.scss */
+
+  .companyinfo h2 {
+    font-size: 20px;
+  }
+
+  /* line 121, assets/styles/layouts/_theme_style.scss */
+
+  .address {
+    margin-top: 48px;
+    margin-left: 20px;
+  }
+
+  /* line 126, assets/styles/layouts/_theme_style.scss */
+
+  .address p {
+    font-size: 12px;
+    top: 5px;
+  }
+}
+
+/* xs */
+
+@media (max-width: 767px) {
+  /* line 134, assets/styles/layouts/_theme_style.scss */
+
+  #cart_items .cart_info table {
+    min-width: 600px;
+  }
+
+  /* line 138, assets/styles/layouts/_theme_style.scss */
+
+  #cart_items .cart_info .cart_description h4 a {
+    font-size: 15px;
+  }
+
+  /* line 142, assets/styles/layouts/_theme_style.scss */
+
+  #cart_items .cart_info .cart_description p {
+    font-size: 12px;
+  }
+
+  /* line 146, assets/styles/layouts/_theme_style.scss */
+
+  .mainmenu ul li:first-child {
+    padding-left: 15px;
+  }
+
+  /* line 150, assets/styles/layouts/_theme_style.scss */
+
+  #form {
+    margin-top: 10px;
+  }
+
+  /* line 154, assets/styles/layouts/_theme_style.scss */
+
+  .shop-menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 160, assets/styles/layouts/_theme_style.scss */
+
+  .shop-menu ul {
+    display: inline-block;
+    float: none;
+  }
+
+  /* line 165, assets/styles/layouts/_theme_style.scss */
+
+  .header_top .col-sm-6:first-child {
+    display: inline-block;
+    float: left;
+  }
+
+  /* line 170, assets/styles/layouts/_theme_style.scss */
+
+  .header_top .col-sm-6:last-child {
+    display: inline-block;
+    float: right;
+  }
+
+  /* line 175, assets/styles/layouts/_theme_style.scss */
+
+  .header-middle .col-sm-4 {
+    display: inline-block;
+    overflow: inherit;
+    width: 100%;
+  }
+
+  /* line 181, assets/styles/layouts/_theme_style.scss */
+
+  .social-icons ul li a i {
+    padding: 8px 10px;
+  }
+
+  /* line 185, assets/styles/layouts/_theme_style.scss */
+
+  .shop-menu.pull-right {
+    float: none !important;
+  }
+
+  /* line 189, assets/styles/layouts/_theme_style.scss */
+
+  .shop-menu .nav.navbar-nav {
+    margin-left: -30px;
+  }
+
+  /* line 193, assets/styles/layouts/_theme_style.scss */
+
+  .header-bottom .col-sm-9 {
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* line 198, assets/styles/layouts/_theme_style.scss */
+
+  .mainmenu {
+    width: 100%;
+  }
+
+  /* line 202, assets/styles/layouts/_theme_style.scss */
+
+  .mainmenu ul li {
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+
+  /* line 208, assets/styles/layouts/_theme_style.scss */
+
+  .mainmenu ul li:last-child {
+    padding-bottom: 15px;
+  }
+
+  /* line 212, assets/styles/layouts/_theme_style.scss */
+
+  .mainmenu ul li a {
+    color: #fff;
+  }
+
+  /* line 216, assets/styles/layouts/_theme_style.scss */
+
+  .navbar-collapse.in {
+    overflow: inherit;
+  }
+
+  /* line 220, assets/styles/layouts/_theme_style.scss */
+
+  .mainmenu ul li a.active {
+    padding-left: 15px;
+  }
+
+  /* line 224, assets/styles/layouts/_theme_style.scss */
+
+  .dropdown .fa-angle-down {
+    display: none;
+  }
+
+  /* line 228, assets/styles/layouts/_theme_style.scss */
+
+  ul.sub-menu {
+    position: relative;
+    width: auto;
+    display: block;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    top: 0;
+  }
+
+  /* line 238, assets/styles/layouts/_theme_style.scss */
+
+  .sub-menu li {
+    background: transparent;
+  }
+
+  /* line 242, assets/styles/layouts/_theme_style.scss */
+
+  .mainmenu .navbar-nav li ul.sub-menu li {
+    background: transparent;
+    padding-bottom: 0;
+  }
+
+  /* line 247, assets/styles/layouts/_theme_style.scss */
+
+  .nav.navbar-nav > li:hover > ul.sub-menu {
+    -webkit-animation: none;
+    animation: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* line 254, assets/styles/layouts/_theme_style.scss */
+
+  .header-bottom {
+    position: relative;
+  }
+
+  /* line 258, assets/styles/layouts/_theme_style.scss */
+
+  .header-bottom .col-sm-3 {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 38px;
+  }
+
+  /* line 265, assets/styles/layouts/_theme_style.scss */
+
+  #slider-carousel .item {
+    padding-left: 0;
+  }
+
+  /* line 269, assets/styles/layouts/_theme_style.scss */
+
+  .shipping {
+    margin-bottom: 25px;
+  }
+
+  /* line 273, assets/styles/layouts/_theme_style.scss */
+
+  .pricing {
+    width: 100px;
+  }
+
+  /* line 277, assets/styles/layouts/_theme_style.scss */
+
+  .footer-top .col-sm-7 .col-sm-3 {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 282, assets/styles/layouts/_theme_style.scss */
+
+  .footer-widget .col-sm-2 {
+    width: 28%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 0;
+    float: left;
+    margin-left: 30px;
+  }
+
+  /* line 293, assets/styles/layouts/_theme_style.scss */
+
+  .companyinfo {
+    text-align: center;
+  }
+
+  /* line 297, assets/styles/layouts/_theme_style.scss */
+
+  .footer-widget .col-sm-3 {
+    display: inline-block;
+  }
+
+  /* line 301, assets/styles/layouts/_theme_style.scss */
+
+  .product-information span {
+    display: block;
+  }
+
+  /* line 305, assets/styles/layouts/_theme_style.scss */
+
+  #similar-product {
+    margin-bottom: 40px;
+  }
+
+  /* line 309, assets/styles/layouts/_theme_style.scss */
+
+  .well {
+    display: inline-block;
+  }
+}
+
+/* XS Portrait */
+
+@media (max-width: 480px) {
+  /* line 316, assets/styles/layouts/_theme_style.scss */
+
+  .bill-to {
+    margin-top: 10px;
+  }
+
+  /* line 320, assets/styles/layouts/_theme_style.scss */
+
+  .form-two,
+  .form-one {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* line 326, assets/styles/layouts/_theme_style.scss */
+
+  .header-middle .dropdown-menu {
+    text-align: left;
+  }
+
+  /* line 330, assets/styles/layouts/_theme_style.scss */
+
+  .header-middle .dropdown-menu {
+    min-width: 0;
+  }
+
+  /* line 334, assets/styles/layouts/_theme_style.scss */
+
+  .header-middle .logo + div {
+    text-align: center;
+    display: block;
+  }
+
+  /* line 339, assets/styles/layouts/_theme_style.scss */
+
+  .header-middle .btn-group > .btn-group {
+    float: none;
+  }
+
+  /* line 343, assets/styles/layouts/_theme_style.scss */
+
+  .contactinfo {
+    text-align: center;
+  }
+
+  /* line 347, assets/styles/layouts/_theme_style.scss */
+
+  .contactinfo ul li a {
+    padding-right: 15px;
+    padding-left: 0;
+  }
+
+  /* line 352, assets/styles/layouts/_theme_style.scss */
+
+  .social-icons.pull-right {
+    float: none !important;
+    text-align: center;
+  }
+
+  /* line 357, assets/styles/layouts/_theme_style.scss */
+
+  .btn-group.pull-right,
+  .footer-bottom .pull-left,
+  .footer-bottom .pull-right,
+  .mainmenu.pull-left,
+  .media.commnets .pull-left,
+  .media-list .pull-left {
+    float: none !important;
+  }
+
+  /* line 366, assets/styles/layouts/_theme_style.scss */
+
+  .header_top .col-sm-6:first-child {
+    display: block;
+    float: none;
+  }
+
+  /* line 371, assets/styles/layouts/_theme_style.scss */
+
+  .header_top .col-sm-6:last-child {
+    display: block;
+    float: none;
+  }
+
+  /* line 376, assets/styles/layouts/_theme_style.scss */
+
+  .contactinfo .nav.nav-pills,
+  .social-icons .nav.navbar-nav {
+    display: inline-block;
+  }
+
+  /* line 381, assets/styles/layouts/_theme_style.scss */
+
+  .logo {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* line 386, assets/styles/layouts/_theme_style.scss */
+
+  .shop-menu ul li {
+    padding: 0 5px;
+  }
+
+  /* line 390, assets/styles/layouts/_theme_style.scss */
+
+  .header-middle .col-sm-4 {
+    text-align: center;
+    overflow: inherit;
+  }
+
+  /* line 395, assets/styles/layouts/_theme_style.scss */
+
+  .shop-menu .nav.navbar-nav {
+    margin-left: 0;
+  }
+
+  /* line 399, assets/styles/layouts/_theme_style.scss */
+
+  .btn-group > .btn-group:last-child > .btn:first-child {
+    margin-right: 0;
+  }
+
+  /* line 403, assets/styles/layouts/_theme_style.scss */
+
+  .header-bottom .col-sm-9 {
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* line 408, assets/styles/layouts/_theme_style.scss */
+
+  .mainmenu {
+    width: 100%;
+  }
+
+  /* line 412, assets/styles/layouts/_theme_style.scss */
+
+  .mainmenu ul li {
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+
+  /* line 418, assets/styles/layouts/_theme_style.scss */
+
+  .mainmenu ul li:last-child {
+    padding-bottom: 15px;
+  }
+
+  /* line 422, assets/styles/layouts/_theme_style.scss */
+
+  .mainmenu ul li a {
+    color: #fff;
+    padding-bottom: 0;
+  }
+
+  /* line 427, assets/styles/layouts/_theme_style.scss */
+
+  .navbar-collapse.in {
+    overflow: inherit;
+  }
+
+  /* line 431, assets/styles/layouts/_theme_style.scss */
+
+  .mainmenu ul li a.active {
+    padding-left: 15px;
+  }
+
+  /* line 435, assets/styles/layouts/_theme_style.scss */
+
+  .dropdown .fa-angle-down {
+    display: none;
+  }
+
+  /* line 439, assets/styles/layouts/_theme_style.scss */
+
+  ul.sub-menu {
+    position: relative;
+    width: auto;
+    display: block;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    top: 0;
+  }
+
+  /* line 449, assets/styles/layouts/_theme_style.scss */
+
+  .mainmenu .navbar-nav li ul.sub-menu li {
+    background: transparent;
+    padding-bottom: 0;
+  }
+
+  /* line 454, assets/styles/layouts/_theme_style.scss */
+
+  .nav.navbar-nav > li:hover > ul.sub-menu {
+    -webkit-animation: none;
+    animation: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* line 461, assets/styles/layouts/_theme_style.scss */
+
+  .item {
+    padding-left: 0;
+  }
+
+  /* line 465, assets/styles/layouts/_theme_style.scss */
+
+  .item h1 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  /* line 470, assets/styles/layouts/_theme_style.scss */
+
+  .item h2 {
+    font-size: 20px;
+  }
+
+  /* line 474, assets/styles/layouts/_theme_style.scss */
+
+  .pricing {
+    width: 70px;
+  }
+
+  /* line 478, assets/styles/layouts/_theme_style.scss */
+
+  .category-tab ul li a {
+    font-size: 12px;
+  }
+
+  /* line 482, assets/styles/layouts/_theme_style.scss */
+
+  .companyinfo h2,
+  .companyinfo p {
+    text-align: center;
+  }
+
+  /* line 487, assets/styles/layouts/_theme_style.scss */
+
+  .video-gallery {
+    margin-top: 30px;
+  }
+
+  /* line 491, assets/styles/layouts/_theme_style.scss */
+
+  .footer-bottom p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  /* line 496, assets/styles/layouts/_theme_style.scss */
+
+  .footer-widget .col-sm-2 {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 0;
+    float: left;
+    padding-right: 0;
+    padding-left: 30px;
+    margin-left: 0;
+  }
+
+  /* line 509, assets/styles/layouts/_theme_style.scss */
+
+  .single-widget {
+    padding-left: 0;
+  }
+
+  /* line 513, assets/styles/layouts/_theme_style.scss */
+
+  .features_items {
+    margin-top: 30px;
+  }
+
+  /* line 517, assets/styles/layouts/_theme_style.scss */
+
+  .category-tab .nav-tabs li {
+    float: none;
+  }
+
+  /* line 521, assets/styles/layouts/_theme_style.scss */
+
+  #similar-product .carousel-inner .item img {
+    margin-left: 4px;
+  }
+
+  /* line 525, assets/styles/layouts/_theme_style.scss */
+
+  .product-information {
+    margin-top: 40px;
+  }
+
+  /* line 529, assets/styles/layouts/_theme_style.scss */
+
+  #reviews p,
+  .blog-post-area .single-blog-post p {
+    text-align: justify;
+  }
+
+  /* line 534, assets/styles/layouts/_theme_style.scss */
+
+  #reviews form span input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* line 539, assets/styles/layouts/_theme_style.scss */
+
+  #reviews form span input:last-child {
+    margin-left: 0;
+  }
+
+  /* line 543, assets/styles/layouts/_theme_style.scss */
+
+  .blog-post-area .single-blog-post h3 {
+    font-size: 14px;
+  }
+
+  /* line 547, assets/styles/layouts/_theme_style.scss */
+
+  .blog-post-area .post-meta ul li {
+    margin-right: 7px;
+  }
+
+  /* line 551, assets/styles/layouts/_theme_style.scss */
+
+  .shipping {
+    margin-bottom: 20px;
+  }
+
+  /* line 555, assets/styles/layouts/_theme_style.scss */
+
+  .commnets {
+    padding: 0;
+  }
+
+  /* line 559, assets/styles/layouts/_theme_style.scss */
+
+  .content-404 h1 {
+    font-size: 30px;
+  }
+
+  /* line 563, assets/styles/layouts/_theme_style.scss */
+
+  .content-404 h2 a {
+    font-size: 20px;
+  }
+
+  /* line 567, assets/styles/layouts/_theme_style.scss */
+
+  .order-message {
+    display: inline-block;
+  }
+
+  /* line 571, assets/styles/layouts/_theme_style.scss */
+
+  .response-area .media img {
+    width: auto;
+  }
+
+  /* line 575, assets/styles/layouts/_theme_style.scss */
+
+  .sinlge-post-meta li {
+    margin-bottom: 10px;
+  }
+
+  /* line 579, assets/styles/layouts/_theme_style.scss */
+
+  .product-information {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  /* line 584, assets/styles/layouts/_theme_style.scss */
+
+  .product-information span span {
+    float: none;
+  }
+}
+
 /* line 3, assets/styles/commons/_general.scss */
 
 body {
@@ -17046,6 +17880,506 @@ div.product .stock.beauty_stock b {
 .subcategories .subcategories_list li a img {
   width: 100%;
   border: 1px solid #0cc66b;
+}
+
+/* line 2, assets/styles/layouts/pages/_woocommerce.scss */
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  background-color: #fe980f;
+  color: #fff;
+}
+
+/* line 1, assets/styles/layouts/pages/_cart.scss */
+
+.shipping {
+  background-color: #f2f2f2;
+  margin-top: 40px;
+  overflow: hidden;
+  padding-top: 20px;
+  position: relative;
+}
+
+/* line 9, assets/styles/layouts/pages/_cart.scss */
+
+.price-range {
+  margin-top: 30px;
+}
+
+/* line 13, assets/styles/layouts/pages/_cart.scss */
+
+.well {
+  background-color: #fff;
+  border: 1px solid #f7f7f0;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: 20px;
+  min-height: 20px;
+  padding: 35px;
+}
+
+/* line 24, assets/styles/layouts/pages/_cart.scss */
+
+.tooltip-inner {
+  background-color: #fe980f;
+  border-radius: 4px;
+  color: #fff;
+  max-width: 200px;
+  padding: 3px 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 34, assets/styles/layouts/pages/_cart.scss */
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: #fe980f;
+  border-width: 5px 5px 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+}
+
+/* line 42, assets/styles/layouts/pages/_cart.scss */
+
+.padding-right {
+  padding-right: 0;
+}
+
+/* line 46, assets/styles/layouts/pages/_cart.scss */
+
+#do_action {
+  margin-bottom: 50px;
+}
+
+/* line 50, assets/styles/layouts/pages/_cart.scss */
+
+.breadcrumbs {
+  position: relative;
+}
+
+/* line 54, assets/styles/layouts/pages/_cart.scss */
+
+.breadcrumbs .breadcrumb {
+  background: transparent;
+  margin-bottom: 75px;
+  padding-left: 0;
+}
+
+/* line 60, assets/styles/layouts/pages/_cart.scss */
+
+.breadcrumbs .breadcrumb li a {
+  background: #fe980f;
+  color: #fff;
+  padding: 3px 7px;
+}
+
+/* line 66, assets/styles/layouts/pages/_cart.scss */
+
+.breadcrumbs .breadcrumb li a::after {
+  content: "";
+  height: auto;
+  width: auto;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fe980f;
+  position: absolute;
+  top: 11px;
+  left: 48px;
+}
+
+/* line 78, assets/styles/layouts/pages/_cart.scss */
+
+.breadcrumbs .breadcrumb > li + li::before {
+  content: "\A0";
+}
+
+/* line 82, assets/styles/layouts/pages/_cart.scss */
+
+#cart_items .cart_info {
+  margin-bottom: 50px;
+}
+
+/* line 85, assets/styles/layouts/pages/_cart.scss */
+
+#cart_items .cart_info .cart_menu {
+  background: #fe980f;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+/* line 94, assets/styles/layouts/pages/_cart.scss */
+
+#cart_items .cart_info .table.table-condensed thead tr {
+  height: 51px;
+}
+
+/* line 97, assets/styles/layouts/pages/_cart.scss */
+
+#cart_items .cart_info .table.table-condensed thead tr th {
+  font-weight: normal !important;
+}
+
+/* line 102, assets/styles/layouts/pages/_cart.scss */
+
+#cart_items .cart_info .table.table-condensed tr {
+  border-bottom: 1px solid #f7f7f0;
+}
+
+/* line 105, assets/styles/layouts/pages/_cart.scss */
+
+#cart_items .cart_info .table.table-condensed tr:last-child {
+  border-bottom: 0;
+}
+
+/* line 111, assets/styles/layouts/pages/_cart.scss */
+
+#cart_items .cart_info table tr td {
+  border-top: 0 none;
+  vertical-align: inherit;
+  padding-right: 5px;
+  background: #fff;
+  border-bottom: 1px solid #f7f7f0;
+}
+
+/* line 119, assets/styles/layouts/pages/_cart.scss */
+
+#cart_items .cart_info .image {
+  padding-left: 30px;
+}
+
+/* line 124, assets/styles/layouts/pages/_cart.scss */
+
+#cart_items .cart_info .cart_description h4 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* line 128, assets/styles/layouts/pages/_cart.scss */
+
+#cart_items .cart_info .cart_description h4 a {
+  color: #363432;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* line 136, assets/styles/layouts/pages/_cart.scss */
+
+#cart_items .cart_info .cart_description p {
+  text-align: center;
+  color: #696763;
+}
+
+/* line 142, assets/styles/layouts/pages/_cart.scss */
+
+#cart_items .cart_info .cart_price p {
+  color: #696763;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* line 148, assets/styles/layouts/pages/_cart.scss */
+
+#cart_items .cart_info .cart_total_price {
+  color: #fe980f;
+  font-size: 24px;
+  margin: 0;
+}
+
+/* line 155, assets/styles/layouts/pages/_cart.scss */
+
+.cart_product {
+  display: block;
+}
+
+/* line 158, assets/styles/layouts/pages/_cart.scss */
+
+.cart_product img {
+  width: 100% !important;
+  max-width: 110px;
+}
+
+/* line 164, assets/styles/layouts/pages/_cart.scss */
+
+.cart_quantity_button a {
+  background: #f0f0e9;
+  color: #696763;
+  display: inline-block;
+  font-size: 16px;
+  height: 28px;
+  overflow: hidden;
+  text-align: center;
+  width: 35px;
+  float: left;
+  line-height: 28px;
+}
+
+/* line 177, assets/styles/layouts/pages/_cart.scss */
+
+.cart_quantity_up,
+.cart_quantity_down {
+  background: #f0f0e9;
+  color: #696763;
+  display: inline-block;
+  font-size: 16px;
+  height: 28px;
+  overflow: hidden;
+  text-align: center;
+  width: 35px;
+  line-height: 28px;
+  border: none;
+  margin: 0 -1px !important;
+}
+
+/* line 192, assets/styles/layouts/pages/_cart.scss */
+
+.cart_quantity_input {
+  color: #696763;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border-spacing: 0;
+  border-width: 1px;
+  border-style: inset;
+  border-color: -internal-light-dark(#767676, #858585);
+  -o-border-image: initial;
+     border-image: initial;
+  border-collapse: collapse;
+  border-radius: 2px;
+  width: auto !important;
+  margin-right: -1px;
+  margin-left: -1px;
+}
+
+/* line 209, assets/styles/layouts/pages/_cart.scss */
+
+.cart_delete {
+  display: table-cell;
+  margin-right: -12px;
+  overflow: hidden;
+}
+
+/* line 214, assets/styles/layouts/pages/_cart.scss */
+
+.cart_delete a {
+  background: #f0f0e9;
+  color: #fff;
+  padding: 5px 7px;
+  font-size: 16px;
+}
+
+/* line 220, assets/styles/layouts/pages/_cart.scss */
+
+.cart_delete a:hover {
+  background: #fe980f;
+}
+
+/* line 224, assets/styles/layouts/pages/_cart.scss */
+
+.cart_delete a i {
+  font-size: inherit;
+  color: #fff;
+  padding: 0;
+}
+
+/* line 232, assets/styles/layouts/pages/_cart.scss */
+
+.bg h2.title {
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+/* line 238, assets/styles/layouts/pages/_cart.scss */
+
+.heading h3 {
+  color: #363432;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 244, assets/styles/layouts/pages/_cart.scss */
+
+.heading p {
+  color: #434343;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* line 250, assets/styles/layouts/pages/_cart.scss */
+
+#do_action .total_area {
+  padding-bottom: 18px !important;
+  background: #fff;
+}
+
+/* line 255, assets/styles/layouts/pages/_cart.scss */
+
+#do_action .total_area,
+#do_action .chose_area {
+  border: 1px solid #e6e4df;
+  color: #696763;
+  padding: 30px 25px 30px 0;
+  margin-bottom: 80px;
+}
+
+/* line 263, assets/styles/layouts/pages/_cart.scss */
+
+.total_area span {
+  float: right;
+}
+
+/* line 267, assets/styles/layouts/pages/_cart.scss */
+
+.total_area input,
+.total_area span#wcus-shipping-cost {
+  float: left;
+}
+
+/* line 272, assets/styles/layouts/pages/_cart.scss */
+
+.total_area span#wcus-shipping-cost {
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+/* line 278, assets/styles/layouts/pages/_cart.scss */
+
+.total_area ul li {
+  background: #e6e4df;
+  color: #696763;
+  margin-top: 10px;
+  padding: 7px 20px;
+  list-style: none;
+  text-align: left;
+}
+
+/* line 286, assets/styles/layouts/pages/_cart.scss */
+
+.total_area ul li ul li {
+  margin: 0;
+  padding: 7px 0;
+  min-height: 38px;
+}
+
+/* line 293, assets/styles/layouts/pages/_cart.scss */
+
+.user_option label {
+  color: #696763;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+/* line 299, assets/styles/layouts/pages/_cart.scss */
+
+.user_info {
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* line 306, assets/styles/layouts/pages/_cart.scss */
+
+.user_info label {
+  color: #696763;
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* line 313, assets/styles/layouts/pages/_cart.scss */
+
+.user_info .single_field {
+  width: 31%;
+}
+
+/* line 317, assets/styles/layouts/pages/_cart.scss */
+
+.user_info .single_field.zip-field input {
+  background: transparent;
+  border: 1px solid #f0f0e9;
+}
+
+/* line 322, assets/styles/layouts/pages/_cart.scss */
+
+.user_info > li {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 327, assets/styles/layouts/pages/_cart.scss */
+
+.user_info input,
+select,
+textarea {
+  background: #f0f0e9;
+  border: 0;
+  color: #696763;
+  padding: 5px;
+  width: 100%;
+  border-radius: 0;
+  resize: none;
+}
+
+/* line 339, assets/styles/layouts/pages/_cart.scss */
+
+.user_info select:focus {
+  border: none;
+}
+
+/* line 343, assets/styles/layouts/pages/_cart.scss */
+
+.chose_area .update {
+  margin-left: 40px;
+}
+
+/* line 347, assets/styles/layouts/pages/_cart.scss */
+
+.update,
+.check_out {
+  background: #fe980f;
+  border-radius: 0;
+  color: #fff;
+  margin-top: 18px !important;
+  border: none;
+  padding: 5px 15px !important;
+  font-size: 14px !important;
+}
+
+/* line 358, assets/styles/layouts/pages/_cart.scss */
+
+.update {
+  margin-left: 40px;
+}
+
+/* line 362, assets/styles/layouts/pages/_cart.scss */
+
+.check_out {
+  margin-left: 20px !important;
+}
+
+/* line 366, assets/styles/layouts/pages/_cart.scss */
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+}
+
+/* line 372, assets/styles/layouts/pages/_cart.scss */
+
+.quantity input.qty {
+  appearance: textfield;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
 }
 
 /* line 3, assets/styles/layouts/blocks/_tilt.scss */

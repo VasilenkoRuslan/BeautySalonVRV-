@@ -74,7 +74,7 @@ module.exports = jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(12);
+module.exports = __webpack_require__(13);
 
 
 /***/ }),
@@ -101,6 +101,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__pages_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_fbi_wanted__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_fbi_wanted___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__pages_fbi_wanted__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__elements_input_buttons__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__elements_input_buttons___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__elements_input_buttons__);
  //plugins
 
 
@@ -111,6 +113,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  //pages
 
 
+
+ //elements
 
 
 
@@ -3208,6 +3212,57 @@ window.Chart = function (context) {
 
 /***/ }),
 /* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(jQuery) {jQuery(function ($) {
+  if (!String.prototype.getDecimals) {
+    String.prototype.getDecimals = function () {
+      var num = this,
+          match = ('' + num).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);
+
+      if (!match) {
+        return 0;
+      }
+
+      return Math.max(0, (match[1] ? match[1].length : 0) - (match[2] ? +match[2] : 0));
+    };
+  } // Quantity "plus" and "minus" buttons
+
+
+  $(document.body).on('click', '.plus, .minus', function () {
+    var $qty = $(this).closest('.quantity').find('.qty'),
+        currentVal = parseFloat($qty.val()),
+        max = parseFloat($qty.attr('max')),
+        min = parseFloat($qty.attr('min')),
+        step = $qty.attr('step'); // Format values
+
+    if (!currentVal || currentVal === '' || currentVal === 'NaN') currentVal = 0;
+    if (max === '' || max === 'NaN') max = '';
+    if (min === '' || min === 'NaN') min = 0;
+    if (step === 'any' || step === '' || step === undefined || parseFloat(step) === 'NaN') step = 1; // Change the value
+
+    if ($(this).is('.plus')) {
+      if (max && currentVal >= max) {
+        $qty.val(max);
+      } else {
+        $qty.val((currentVal + parseFloat(step)).toFixed(step.getDecimals()));
+      }
+    } else {
+      if (min && currentVal <= min) {
+        $qty.val(min);
+      } else if (currentVal > 0) {
+        $qty.val((currentVal - parseFloat(step)).toFixed(step.getDecimals()));
+      }
+    } // Trigger change event
+
+
+    $qty.trigger('change');
+  });
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 13 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

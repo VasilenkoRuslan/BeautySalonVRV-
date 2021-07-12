@@ -1,142 +1,43 @@
 <?php
+$q_obj = get_queried_object();
+$q_taxonomy = (!empty($q_obj)) ? $q_obj->taxonomy : null;
+$q_slug = (!empty($q_obj)) ? $q_obj->slug : null;
+$q_archive = (!empty($q_obj)) ? $q_obj->has_archive : null;
+
+$product_filters = null;
+
+$product_filters_price = do_shortcode('[br_filter_single filter_id=700]');
 ?>
 <div class="col-sm-3">
 	<div class="left-sidebar">
-		<h2>Category</h2>
-		<div class="panel-group category-products" id="accordian"><!--category-productsr-->
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
-							<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-							Sportswear
-						</a>
-					</h4>
-				</div>
-				<div id="sportswear" class="panel-collapse collapse">
-					<div class="panel-body">
-						<ul>
-							<li><a href="">Nike </a></li>
-							<li><a href="">Under Armour </a></li>
-							<li><a href="">Adidas </a></li>
-							<li><a href="">Puma</a></li>
-							<li><a href="">ASICS </a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordian" href="#mens">
-							<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-							Mens
-						</a>
-					</h4>
-				</div>
-				<div id="mens" class="panel-collapse collapse">
-					<div class="panel-body">
-						<ul>
-							<li><a href="">Fendi</a></li>
-							<li><a href="">Guess</a></li>
-							<li><a href="">Valentino</a></li>
-							<li><a href="">Dior</a></li>
-							<li><a href="">Versace</a></li>
-							<li><a href="">Armani</a></li>
-							<li><a href="">Prada</a></li>
-							<li><a href="">Dolce and Gabbana</a></li>
-							<li><a href="">Chanel</a></li>
-							<li><a href="">Gucci</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+		<h2><?php _e('Sidebar store', 'beautysalon'); ?></h2>
 
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordian" href="#womens">
-							<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-							Womens
-						</a>
-					</h4>
-				</div>
-				<div id="womens" class="panel-collapse collapse">
-					<div class="panel-body">
-						<ul>
-							<li><a href="">Fendi</a></li>
-							<li><a href="">Guess</a></li>
-							<li><a href="">Valentino</a></li>
-							<li><a href="">Dior</a></li>
-							<li><a href="">Versace</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title"><a href="#">Kids</a></h4>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title"><a href="#">Fashion</a></h4>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title"><a href="#">Households</a></h4>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title"><a href="#">Interiors</a></h4>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title"><a href="#">Clothing</a></h4>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title"><a href="#">Bags</a></h4>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title"><a href="#">Shoes</a></h4>
-				</div>
-			</div>
-		</div><!--/category-productsr-->
+			<?php if ((($q_taxonomy === 'product_cat') && ($q_slug === 'perfumery')) ||
+					($q_archive === 'catalog') ||
+					(($q_taxonomy === 'product_cat') && ($q_slug === 'perfumery_for_men')) ||
+					(($q_taxonomy === 'product_cat') && ($q_slug === 'perfumery_for_women'))) {
+				$product_filter_was_born = do_shortcode('[yith_wcan_filters slug="draft-preset"]');
+				$product_filter_country = do_shortcode('[yith_wcan_filters slug="draft-preset-3"]');
+				$product_filter_classification = do_shortcode('[yith_wcan_filters slug="draft-preset-6"]');
+				?>
+							<?php echo $product_filter_was_born; ?>
+							<?php echo $product_filter_country; ?>
+							<?php echo $product_filter_classification; ?>
+			<?php }
+			if ((($q_taxonomy === 'product_cat') && ($q_slug === 'cosmetics')) ||
+					($q_archive === 'catalog') ||
+					(($q_taxonomy === 'product_cat') && ($q_slug === 'face_cosmetics')) ||
+					(($q_taxonomy === 'product_cat') && ($q_slug === 'hair_cosmetics'))) {
+				$product_filter_year_old = do_shortcode('[yith_wcan_filters slug="draft-preset-2"]');
+				$product_filter_size = do_shortcode('[yith_wcan_filters slug="draft-preset-4"]');
+				$product_filter_classification2 = do_shortcode('[yith_wcan_filters slug="draft-preset-5"]');
+				?>
+							<?php echo $product_filter_year_old; ?>
+							<?php echo $product_filter_size ?>
+							<?php echo $product_filter_classification2; ?>
+			<?php } ?>
 
-		<div class="brands_products"><!--brands_products-->
-			<h2>Brands</h2>
-			<div class="brands-name">
-				<ul class="nav nav-pills nav-stacked">
-					<li><a href=""> <span class="pull-right">(50)</span>Acne</a></li>
-					<li><a href=""> <span class="pull-right">(56)</span>Grüne Erde</a></li>
-					<li><a href=""> <span class="pull-right">(27)</span>Albiro</a></li>
-					<li><a href=""> <span class="pull-right">(32)</span>Ronhill</a></li>
-					<li><a href=""> <span class="pull-right">(5)</span>Oddmolly</a></li>
-					<li><a href=""> <span class="pull-right">(9)</span>Boudestijn</a></li>
-					<li><a href=""> <span class="pull-right">(4)</span>Rösch creative culture</a></li>
-				</ul>
-			</div>
-		</div><!--/brands_products-->
-
-		<div class="price-range"><!--price-range-->
-			<h2>Price Range</h2>
-			<div class="well">
-				<input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
-				<b>$ 0</b> <b class="pull-right">$ 600</b>
-			</div>
-		</div><!--/price-range-->
-
-		<div class="shipping text-center"><!--shipping-->
-			<img src="images/home/shipping.jpg" alt="" />
-		</div><!--/shipping-->
-
+			<?php echo $product_filters_price; ?>
 	</div>
 </div>
 

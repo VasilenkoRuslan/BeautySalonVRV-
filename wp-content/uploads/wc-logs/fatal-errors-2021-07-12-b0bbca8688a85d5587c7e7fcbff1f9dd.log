@@ -1,0 +1,4 @@
+2021-07-12T16:23:44+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/cart/cart-totals.php on line 200
+
+2021-07-12T16:24:06+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/cart/cart-totals.php on line 200
+

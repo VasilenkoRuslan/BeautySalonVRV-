@@ -13,3 +13,6 @@ import './plugins/compare/add-to-compare';
 import './pages/team';
 import './pages/map';
 import './pages/fbi_wanted';
+
+//elements
+import './elements/input_buttons';

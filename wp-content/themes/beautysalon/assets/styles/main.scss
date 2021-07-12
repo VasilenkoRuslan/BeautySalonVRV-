@@ -9,6 +9,9 @@
 @import "components/font-awesome";
 @import "components/comments";
 
+//theme style
+@import "layouts/theme_style";
+
 //commons
 @import "commons/variables";
 @import "commons/general";
@@ -27,6 +30,8 @@
 @import "layouts/pages/fbi_wanted";
 @import "layouts/pages/single_product";
 @import "layouts/pages/archive";
+@import "layouts/pages/woocommerce";
+@import "layouts/pages/cart";
 
 //blocks
 @import "layouts/blocks/tilt";
