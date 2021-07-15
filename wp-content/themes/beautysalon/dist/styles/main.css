@@ -17894,21 +17894,26 @@ div.product .stock.beauty_stock b {
 
 /* line 1, assets/styles/layouts/pages/_cart.scss */
 
+body.woocommerce-cart {
+  background-color: #fff;
+}
+
+/* line 5, assets/styles/layouts/pages/_cart.scss */
+
 .shipping {
-  background-color: #f2f2f2;
   margin-top: 40px;
   overflow: hidden;
   padding-top: 20px;
   position: relative;
 }
 
-/* line 9, assets/styles/layouts/pages/_cart.scss */
+/* line 12, assets/styles/layouts/pages/_cart.scss */
 
 .price-range {
   margin-top: 30px;
 }
 
-/* line 13, assets/styles/layouts/pages/_cart.scss */
+/* line 16, assets/styles/layouts/pages/_cart.scss */
 
 .well {
   background-color: #fff;
@@ -17921,7 +17926,7 @@ div.product .stock.beauty_stock b {
   padding: 35px;
 }
 
-/* line 24, assets/styles/layouts/pages/_cart.scss */
+/* line 27, assets/styles/layouts/pages/_cart.scss */
 
 .tooltip-inner {
   background-color: #fe980f;
@@ -17933,7 +17938,7 @@ div.product .stock.beauty_stock b {
   text-decoration: none;
 }
 
-/* line 34, assets/styles/layouts/pages/_cart.scss */
+/* line 37, assets/styles/layouts/pages/_cart.scss */
 
 .tooltip.top .tooltip-arrow {
   border-top-color: #fe980f;
@@ -17943,25 +17948,25 @@ div.product .stock.beauty_stock b {
   margin-left: -5px;
 }
 
-/* line 42, assets/styles/layouts/pages/_cart.scss */
+/* line 45, assets/styles/layouts/pages/_cart.scss */
 
 .padding-right {
   padding-right: 0;
 }
 
-/* line 46, assets/styles/layouts/pages/_cart.scss */
+/* line 49, assets/styles/layouts/pages/_cart.scss */
 
 #do_action {
   margin-bottom: 50px;
 }
 
-/* line 50, assets/styles/layouts/pages/_cart.scss */
+/* line 53, assets/styles/layouts/pages/_cart.scss */
 
 .breadcrumbs {
   position: relative;
 }
 
-/* line 54, assets/styles/layouts/pages/_cart.scss */
+/* line 57, assets/styles/layouts/pages/_cart.scss */
 
 .breadcrumbs .breadcrumb {
   background: transparent;
@@ -17969,7 +17974,7 @@ div.product .stock.beauty_stock b {
   padding-left: 0;
 }
 
-/* line 60, assets/styles/layouts/pages/_cart.scss */
+/* line 63, assets/styles/layouts/pages/_cart.scss */
 
 .breadcrumbs .breadcrumb li a {
   background: #fe980f;
@@ -17977,7 +17982,7 @@ div.product .stock.beauty_stock b {
   padding: 3px 7px;
 }
 
-/* line 66, assets/styles/layouts/pages/_cart.scss */
+/* line 69, assets/styles/layouts/pages/_cart.scss */
 
 .breadcrumbs .breadcrumb li a::after {
   content: "";
@@ -17991,21 +17996,21 @@ div.product .stock.beauty_stock b {
   left: 48px;
 }
 
-/* line 78, assets/styles/layouts/pages/_cart.scss */
+/* line 81, assets/styles/layouts/pages/_cart.scss */
 
 .breadcrumbs .breadcrumb > li + li::before {
   content: "\A0";
 }
 
-/* line 82, assets/styles/layouts/pages/_cart.scss */
+/* line 85, assets/styles/layouts/pages/_cart.scss */
 
-#cart_items .cart_info {
+.cart_info {
   margin-bottom: 50px;
 }
 
-/* line 85, assets/styles/layouts/pages/_cart.scss */
+/* line 88, assets/styles/layouts/pages/_cart.scss */
 
-#cart_items .cart_info .cart_menu {
+.cart_info .cart_menu {
   background: #fe980f;
   color: #fff;
   font-size: 16px;
@@ -18013,33 +18018,33 @@ div.product .stock.beauty_stock b {
   font-weight: normal;
 }
 
-/* line 94, assets/styles/layouts/pages/_cart.scss */
+/* line 97, assets/styles/layouts/pages/_cart.scss */
 
-#cart_items .cart_info .table.table-condensed thead tr {
+.cart_info .table.table-condensed thead tr {
   height: 51px;
 }
 
-/* line 97, assets/styles/layouts/pages/_cart.scss */
+/* line 100, assets/styles/layouts/pages/_cart.scss */
 
-#cart_items .cart_info .table.table-condensed thead tr th {
+.cart_info .table.table-condensed thead tr th {
   font-weight: normal !important;
-}
-
-/* line 102, assets/styles/layouts/pages/_cart.scss */
-
-#cart_items .cart_info .table.table-condensed tr {
-  border-bottom: 1px solid #f7f7f0;
 }
 
 /* line 105, assets/styles/layouts/pages/_cart.scss */
 
-#cart_items .cart_info .table.table-condensed tr:last-child {
+.cart_info .table.table-condensed tr {
+  border-bottom: 1px solid #f7f7f0;
+}
+
+/* line 108, assets/styles/layouts/pages/_cart.scss */
+
+.cart_info .table.table-condensed tr:last-child {
   border-bottom: 0;
 }
 
-/* line 111, assets/styles/layouts/pages/_cart.scss */
+/* line 114, assets/styles/layouts/pages/_cart.scss */
 
-#cart_items .cart_info table tr td {
+.cart_info table tr td {
   border-top: 0 none;
   vertical-align: inherit;
   padding-right: 5px;
@@ -18047,65 +18052,65 @@ div.product .stock.beauty_stock b {
   border-bottom: 1px solid #f7f7f0;
 }
 
-/* line 119, assets/styles/layouts/pages/_cart.scss */
+/* line 122, assets/styles/layouts/pages/_cart.scss */
 
-#cart_items .cart_info .image {
+.cart_info .image {
   padding-left: 30px;
 }
 
-/* line 124, assets/styles/layouts/pages/_cart.scss */
+/* line 127, assets/styles/layouts/pages/_cart.scss */
 
-#cart_items .cart_info .cart_description h4 {
+.cart_info .cart_description h4 {
   text-align: center;
   margin-bottom: 0;
 }
 
-/* line 128, assets/styles/layouts/pages/_cart.scss */
+/* line 131, assets/styles/layouts/pages/_cart.scss */
 
-#cart_items .cart_info .cart_description h4 a {
+.cart_info .cart_description h4 a {
   color: #363432;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: normal;
 }
 
-/* line 136, assets/styles/layouts/pages/_cart.scss */
+/* line 139, assets/styles/layouts/pages/_cart.scss */
 
-#cart_items .cart_info .cart_description p {
+.cart_info .cart_description p {
   text-align: center;
   color: #696763;
 }
 
-/* line 142, assets/styles/layouts/pages/_cart.scss */
+/* line 145, assets/styles/layouts/pages/_cart.scss */
 
-#cart_items .cart_info .cart_price p {
+.cart_info .cart_price p {
   color: #696763;
   font-size: 18px;
   margin: 0;
 }
 
-/* line 148, assets/styles/layouts/pages/_cart.scss */
+/* line 151, assets/styles/layouts/pages/_cart.scss */
 
-#cart_items .cart_info .cart_total_price {
+.cart_info .cart_total_price {
   color: #fe980f;
   font-size: 24px;
   margin: 0;
 }
 
-/* line 155, assets/styles/layouts/pages/_cart.scss */
+/* line 158, assets/styles/layouts/pages/_cart.scss */
 
 .cart_product {
   display: block;
 }
 
-/* line 158, assets/styles/layouts/pages/_cart.scss */
+/* line 161, assets/styles/layouts/pages/_cart.scss */
 
 .cart_product img {
   width: 100% !important;
   max-width: 110px;
 }
 
-/* line 164, assets/styles/layouts/pages/_cart.scss */
+/* line 167, assets/styles/layouts/pages/_cart.scss */
 
 .cart_quantity_button a {
   background: #f0f0e9;
@@ -18120,7 +18125,7 @@ div.product .stock.beauty_stock b {
   line-height: 28px;
 }
 
-/* line 177, assets/styles/layouts/pages/_cart.scss */
+/* line 180, assets/styles/layouts/pages/_cart.scss */
 
 .cart_quantity_up,
 .cart_quantity_down {
@@ -18137,7 +18142,7 @@ div.product .stock.beauty_stock b {
   margin: 0 -1px !important;
 }
 
-/* line 192, assets/styles/layouts/pages/_cart.scss */
+/* line 195, assets/styles/layouts/pages/_cart.scss */
 
 .cart_quantity_input {
   color: #696763;
@@ -18157,7 +18162,7 @@ div.product .stock.beauty_stock b {
   margin-left: -1px;
 }
 
-/* line 209, assets/styles/layouts/pages/_cart.scss */
+/* line 212, assets/styles/layouts/pages/_cart.scss */
 
 .cart_delete {
   display: table-cell;
@@ -18165,7 +18170,7 @@ div.product .stock.beauty_stock b {
   overflow: hidden;
 }
 
-/* line 214, assets/styles/layouts/pages/_cart.scss */
+/* line 217, assets/styles/layouts/pages/_cart.scss */
 
 .cart_delete a {
   background: #f0f0e9;
@@ -18174,13 +18179,13 @@ div.product .stock.beauty_stock b {
   font-size: 16px;
 }
 
-/* line 220, assets/styles/layouts/pages/_cart.scss */
+/* line 223, assets/styles/layouts/pages/_cart.scss */
 
 .cart_delete a:hover {
   background: #fe980f;
 }
 
-/* line 224, assets/styles/layouts/pages/_cart.scss */
+/* line 227, assets/styles/layouts/pages/_cart.scss */
 
 .cart_delete a i {
   font-size: inherit;
@@ -18188,7 +18193,7 @@ div.product .stock.beauty_stock b {
   padding: 0;
 }
 
-/* line 232, assets/styles/layouts/pages/_cart.scss */
+/* line 235, assets/styles/layouts/pages/_cart.scss */
 
 .bg h2.title {
   margin-right: 0;
@@ -18196,7 +18201,7 @@ div.product .stock.beauty_stock b {
   margin-top: 0;
 }
 
-/* line 238, assets/styles/layouts/pages/_cart.scss */
+/* line 241, assets/styles/layouts/pages/_cart.scss */
 
 .heading h3 {
   color: #363432;
@@ -18204,7 +18209,7 @@ div.product .stock.beauty_stock b {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 244, assets/styles/layouts/pages/_cart.scss */
+/* line 247, assets/styles/layouts/pages/_cart.scss */
 
 .heading p {
   color: #434343;
@@ -18212,14 +18217,14 @@ div.product .stock.beauty_stock b {
   font-weight: 300;
 }
 
-/* line 250, assets/styles/layouts/pages/_cart.scss */
+/* line 253, assets/styles/layouts/pages/_cart.scss */
 
 #do_action .total_area {
   padding-bottom: 18px !important;
   background: #fff;
 }
 
-/* line 255, assets/styles/layouts/pages/_cart.scss */
+/* line 258, assets/styles/layouts/pages/_cart.scss */
 
 #do_action .total_area,
 #do_action .chose_area {
@@ -18229,20 +18234,20 @@ div.product .stock.beauty_stock b {
   margin-bottom: 80px;
 }
 
-/* line 263, assets/styles/layouts/pages/_cart.scss */
+/* line 266, assets/styles/layouts/pages/_cart.scss */
 
 .total_area span {
   float: right;
 }
 
-/* line 267, assets/styles/layouts/pages/_cart.scss */
+/* line 270, assets/styles/layouts/pages/_cart.scss */
 
 .total_area input,
 .total_area span#wcus-shipping-cost {
   float: left;
 }
 
-/* line 272, assets/styles/layouts/pages/_cart.scss */
+/* line 275, assets/styles/layouts/pages/_cart.scss */
 
 .total_area span#wcus-shipping-cost {
   max-width: 100%;
@@ -18250,7 +18255,7 @@ div.product .stock.beauty_stock b {
   font-weight: 700;
 }
 
-/* line 278, assets/styles/layouts/pages/_cart.scss */
+/* line 281, assets/styles/layouts/pages/_cart.scss */
 
 .total_area ul li {
   background: #e6e4df;
@@ -18261,7 +18266,7 @@ div.product .stock.beauty_stock b {
   text-align: left;
 }
 
-/* line 286, assets/styles/layouts/pages/_cart.scss */
+/* line 289, assets/styles/layouts/pages/_cart.scss */
 
 .total_area ul li ul li {
   margin: 0;
@@ -18269,7 +18274,7 @@ div.product .stock.beauty_stock b {
   min-height: 38px;
 }
 
-/* line 293, assets/styles/layouts/pages/_cart.scss */
+/* line 296, assets/styles/layouts/pages/_cart.scss */
 
 .user_option label {
   color: #696763;
@@ -18277,7 +18282,7 @@ div.product .stock.beauty_stock b {
   margin-left: 10px;
 }
 
-/* line 299, assets/styles/layouts/pages/_cart.scss */
+/* line 302, assets/styles/layouts/pages/_cart.scss */
 
 .user_info {
   display: block;
@@ -18286,7 +18291,7 @@ div.product .stock.beauty_stock b {
   overflow: hidden;
 }
 
-/* line 306, assets/styles/layouts/pages/_cart.scss */
+/* line 309, assets/styles/layouts/pages/_cart.scss */
 
 .user_info label {
   color: #696763;
@@ -18295,27 +18300,27 @@ div.product .stock.beauty_stock b {
   font-weight: normal;
 }
 
-/* line 313, assets/styles/layouts/pages/_cart.scss */
+/* line 316, assets/styles/layouts/pages/_cart.scss */
 
 .user_info .single_field {
   width: 31%;
 }
 
-/* line 317, assets/styles/layouts/pages/_cart.scss */
+/* line 320, assets/styles/layouts/pages/_cart.scss */
 
 .user_info .single_field.zip-field input {
   background: transparent;
   border: 1px solid #f0f0e9;
 }
 
-/* line 322, assets/styles/layouts/pages/_cart.scss */
+/* line 325, assets/styles/layouts/pages/_cart.scss */
 
 .user_info > li {
   float: left;
   margin-right: 10px;
 }
 
-/* line 327, assets/styles/layouts/pages/_cart.scss */
+/* line 330, assets/styles/layouts/pages/_cart.scss */
 
 .user_info input,
 select,
@@ -18329,19 +18334,19 @@ textarea {
   resize: none;
 }
 
-/* line 339, assets/styles/layouts/pages/_cart.scss */
+/* line 342, assets/styles/layouts/pages/_cart.scss */
 
 .user_info select:focus {
   border: none;
 }
 
-/* line 343, assets/styles/layouts/pages/_cart.scss */
+/* line 346, assets/styles/layouts/pages/_cart.scss */
 
 .chose_area .update {
   margin-left: 40px;
 }
 
-/* line 347, assets/styles/layouts/pages/_cart.scss */
+/* line 350, assets/styles/layouts/pages/_cart.scss */
 
 .update,
 .check_out {
@@ -18354,19 +18359,28 @@ textarea {
   font-size: 14px !important;
 }
 
-/* line 358, assets/styles/layouts/pages/_cart.scss */
+/* line 360, assets/styles/layouts/pages/_cart.scss */
+
+.update:hover,
+.check_out:hover {
+  color: #333 !important;
+  background-color: #ebebeb !important;
+  border-color: #adadad !important;
+}
+
+/* line 367, assets/styles/layouts/pages/_cart.scss */
 
 .update {
   margin-left: 40px;
 }
 
-/* line 362, assets/styles/layouts/pages/_cart.scss */
+/* line 371, assets/styles/layouts/pages/_cart.scss */
 
 .check_out {
   margin-left: 20px !important;
 }
 
-/* line 366, assets/styles/layouts/pages/_cart.scss */
+/* line 375, assets/styles/layouts/pages/_cart.scss */
 
 .quantity input::-webkit-outer-spin-button,
 .quantity input::-webkit-inner-spin-button {
@@ -18374,12 +18388,375 @@ textarea {
   margin: 0;
 }
 
-/* line 372, assets/styles/layouts/pages/_cart.scss */
+/* line 381, assets/styles/layouts/pages/_cart.scss */
 
 .quantity input.qty {
   appearance: textfield;
   -webkit-appearance: none;
   -moz-appearance: textfield;
+}
+
+/* line 1, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout {
+  background: #fff;
+}
+
+/* line 4, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout .woocommerce table.shop_table td {
+  border: inherit;
+}
+
+/* line 8, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout .woocommerce table.shop_table tfoot th {
+  border: 0 none;
+}
+
+/* line 12, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout .woocommerce ul#shipping_method .amount {
+  font-weight: 300;
+}
+
+/* line 16, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout h2#order_review_heading {
+  color: #696763;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+/* line 27, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout .cart_info .table.table-condensed.total-result {
+  margin-bottom: 10px;
+  margin-top: 35px;
+  color: #696763;
+  border: 0 none;
+}
+
+/* line 34, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout .cart_info td.cart_product.product-thumbnail {
+  min-width: 218px;
+}
+
+/* line 38, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout .cart_info td.cart_description.product-name {
+  min-width: 300px;
+}
+
+/* line 42, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout .cart_info td.cart_price.product-price {
+  min-width: 76px;
+}
+
+/* line 46, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout .cart_info td.cart_quantity.product-quantity {
+  min-width: 226px;
+}
+
+/* line 51, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout .cart_info table tbody.review-order tr td {
+  border-top: 0 none;
+  vertical-align: inherit;
+  margin-right: 5px;
+  padding: 5px;
+  line-height: 1.428571429;
+  font-size: 14px;
+  color: #696763;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300 !important;
+}
+
+/* line 62, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout .cart_info table tbody.review-order tr td span {
+  float: right;
+}
+
+/* line 66, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout .cart_info table tbody.review-order tr td label {
+  width: 100%;
+  line-height: 1.428571429;
+  font-size: 14px;
+  color: #696763;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300 !important;
+}
+
+/* line 74, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout .cart_info table tbody.review-order tr td label span#wcus-shipping-cost {
+  float: none;
+}
+
+/* line 80, assets/styles/layouts/pages/_checkout.scss */
+
+body.woocommerce-checkout .cart_info table tbody.review-order tr.order-total span {
+  color: #fe980f;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* line 89, assets/styles/layouts/pages/_checkout.scss */
+
+.woocommerce-billing-fields {
+  padding: 0 15px;
+}
+
+/* line 92, assets/styles/layouts/pages/_checkout.scss */
+
+.woocommerce-billing-fields h3 {
+  min-height: 45.33px;
+}
+
+/* line 100, assets/styles/layouts/pages/_checkout.scss */
+
+.woocommerce-shipping-fields__field-wrapper .custom-input input,
+.woocommerce-shipping-fields__field-wrapper .custom-input select,
+.shopper-info.woocommerce-billing-fields__field-wrapper .custom-input input,
+.shopper-info.woocommerce-billing-fields__field-wrapper .custom-input select {
+  background: #f0f0e9;
+  border: 0 none;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  font-weight: 300;
+}
+
+/* line 112, assets/styles/layouts/pages/_checkout.scss */
+
+.woocommerce form .form-row {
+  margin-bottom: 10px;
+}
+
+/* line 116, assets/styles/layouts/pages/_checkout.scss */
+
+.woocommerce-shipping-fields,
+.woocommerce-additional-fields {
+  padding: 0 15px;
+}
+
+/* line 121, assets/styles/layouts/pages/_checkout.scss */
+
+.woocommerce-shipping-fields {
+  padding-left: 45px;
+}
+
+/* line 125, assets/styles/layouts/pages/_checkout.scss */
+
+.woocommerce-shipping-fields__field-wrapper {
+  margin-left: -45px;
+}
+
+/* line 129, assets/styles/layouts/pages/_checkout.scss */
+
+.woocommerce-additional-fields__field-wrapper {
+  margin-left: -15px;
+}
+
+/* line 133, assets/styles/layouts/pages/_checkout.scss */
+
+#ship-to-different-address {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+/* line 1, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account {
+  background: #fff;
+}
+
+/* line 4, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .container.desc {
+  display: block;
+  margin-bottom: 185px;
+  margin-top: 185px;
+  overflow: hidden;
+}
+
+/* line 12, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .login-form h2 {
+  color: #696763;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  line-height: 1.1;
+  text-align: left;
+}
+
+/* line 23, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .login-form form.login {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 29, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .login-form form span {
+  line-height: 25px;
+}
+
+/* line 32, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .login-form form span.remember_me {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+/* line 38, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .login-form form span input.woocommerce-form__input-checkbox {
+  width: 15px !important;
+  float: left;
+  height: 15px;
+  margin: 4px 5px 0;
+}
+
+/* line 45, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .login-form form span.password-input input[type=password] {
+  width: auto;
+  height: 40px;
+}
+
+/* line 52, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .login-form form input,
+body.woocommerce-account .signup-form form input {
+  background: #f0f0e9;
+  border: medium none;
+  color: #696763;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  height: 40px;
+  margin-bottom: 10px !important;
+  outline: medium none !important;
+  padding-left: 10px;
+  width: 100% !important;
+}
+
+/* line 68, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .login-form form button,
+body.woocommerce-account .signup-form form button {
+  background: #fe980f;
+  border: medium none;
+  border-radius: 0;
+  color: #fff;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  padding: 6px 25px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  float: none !important;
+}
+
+/* line 88, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .login-form form button {
+  margin-top: 23px;
+}
+
+/* line 92, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .signup-form form button {
+  margin-top: 0;
+}
+
+/* line 97, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .signup-form h2 {
+  color: #696763;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  line-height: 1.1;
+  text-align: left;
+}
+
+/* line 108, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .signup-form form.register {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 114, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .signup-form form span {
+  line-height: 25px;
+}
+
+/* line 117, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .signup-form form span.remember_me {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+/* line 123, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .signup-form form span input.woocommerce-form__input-checkbox {
+  width: 15px !important;
+  float: left;
+  height: 15px;
+  margin: 4px 5px 0;
+}
+
+/* line 130, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .signup-form form span.password-input input[type=password] {
+  width: auto;
+  height: 40px;
+}
+
+/* line 137, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .or {
+  background: #fe980f;
+  border-radius: 40px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 75px;
+  text-align: center;
+  width: 50px;
 }
 
 /* line 3, assets/styles/layouts/blocks/_tilt.scss */

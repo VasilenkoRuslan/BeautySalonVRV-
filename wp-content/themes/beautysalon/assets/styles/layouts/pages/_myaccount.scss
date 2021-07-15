@@ -1,0 +1,149 @@
+body.woocommerce-account {
+  background: #fff;
+
+  .container.desc {
+    display: block;
+    margin-bottom: 185px;
+    margin-top: 185px;
+    overflow: hidden;
+  }
+
+  .login-form {
+    h2 {
+      color: #696763;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 30px;
+      margin-top: 20px;
+      line-height: 1.1;
+      text-align: left;
+    }
+
+    form.login {
+      border: 0 none;
+      padding: 0;
+      margin: 0;
+    }
+
+    form span {
+      line-height: 25px;
+
+      &.remember_me {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+      }
+
+      input.woocommerce-form__input-checkbox {
+        width: 15px !important;
+        float: left;
+        height: 15px;
+        margin: 4px 5px 0;
+      }
+
+      &.password-input input[type=password] {
+        width: auto;
+        height: 40px;
+      }
+    }
+  }
+
+  .login-form form input,
+  .signup-form form input {
+    background: #f0f0e9;
+    border: medium none;
+    color: #696763;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    height: 40px;
+    margin-bottom: 10px !important;
+    outline: medium none !important;
+    padding-left: 10px;
+    width: 100% !important;
+  }
+
+  .login-form form button,
+  .signup-form form button {
+    background: #fe980f;
+    border: medium none;
+    border-radius: 0;
+    color: #fff;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    padding: 6px 25px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    float: none !important;
+  }
+
+  .login-form form button {
+    margin-top: 23px;
+  }
+
+  .signup-form form button {
+    margin-top: 0;
+  }
+
+  .signup-form {
+    h2 {
+      color: #696763;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 30px;
+      margin-top: 20px;
+      line-height: 1.1;
+      text-align: left;
+    }
+
+    form.register {
+      border: 0 none;
+      padding: 0;
+      margin: 0;
+    }
+
+    form span {
+      line-height: 25px;
+
+      &.remember_me {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+      }
+
+      input.woocommerce-form__input-checkbox {
+        width: 15px !important;
+        float: left;
+        height: 15px;
+        margin: 4px 5px 0;
+      }
+
+      &.password-input input[type=password] {
+        width: auto;
+        height: 40px;
+      }
+    }
+  }
+
+  .or {
+    background: #fe980f;
+    border-radius: 40px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 75px;
+    text-align: center;
+    width: 50px;
+  }
+}

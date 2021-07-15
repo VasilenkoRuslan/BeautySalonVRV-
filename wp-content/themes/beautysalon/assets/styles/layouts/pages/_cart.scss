@@ -1,5 +1,8 @@
+body.woocommerce-cart {
+  background-color: #fff;
+}
+
 .shipping {
-  background-color: #f2f2f2;
   margin-top: 40px;
   overflow: hidden;
   padding-top: 20px;
@@ -79,7 +82,7 @@
   content: " ";
 }
 
-#cart_items .cart_info {
+.cart_info {
   margin-bottom: 50px;
 
   .cart_menu {
@@ -353,6 +356,12 @@ textarea {
   border: none;
   padding: 5px 15px !important;
   font-size: 14px !important;
+
+  &:hover {
+    color: #333 !important;
+    background-color: #ebebeb !important;
+    border-color: #adadad !important;
+  }
 }
 
 .update {

@@ -1,0 +1,179 @@
+2021-07-13T16:01:48+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Checkout as array in /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-billing.php:36
+Stack trace:
+#0 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(294): wc_get_template('checkout/form-b...', Array)
+#2 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): WC_Checkout->checkout_form_billing('')
+#3 /var/www/html/beauty/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/beauty/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-checkout.php(42): do_action('woocommerce_che...')
+#6 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/b...')
+#7 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#8 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#9 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#10 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#11 /var/www/html/beauty/wp-includes/shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#12 [internal function]: do_shortcode_tag(Array)
+#13 /var/www/html/beauty/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#14 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): do_shortcode('[woocommerce_ch...')
+#15 /var/www/html/beauty/wp-includes/plugin.php(212): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#16 /var/www/html/beauty/wp-content/themes/beautysalon/page.php(7): apply_filters('the_content', '<!-- wp:shortco...')
+#17 /var/www/html/beauty/wp-includes/template-loader.php(106): include('/var/www/html/b...')
+#18 /var/www/html/beauty/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#19 /var/www/html/beauty/index.php(17): require('/var/www/html/b...')
+#20 {main}
+  thrown in /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-billing.php on line 36
+
+2021-07-13T16:02:07+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Checkout::billing_first_name() in /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-billing.php:36
+Stack trace:
+#0 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(294): wc_get_template('checkout/form-b...', Array)
+#2 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): WC_Checkout->checkout_form_billing('')
+#3 /var/www/html/beauty/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/beauty/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-checkout.php(42): do_action('woocommerce_che...')
+#6 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/b...')
+#7 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#8 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#9 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#10 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#11 /var/www/html/beauty/wp-includes/shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#12 [internal function]: do_shortcode_tag(Array)
+#13 /var/www/html/beauty/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#14 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): do_shortcode('[woocommerce_ch...')
+#15 /var/www/html/beauty/wp-includes/plugin.php(212): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#16 /var/www/html/beauty/wp-content/themes/beautysalon/page.php(7): apply_filters('the_content', '<!-- wp:shortco...')
+#17 /var/www/html/beauty/wp-includes/template-loader.php(106): include('/var/www/html/b...')
+#18 /var/www/html/beauty/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#19 /var/www/html/beauty/index.php(17): require('/var/www/html/b...')
+#20 {main}
+  thrown in /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-billing.php on line 36
+
+2021-07-13T16:02:10+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Checkout::billing_first_name() in /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-billing.php:36
+Stack trace:
+#0 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(294): wc_get_template('checkout/form-b...', Array)
+#2 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): WC_Checkout->checkout_form_billing('')
+#3 /var/www/html/beauty/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/beauty/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-checkout.php(42): do_action('woocommerce_che...')
+#6 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/b...')
+#7 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#8 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#9 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#10 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#11 /var/www/html/beauty/wp-includes/shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#12 [internal function]: do_shortcode_tag(Array)
+#13 /var/www/html/beauty/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#14 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): do_shortcode('[woocommerce_ch...')
+#15 /var/www/html/beauty/wp-includes/plugin.php(212): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#16 /var/www/html/beauty/wp-content/themes/beautysalon/page.php(7): apply_filters('the_content', '<!-- wp:shortco...')
+#17 /var/www/html/beauty/wp-includes/template-loader.php(106): include('/var/www/html/b...')
+#18 /var/www/html/beauty/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#19 /var/www/html/beauty/index.php(17): require('/var/www/html/b...')
+#20 {main}
+  thrown in /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-billing.php on line 36
+
+2021-07-13T16:58:25+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-template-functions.php:2694
+Stack trace:
+#0 /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-billing.php(43): woocommerce_form_field('billing_first_n...', Array, NULL)
+#1 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/b...')
+#2 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(294): wc_get_template('checkout/form-b...', Array)
+#3 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): WC_Checkout->checkout_form_billing('')
+#4 /var/www/html/beauty/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/beauty/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#6 /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-checkout.php(42): do_action('woocommerce_che...')
+#7 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/b...')
+#8 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#9 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#10 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#11 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#12 /var/www/html/beauty/wp-includes/shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#13 [internal function]: do_shortcode_tag(Array)
+#14 /var/www/html/beauty/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#15 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): do_shortcode('[woocommerce_ch...')
+#16 /var/www/html/beauty/wp-includes/plugin.php(212): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#17 /var/www/html/beauty/wp-content/themes/beautysalon/page.php(7): apply_filters('the_content', '<!-- wp:shortco...')
+#18 /var/www/html/beauty/wp-includes/template-loader.php(106): include('/var/www/html/b...')
+#19 /var/www/html/beauty/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#20 /var/www/html/beauty/index.php(17): require('/var/www/html/b...')
+#21 {main}
+  thrown in /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 2694
+
+2021-07-13T16:59:09+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-template-functions.php:2694
+Stack trace:
+#0 /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-billing.php(43): woocommerce_form_field('billing_first_n...', Array, NULL)
+#1 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/b...')
+#2 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(294): wc_get_template('checkout/form-b...', Array)
+#3 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): WC_Checkout->checkout_form_billing('')
+#4 /var/www/html/beauty/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/beauty/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#6 /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-checkout.php(42): do_action('woocommerce_che...')
+#7 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/b...')
+#8 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#9 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#10 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#11 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#12 /var/www/html/beauty/wp-includes/shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#13 [internal function]: do_shortcode_tag(Array)
+#14 /var/www/html/beauty/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#15 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): do_shortcode('[woocommerce_ch...')
+#16 /var/www/html/beauty/wp-includes/plugin.php(212): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#17 /var/www/html/beauty/wp-content/themes/beautysalon/page.php(7): apply_filters('the_content', '<!-- wp:shortco...')
+#18 /var/www/html/beauty/wp-includes/template-loader.php(106): include('/var/www/html/b...')
+#19 /var/www/html/beauty/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#20 /var/www/html/beauty/index.php(17): require('/var/www/html/b...')
+#21 {main}
+  thrown in /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 2694
+
+2021-07-13T16:59:19+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-template-functions.php:2694
+Stack trace:
+#0 /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-billing.php(43): woocommerce_form_field('billing_first_n...', Array, NULL)
+#1 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/b...')
+#2 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(294): wc_get_template('checkout/form-b...', Array)
+#3 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): WC_Checkout->checkout_form_billing('')
+#4 /var/www/html/beauty/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/beauty/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#6 /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-checkout.php(42): do_action('woocommerce_che...')
+#7 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/b...')
+#8 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#9 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#10 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#11 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#12 /var/www/html/beauty/wp-includes/shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#13 [internal function]: do_shortcode_tag(Array)
+#14 /var/www/html/beauty/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#15 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): do_shortcode('[woocommerce_ch...')
+#16 /var/www/html/beauty/wp-includes/plugin.php(212): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#17 /var/www/html/beauty/wp-content/themes/beautysalon/page.php(7): apply_filters('the_content', '<!-- wp:shortco...')
+#18 /var/www/html/beauty/wp-includes/template-loader.php(106): include('/var/www/html/b...')
+#19 /var/www/html/beauty/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#20 /var/www/html/beauty/index.php(17): require('/var/www/html/b...')
+#21 {main}
+  thrown in /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 2694
+
+2021-07-13T16:59:32+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-template-functions.php:2694
+Stack trace:
+#0 /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-billing.php(43): woocommerce_form_field('billing_first_n...', Array, NULL)
+#1 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/b...')
+#2 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(294): wc_get_template('checkout/form-b...', Array)
+#3 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): WC_Checkout->checkout_form_billing('')
+#4 /var/www/html/beauty/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/beauty/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#6 /var/www/html/beauty/wp-content/themes/beautysalon/woocommerce/checkout/form-checkout.php(42): do_action('woocommerce_che...')
+#7 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/b...')
+#8 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#9 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#10 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#11 /var/www/html/beauty/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#12 /var/www/html/beauty/wp-includes/shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#13 [internal function]: do_shortcode_tag(Array)
+#14 /var/www/html/beauty/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#15 /var/www/html/beauty/wp-includes/class-wp-hook.php(292): do_shortcode('[woocommerce_ch...')
+#16 /var/www/html/beauty/wp-includes/plugin.php(212): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#17 /var/www/html/beauty/wp-content/themes/beautysalon/page.php(7): apply_filters('the_content', '<!-- wp:shortco...')
+#18 /var/www/html/beauty/wp-includes/template-loader.php(106): include('/var/www/html/b...')
+#19 /var/www/html/beauty/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#20 /var/www/html/beauty/index.php(17): require('/var/www/html/b...')
+#21 {main}
+  thrown in /var/www/html/beauty/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 2694
+

@@ -1,0 +1,137 @@
+body.woocommerce-checkout {
+  background: #fff;
+
+  .woocommerce table.shop_table td {
+    border: inherit;
+  }
+
+  .woocommerce table.shop_table tfoot th {
+    border: 0 none;
+  }
+
+  .woocommerce ul#shipping_method .amount {
+    font-weight: 300;
+  }
+
+  h2#order_review_heading {
+    color: #696763;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+  }
+
+  .cart_info {
+    .table.table-condensed.total-result {
+      margin-bottom: 10px;
+      margin-top: 35px;
+      color: #696763;
+      border: 0 none;
+    }
+
+    td.cart_product.product-thumbnail {
+      min-width: 218px;
+    }
+
+    td.cart_description.product-name {
+      min-width: 300px;
+    }
+
+    td.cart_price.product-price {
+      min-width: 76px;
+    }
+
+    td.cart_quantity.product-quantity {
+      min-width: 226px;
+    }
+
+    table tbody.review-order tr {
+      td {
+        border-top: 0 none;
+        vertical-align: inherit;
+        margin-right: 5px;
+        padding: 5px;
+        line-height: 1.428571429;
+        font-size: 14px;
+        color: #696763;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300 !important;
+
+        span {
+          float: right;
+        }
+
+        label {
+          width: 100%;
+          line-height: 1.428571429;
+          font-size: 14px;
+          color: #696763;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300 !important;
+
+          span#wcus-shipping-cost {
+            float: none;
+          }
+        }
+      }
+
+      &.order-total span {
+        color: #fe980f;
+        font-weight: 700;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.woocommerce-billing-fields {
+  padding: 0 15px;
+
+  h3 {
+    min-height: 45.33px;
+  }
+}
+
+.woocommerce-shipping-fields__field-wrapper,
+.shopper-info.woocommerce-billing-fields__field-wrapper {
+  .custom-input {
+    input,
+    select {
+      background: #f0f0e9;
+      border: 0 none;
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 100%;
+      font-weight: 300;
+    }
+  }
+}
+
+.woocommerce form .form-row {
+  margin-bottom: 10px;
+}
+
+.woocommerce-shipping-fields,
+.woocommerce-additional-fields {
+  padding: 0 15px;
+}
+
+.woocommerce-shipping-fields {
+  padding-left: 45px;
+}
+
+.woocommerce-shipping-fields__field-wrapper {
+  margin-left: -45px;
+}
+
+.woocommerce-additional-fields__field-wrapper {
+  margin-left: -15px;
+}
+
+#ship-to-different-address {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}

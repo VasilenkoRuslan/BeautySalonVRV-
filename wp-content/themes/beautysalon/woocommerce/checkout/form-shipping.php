@@ -36,6 +36,9 @@ defined( 'ABSPATH' ) || exit;
 				$fields = $checkout->get_checkout_fields( 'shipping' );
 
 				foreach ( $fields as $key => $field ) {
+					$field['placeholder'] = $field['label'];
+					$field['label'] = '';
+					$field['class'] = array('custom-input');
 					woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
 				}
 				?>
