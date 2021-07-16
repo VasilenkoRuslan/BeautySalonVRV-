@@ -16640,6 +16640,12 @@ a::after {
   transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
+/* line 58, assets/styles/commons/_general.scss */
+
+li {
+  list-style-type: none;
+}
+
 /* line 1, assets/styles/layouts/sections/_header.scss */
 
 hr {
@@ -16680,28 +16686,29 @@ hr {
 
 .navbar-inverse .navbar-header h4 {
   color: #fff;
+  font-weight: 500;
 }
 
-/* line 32, assets/styles/layouts/sections/_header.scss */
+/* line 33, assets/styles/layouts/sections/_header.scss */
 
 .navbar-inverse i {
   color: #ff7878;
   letter-spacing: 1px;
 }
 
-/* line 38, assets/styles/layouts/sections/_header.scss */
+/* line 39, assets/styles/layouts/sections/_header.scss */
 
 .navbar-inverse img {
   max-height: 40px;
 }
 
-/* line 43, assets/styles/layouts/sections/_header.scss */
+/* line 44, assets/styles/layouts/sections/_header.scss */
 
 .navbar-nav > .active > a {
   background: #ff7878;
 }
 
-/* line 47, assets/styles/layouts/sections/_header.scss */
+/* line 48, assets/styles/layouts/sections/_header.scss */
 
 #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item > a.mega-menu-link {
   line-height: 20px;
@@ -16721,32 +16728,32 @@ hr {
   text-transform: uppercase;
 }
 
-/* line 63, assets/styles/layouts/sections/_header.scss */
+/* line 64, assets/styles/layouts/sections/_header.scss */
 
 #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link {
   background: #ff7878;
 }
 
-/* line 66, assets/styles/layouts/sections/_header.scss */
+/* line 67, assets/styles/layouts/sections/_header.scss */
 
 #mega-menu-wrap-main-menu #mega-menu-main-menu > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link:hover {
   background: #090909;
 }
 
-/* line 72, assets/styles/layouts/sections/_header.scss */
+/* line 73, assets/styles/layouts/sections/_header.scss */
 
 .lang-container ul {
   margin-left: 0;
   padding-left: 0;
 }
 
-/* line 77, assets/styles/layouts/sections/_header.scss */
+/* line 78, assets/styles/layouts/sections/_header.scss */
 
 .lang-container ul li.wpml-ls-item a {
   padding: 0;
 }
 
-/* line 81, assets/styles/layouts/sections/_header.scss */
+/* line 82, assets/styles/layouts/sections/_header.scss */
 
 .lang-container ul li.wpml-ls-item ul.sub-menu {
   display: none;
@@ -16754,20 +16761,20 @@ hr {
   padding-left: 0;
 }
 
-/* line 88, assets/styles/layouts/sections/_header.scss */
+/* line 89, assets/styles/layouts/sections/_header.scss */
 
 .lang-container ul li.wpml-ls-item:hover ul.sub-menu {
   display: block;
   right: 0;
 }
 
-/* line 92, assets/styles/layouts/sections/_header.scss */
+/* line 93, assets/styles/layouts/sections/_header.scss */
 
 .lang-container ul li.wpml-ls-item:hover ul.sub-menu li {
   list-style-type: none;
 }
 
-/* line 95, assets/styles/layouts/sections/_header.scss */
+/* line 96, assets/styles/layouts/sections/_header.scss */
 
 .lang-container ul li.wpml-ls-item:hover ul.sub-menu li a {
   color: #ff7878;
@@ -16775,7 +16782,7 @@ hr {
   padding: 0;
 }
 
-/* line 100, assets/styles/layouts/sections/_header.scss */
+/* line 101, assets/styles/layouts/sections/_header.scss */
 
 .lang-container ul li.wpml-ls-item:hover ul.sub-menu li a:hover {
   background-color: #eee;
@@ -16827,6 +16834,53 @@ hr {
 
 .credits {
   color: #999;
+}
+
+/* line 39, assets/styles/layouts/sections/_footer.scss */
+
+#f .navbar ul.navbar-nav .display-3 {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+/* line 46, assets/styles/layouts/sections/_footer.scss */
+
+#f .navbar ul.navbar-nav div {
+  text-align: left;
+}
+
+/* line 49, assets/styles/layouts/sections/_footer.scss */
+
+#f .navbar ul.navbar-nav div ul.menu {
+  padding-left: 0;
+}
+
+/* line 52, assets/styles/layouts/sections/_footer.scss */
+
+#f .navbar ul.navbar-nav div ul.menu li a {
+  color: #ffed85;
+  border-bottom: 2px solid #ff744e;
+  border-right: 2px solid #ff744e;
+  margin: 10px 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* line 59, assets/styles/layouts/sections/_footer.scss */
+
+#f .navbar ul.navbar-nav div ul.menu li a:hover {
+  padding-right: 50px;
+  border: 2px solid #ff744e;
+  color: #ff744e;
+}
+
+/* line 71, assets/styles/layouts/sections/_footer.scss */
+
+#f .textwidget p {
+  color: #fff !important;
+  font-weight: 400;
 }
 
 /* ==========================================================================
@@ -18757,6 +18811,101 @@ body.woocommerce-account .or {
   margin-top: 75px;
   text-align: center;
   width: 50px;
+}
+
+/* line 153, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .container.desc {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 0;
+}
+
+/* line 158, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .container.desc a {
+  color: #121212;
+}
+
+/* line 162, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .container.desc p {
+  font-size: 115%;
+}
+
+/* line 166, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .container.desc .button {
+  background-color: #fe980f !important;
+  color: #fff !important;
+  padding: 5px 15px !important;
+}
+
+/* line 173, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .my-account-tab-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 177, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .my-account-tab-menu a {
+  width: 100%;
+  background: #eee;
+  border: 2px solid inherit;
+  border-radius: 5px;
+  color: #121212;
+  max-width: 200px;
+  min-height: 50px;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* line 192, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .my-account-tab-menu a:hover,
+body.woocommerce-account .my-account-tab-menu a.active {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  max-width: 300px;
+  background-color: #fe980f;
+  color: #fff;
+  border-color: #fe980f;
+}
+
+/* line 203, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .woocommerce-MyAccount-content {
+  float: none;
+  width: 90%;
+}
+
+/* line 207, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .woocommerce-MyAccount-content h1 {
+  margin: 0 auto;
+}
+
+/* line 211, assets/styles/layouts/pages/_myaccount.scss */
+
+body.woocommerce-account .woocommerce-MyAccount-content p {
+  text-align: left;
 }
 
 /* line 3, assets/styles/layouts/blocks/_tilt.scss */

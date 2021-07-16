@@ -33,3 +33,44 @@
   color: #999;
 }
 
+#f {
+  .navbar {
+    ul.navbar-nav {
+      .display-3 {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: underline;
+        padding-bottom: 15px;
+      }
+
+      div {
+        text-align: left;
+
+        ul.menu {
+          padding-left: 0;
+
+          li a {
+            color: #ffed85;
+            border-bottom: 2px solid #ff744e;
+            border-right: 2px solid #ff744e;
+            margin: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+            &:hover {
+              padding-right: 50px;
+              border: 2px solid #ff744e;
+              color: #ff744e;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .textwidget {
+    p {
+      color: #fff !important;
+      font-weight: 400;
+    }
+  }
+}

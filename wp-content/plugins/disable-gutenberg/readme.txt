@@ -9,9 +9,9 @@ Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Contributors: specialk
 Requires at least: 4.9
-Tested up to: 5.7
-Stable tag: 2.4
-Version: 2.4
+Tested up to: 5.8
+Stable tag: 2.5
+Version: 2.5
 Requires PHP: 5.6.20
 Text Domain: disable-gutenberg
 Domain Path: /languages
@@ -38,6 +38,8 @@ The Disable Gutenberg plugin restores the classic (original) WordPress editor an
 
 Just activate and done! The default plugin settings are configured to hide all traces of the Gutenberg Block Editor, and fully restore the original Classic Editor. Further options for customizing when/where Gutenberg is enabled are available in the plugin settings.
 
+> NEW! Disable Block Widgets and restore Classic Widgets :)
+
 
 **Options**
 
@@ -47,6 +49,7 @@ Just activate and done! The default plugin settings are configured to hide all t
 * Disable Gutenberg for any theme template
 * Disable Gutenberg for any post/page IDs
 * Disable Gutenberg admin notice (nag)
+* Option to restore Classic Widgets
 * Option to hide the plugin menu item
 * Option to hide the Gutenberg plugin menu item (settings link)
 * Adds "Classic Editor" link to each post on the Posts screen
@@ -294,6 +297,12 @@ Thank you to everyone for using Disable Gutenberg and for all the [awesome 5-sta
 
 If you have any feedback or suggestions to make this plugin the absolute best it can be, and/or would like to help with development, please reach me via my [contact form](https://perishablepress.com/contact/) at Perishable Press.
 
+
+**2.5 (2021/07/13)**
+
+* Adds option to disable block widgets and use classic widgets
+* Generates new default translation template
+* Tests on WordPress 5.8
 
 **2.4 (2021/02/08)**
 

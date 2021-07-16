@@ -9,6 +9,8 @@ require_once THEME_DIR . '/inc/hooks/woocommerce/cart/cart.php';
 
 require_once THEME_DIR . '/inc/hooks/woocommerce/checkout/checkout.php';
 
+require_once THEME_DIR . '/inc/hooks/woocommerce/account/account.php';
+
 require_once THEME_DIR . '/inc/hooks/woocommerce/global/subcategories.php';
 require_once THEME_DIR . '/inc/hooks/woocommerce/global/price.php';
 require_once THEME_DIR . '/inc/hooks/woocommerce/global/mini-cart-subtotal.php';

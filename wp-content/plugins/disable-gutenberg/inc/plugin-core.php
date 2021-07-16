@@ -16,6 +16,8 @@ function disable_gutenberg_init() {
 	
 	if (disable_gutenberg()) disable_gutenberg_remove();
 	
+	disable_gutenberg_restore_widgets();
+	
 }
 
 function disable_gutenberg($post_id = false) {
@@ -425,5 +427,26 @@ function disable_gutenberg_get_post_id($post_id = false) {
 	}
 	
 	return $post_id;
+	
+}
+
+function disable_gutenberg_restore_widgets() {
+	
+	$restore = false;
+	
+	$options = disable_gutenberg_get_options();
+	
+	if (isset($options['classic-widgets'])) {
+		
+		$restore = (!empty($options['classic-widgets'])) ? true : false;
+		
+	}
+	
+	if ($restore) {
+		
+		add_filter('gutenberg_use_widgets_block_editor', '__return_false');
+		add_filter('use_widgets_block_editor', '__return_false');
+		
+	}
 	
 }
