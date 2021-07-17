@@ -14,6 +14,7 @@ import './pages/team';
 import './pages/map';
 import './pages/fbi_wanted';
 import './pages/account';
+import './pages/home';
 
 //elements
 import './elements/input_buttons';

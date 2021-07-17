@@ -3,6 +3,10 @@
 include_once THEME_DIR . '/inc/classes/ThemeHome.class.php';
 $home_page = new ThemeHome();
 ?>
+
+<?= $home_page->display(); ?>
+<?= $home_page->get_archive_products(); ?>
+<?= $home_page->display_block_with_tabs_cats(); ?>
 <?= $home_page->get_header_board(); ?>
 <?= $home_page->get_block_w_items(); ?>
 <?= $home_page->block_dg_items(); ?>

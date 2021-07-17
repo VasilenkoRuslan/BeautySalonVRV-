@@ -74,7 +74,7 @@ module.exports = jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(14);
+module.exports = __webpack_require__(15);
 
 
 /***/ }),
@@ -103,8 +103,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_fbi_wanted___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__pages_fbi_wanted__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_account__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_account___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__pages_account__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__elements_input_buttons__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__elements_input_buttons___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__elements_input_buttons__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__pages_home__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__elements_input_buttons__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__elements_input_buttons___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__elements_input_buttons__);
  //plugins
 
 
@@ -113,6 +115,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
  //pages
+
 
 
 
@@ -3233,6 +3236,24 @@ window.Chart = function (context) {
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
+/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
+  if ($('.filters-container').length > 0) {
+    var url_s = window.location.href;
+
+    if (url_s === window.location.origin + '/') {
+      var button_reset_filter = $('.reset-filters');
+      button_reset_filter.hide();
+    }
+
+    console.log(window.location.href);
+  }
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /* WEBPACK VAR INJECTION */(function(jQuery) {jQuery(function ($) {
   if (!String.prototype.getDecimals) {
     String.prototype.getDecimals = function () {
@@ -3281,7 +3302,7 @@ window.Chart = function (context) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
