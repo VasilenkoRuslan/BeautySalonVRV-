@@ -17147,7 +17147,7 @@ body.home #slider .pricing .block_price span {
   font-size: 18px;
   font-weight: 500;
   color: #ff744e;
-  background: #fff;
+  background: #eee;
   letter-spacing: 1.3px;
 }
 
@@ -18067,6 +18067,120 @@ div.product .stock.beauty_stock b {
 
 .woocommerce div.product form.cart .variations {
   width: auto;
+}
+
+/* line 241, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable .product_meta + .price {
+  display: none;
+}
+
+/* line 246, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable .variations_form table.variations {
+  min-width: 50%;
+}
+
+/* line 249, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable .variations_form table.variations tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 253, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable .variations_form table.variations tr td.label {
+  display: none;
+}
+
+/* line 257, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable .variations_form table.variations tr td.value {
+  width: 100%;
+}
+
+/* line 263, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable .variations_form .single_variation_wrap {
+  width: 100%;
+}
+
+/* line 266, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable .variations_form .single_variation_wrap .woocommerce-variation-add-to-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 271, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable .variations_form .single_variation_wrap .woocommerce-variation-add-to-cart .quantity {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+/* line 277, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable .variations_form .single_variation_wrap .woocommerce-variation-add-to-cart .single_add_to_cart_button {
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+/* line 285, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable .variations_form .single_variation_wrap .woocommerce-variation .woocommerce-variation-price .total_price {
+  text-align: center;
+}
+
+/* line 291, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable .variations_form .single_variation_wrap .woocommerce-variation .woocommerce-variation-availability .stock {
+  text-align: center;
+}
+
+/* line 299, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable .yith-wcwl-add-to-wishlist {
+  margin-bottom: 20px;
+  min-height: 25px;
+}
+
+/* line 303, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable .yith-wcwl-add-to-wishlist a.add_to_wishlist {
+  background-color: #ff744e;
+  color: #fff;
+  border: 2px solid #bbb;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-weight: 700;
+}
+
+/* line 314, assets/styles/layouts/pages/_single_product.scss */
+
+body.single-product .product-type-variable a.compare.button {
+  padding: 15px 25px;
+  background: #0cc66b;
+  border: 2px solid #000;
+  color: #fff;
+  border-radius: 5%;
 }
 
 /* line 2, assets/styles/layouts/pages/_archive.scss */

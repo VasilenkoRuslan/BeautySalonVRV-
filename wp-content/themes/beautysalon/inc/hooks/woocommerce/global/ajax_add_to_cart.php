@@ -19,7 +19,7 @@ function custom_add_to_cart_handler() {
 			}
 		}
 
-		$product = wc_get_product( $variation_id ? $variation_id : $product_id );
+		$product = wc_get_product( ($variation_id) ? $variation_id : $product_id );
 
 		// Allow product custom fields to be added as custom cart item data from $custom_data additional array variable
 		$cart_item_data = (array) apply_filters( 'woocommerce_add_cart_item_data', $cart_item_data, $product_id, $variation_id, $quantity, $custom_data );
@@ -27,7 +27,7 @@ function custom_add_to_cart_handler() {
 		// Add to cart
 		$cart_item_key = WC()->cart->add_to_cart( $product_id, $quantity, $variation_id, $variation, $cart_item_data );
 
-		if ( $cart_item_key ) {
+		if ( $cart_item_key) {
 			// Add to cart successful notice
 			wc_add_notice( sprintf(
 				'<a href="%s" class="button wc-forward">%s</a> %d &times; "%s" %s' ,

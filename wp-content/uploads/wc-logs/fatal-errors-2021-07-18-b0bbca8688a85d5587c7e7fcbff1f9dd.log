@@ -1,0 +1,8 @@
+2021-07-18T10:36:16+00:00 CRITICAL Uncaught Error: Call to undefined function shape_content_nav() in /var/www/html/beauty/wp-content/themes/beautysalon/search.php:20
+Stack trace:
+#0 /var/www/html/beauty/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/beauty/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/beauty/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/beauty/wp-content/themes/beautysalon/search.php on line 20
+

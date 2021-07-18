@@ -59,7 +59,7 @@ if (!$checkout->is_registration_enabled() && $checkout->is_registration_required
 		</form>
 			<h2 id="order_review_heading"><?php esc_html_e('Review & Payment', 'woocommerce'); ?></h2>
 
-		<form class="woocommerce-checkout-form" action="<?php echo esc_url(wc_get_checkout_url()); ?>" method="post"
+		<form class="woocommerce-cart-form" action="<?php echo esc_url(wc_get_checkout_url()); ?>" method="post"
 			  id="data">
 			<div class="table-responsive cart_info">
 				<?php do_action('woocommerce_checkout_before_order_review'); ?>

@@ -3239,13 +3239,13 @@ window.Chart = function (context) {
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
   if ($('.filters-container').length > 0) {
     var url_s = window.location.href;
+    var button_reset_filter = $('.reset-filters');
 
     if (url_s === window.location.origin + '/') {
-      var button_reset_filter = $('.reset-filters');
       button_reset_filter.hide();
+    } else {
+      button_reset_filter.show();
     }
-
-    console.log(window.location.href);
   }
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))

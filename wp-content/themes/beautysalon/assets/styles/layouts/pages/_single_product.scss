@@ -235,3 +235,88 @@ div.product .stock.beauty_stock {
 .woocommerce div.product form.cart .variations {
   width: auto;
 }
+
+body.single-product {
+  .product-type-variable {
+    .product_meta + .price {
+      display: none;
+    }
+
+    .variations_form {
+      table.variations {
+        min-width: 50%;
+
+        tr {
+          display: flex;
+          flex-direction: column;
+
+          td.label {
+            display: none;
+          }
+
+          td.value {
+            width: 100%;
+          }
+        }
+      }
+
+      .single_variation_wrap {
+        width: 100%;
+
+        .woocommerce-variation-add-to-cart {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .quantity {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+          }
+
+          .single_add_to_cart_button {
+            margin: 0 auto;
+            padding: 15px 20px;
+          }
+        }
+
+        .woocommerce-variation {
+          .woocommerce-variation-price {
+            .total_price {
+              text-align: center;
+            }
+          }
+
+          .woocommerce-variation-availability {
+            .stock {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    .yith-wcwl-add-to-wishlist {
+      margin-bottom: 20px;
+      min-height: 25px;
+
+      a.add_to_wishlist {
+        background-color: #ff744e;
+        color: #fff;
+        border: 2px solid #bbb;
+        border-radius: 10px;
+        padding: 15px 20px;
+        font-weight: 700;
+      }
+    }
+
+
+    a.compare.button {
+      padding: 15px 25px;
+      background: #0cc66b;
+      border: 2px solid #000;
+      color: #fff;
+      border-radius: 5%;
+    }
+  }
+}
