@@ -19,7 +19,6 @@ class ThemeHome
 		$cur = get_woocommerce_currency_symbol();
 		$display_only_price = null;
 		foreach ($slider_data as $numn_slide => $slider_item) {
-//			var_dump($slider_item);
 			$img_right = $slider_item['img']['sizes']['1536x1536'];
 			$title = (!empty($slider_item['title'])) ? '<h1>' . $slider_item['title'] . '</h1>' : null;
 			$subtitle = (!empty($slider_item['subtitle'])) ? '<h2>' . $slider_item['subtitle'] . '</h2>' : null;
@@ -138,6 +137,10 @@ HTML;
 
 	}
 
+	/*
+ 	* block Tabs Category and Products
+	 *  - get subcategory for tabs
+ 	*/
 	function get_category_for_tabs(): array
 	{
 		$categories = get_terms(['taxonomy' => 'product_cat']);
@@ -156,6 +159,9 @@ HTML;
 		return $arrayCat;
 	}
 
+	/*
+	 * - get html div tabs subcategory
+	 */
 	function display_cat_tabs() {
 		$arr_cats = $this->get_category_for_tabs();
 		if (empty($arr_cats)) {
@@ -177,6 +183,9 @@ HTML;
 		return $html_cat_tabs;
 	}
 
+	/*
+	 * get products by tabs subcategories
+	 */
 	function get_products_by_cats() {
 		$arr_cats = $this->get_category_for_tabs();
 		if (empty($arr_cats)) {
@@ -193,6 +202,7 @@ HTML;
 				'post_status'           => 'publish',
 				'ignore_sticky_posts'   => 1,
 				'posts_per_page'        => '4',
+				'orderby'               => 'rand',
 				'tax_query'             => array(
 					array(
 						'taxonomy'      => 'product_cat',
@@ -223,6 +233,9 @@ HTML;
 		return $arr_products;
 	}
 
+	/*
+	 * get all html display block Tabs Subcategory
+	 */
 	function display_products_after_tabs() {
 		$arr_products_by_cats = $this->get_products_by_cats();
 
@@ -294,8 +307,6 @@ HTML;
 HTML;
 
 	}
-
-
 
 	/*
 	 * display page content
